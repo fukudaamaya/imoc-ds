@@ -153,6 +153,17 @@ export function dartPrimitiveColorRef(group: string, step: string): string {
   return `AppColorPrimitives.${group}${step}`;
 }
 
+/**
+ * Every primitive color description starts with its own name, e.g. "Ocean 50. Lightest
+ * brand wash..." — redundant once the name's already shown as the row label. Strips just
+ * that exact leading "{Group} {step}. " if present; leaves the description untouched
+ * otherwise, so a differently-worded description in Figma never gets mangled.
+ */
+export function cleanPrimitiveDescription(description: string, group: string, step: string): string {
+  const prefix = `${group.charAt(0).toUpperCase()}${group.slice(1)} ${step}. `;
+  return description.startsWith(prefix) ? description.slice(prefix.length) : description;
+}
+
 /** e.g. dartTypeStyleRef('heading-1') -> "AppTypography.heading1" */
 export function dartTypeStyleRef(styleName: string): string {
   return `AppTypography.${camelFromKey(styleName)}`;

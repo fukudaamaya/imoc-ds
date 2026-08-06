@@ -126,6 +126,66 @@
   border-radius: 3px;
 }
 
+/* Primitives list — a divided single-column list reads as a scale (light-to-dark top-to-
+   bottom) much more clearly than a wrapped multi-column grid of cards does. */
+.swatch-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.swatch-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 4px;
+  border-bottom: 1px solid var(--imoc-border-subtle);
+}
+
+.swatch-row-preview {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: var(--imoc-radius-small);
+  border: 1px solid var(--imoc-border-default);
+}
+
+.swatch-row-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.swatch-row-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.swatch-row-name {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  color: var(--imoc-text-primary);
+}
+
+.swatch-row-hex {
+  font-size: 12px;
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  color: var(--imoc-text-tertiary);
+}
+
+.swatch-row-desc {
+  margin: 2px 0 0;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--imoc-text-secondary);
+}
+
+.swatch-row-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
 .swatch-desc {
   font-size: 12px;
   line-height: 1.45;

@@ -41,7 +41,7 @@ function ColorsPrimitivesPage() {
           <h2 className="doc-section-title" style={{ textTransform: 'capitalize' }}>
             {group}
           </h2>
-          <div className="doc-grid doc-color-grid">
+          <div className="swatch-list">
             {primitives[group].map((c) => (
               <PrimitiveSwatch key={c.name} group={c.group} step={c.step} token={c.token} />
             ))}
