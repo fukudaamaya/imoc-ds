@@ -1,12 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import './lib/doc-ui.css';
-import { primitives, dimensions, dartDimensionRef } from './lib/tokens';
+import { dimensions, dartDimensionRef } from './lib/tokens';
 import { usePlatform } from './lib/usePlatform';
 import { CopyButton } from './components/CopyButton';
 import { FigmaBadge } from './components/FigmaBadge';
 
-const MAX_BAR_REF = 128; // primitives.spacing['1300'].value — bars scale relative to this
+const MAX_BAR_REF = 100; // slightly above the largest semantic spacing value (96px), for headroom
+
+// Fixed order (by Web-mode value, ascending) so rows don't reshuffle when the Mobile/Web
+// toolbar toggle changes which values are displayed — only the bar width and px label move.
+const SPACING_ORDER = Object.keys(dimensions.spacing).sort(
+  (a, b) => (dimensions.spacing[a].web as number) - (dimensions.spacing[b].web as number),
+);
 
 function RulerRow({
   name,
@@ -35,8 +41,8 @@ function RulerRow({
         {description}
       </p>
       <div className="action-row" style={{ marginLeft: 236 }}>
-        <CopyButton label={cssVar} value={`var(${cssVar})`} />
-        <CopyButton label="Dart" value={dartRef} />
+        <CopyButton kind="css" label={cssVar} value={`var(${cssVar})`} />
+        <CopyButton kind="dart" label="Dart" value={dartRef} />
       </div>
     </div>
   );
@@ -51,39 +57,28 @@ function SpacingPage() {
         <div>
           <h1 className="doc-h1">Spacing, Radius &amp; Layout</h1>
           <p className="doc-lede">
-            The raw scale (<code>space/*</code>) is platform-agnostic — semantic spacing, radius, and layout
-            tokens map onto it per platform. Toggle Mobile/Web above to see the semantic values shift.
+            Semantic spacing, radius, and layout tokens — reach for these directly. The raw{' '}
+            <code>space/*</code> scale underneath is implementation detail; it isn't shown here. Toggle
+            Mobile/Web above to see values shift.
           </p>
         </div>
         <FigmaBadge />
       </div>
 
-      <h2 className="doc-section-title">Spacing scale (primitive)</h2>
-      <p className="doc-section-note">
-        Raw steps — don't reference these directly in product code, use a semantic spacing/* token below instead.
-      </p>
-      {Object.entries(primitives.spacing).map(([step, t]) => (
-        <RulerRow
-          key={step}
-          name={`space/${step}`}
-          value={t.value}
-          description={t.description}
-          cssVar={t.figma.codeSyntax}
-          dartRef={dartDimensionRef('spacing', 'primitive', step)}
-        />
-      ))}
-
-      <h2 className="doc-section-title">Spacing (semantic) — {platform} mode</h2>
-      {Object.entries(dimensions.spacing).map(([key, t]) => (
-        <RulerRow
-          key={key}
-          name={`spacing/${key}`}
-          value={t[platform] as number}
-          description={t.description}
-          cssVar={t.figma.codeSyntax}
-          dartRef={dartDimensionRef('spacing', 'semantic', key)}
-        />
-      ))}
+      <h2 className="doc-section-title">Spacing — {platform} mode</h2>
+      {SPACING_ORDER.map((key) => {
+        const t = dimensions.spacing[key];
+        return (
+          <RulerRow
+            key={key}
+            name={`spacing/${key}`}
+            value={t[platform] as number}
+            description={t.description}
+            cssVar={t.figma.codeSyntax}
+            dartRef={dartDimensionRef('spacing', 'semantic', key)}
+          />
+        );
+      })}
 
       <h2 className="doc-section-title">Corner radius</h2>
       <p className="doc-section-note">Identical on Mobile and Web.</p>
@@ -94,8 +89,8 @@ function SpacingPage() {
             <div style={{ fontSize: 12, fontFamily: 'ui-monospace, monospace' }}>radius/{key}</div>
             <div style={{ fontSize: 11, color: 'var(--imoc-text-tertiary)' }}>{t.web}px</div>
             <div className="action-row">
-              <CopyButton label={t.figma.codeSyntax} value={`var(${t.figma.codeSyntax})`} />
-              <CopyButton label="Dart" value={dartDimensionRef('radius', 'semantic', key)} />
+              <CopyButton kind="css" label={t.figma.codeSyntax} value={`var(${t.figma.codeSyntax})`} />
+              <CopyButton kind="dart" label="Dart" value={dartDimensionRef('radius', 'semantic', key)} />
             </div>
           </div>
         ))}
@@ -117,8 +112,8 @@ function SpacingPage() {
             </div>
             <p className="swatch-desc">{t.description}</p>
             <div className="action-row">
-              <CopyButton label={t.figma.codeSyntax} value={`var(${t.figma.codeSyntax})`} />
-              <CopyButton label="Dart" value={dartDimensionRef('layout', null, key)} />
+              <CopyButton kind="css" label={t.figma.codeSyntax} value={`var(${t.figma.codeSyntax})`} />
+              <CopyButton kind="dart" label="Dart" value={dartDimensionRef('layout', null, key)} />
             </div>
           </div>
         ))}
@@ -205,8 +200,7 @@ const meta: Meta<typeof SpacingPage> = {
     layout: 'fullscreen',
     docs: {
       description: {
-        component:
-          'The raw scale (space/*) is platform-agnostic — semantic spacing, radius, and layout tokens map onto it per platform.',
+        component: 'Semantic spacing, radius, and layout tokens — the raw scale underneath is implementation detail.',
       },
     },
   },

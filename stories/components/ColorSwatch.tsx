@@ -16,8 +16,8 @@ export function PrimitiveSwatch({ group, step, token }: { group: string; step: s
         <div className="swatch-hex">{token.value}</div>
         <p className="swatch-desc">{token.description}</p>
         <div className="action-row">
-          <CopyButton label={token.figma.codeSyntax} value={`var(${token.figma.codeSyntax})`} />
-          <CopyButton label="Dart" value={dartPrimitiveColorRef(group, step)} />
+          <CopyButton kind="css" label={token.figma.codeSyntax} value={`var(${token.figma.codeSyntax})`} />
+          <CopyButton kind="dart" label="Dart" value={dartPrimitiveColorRef(group, step)} />
           <FigmaBadge />
         </div>
       </div>
@@ -49,8 +49,8 @@ export function SemanticSwatch({ group, tokenKey, token }: { group: string; toke
           </div>
         )}
         <div className="action-row">
-          <CopyButton label={token.figma.codeSyntax} value={`var(${token.figma.codeSyntax})`} />
-          <CopyButton label="Dart" value={dartSemanticColorRef(group, tokenKey)} />
+          <CopyButton kind="css" label={token.figma.codeSyntax} value={`var(${token.figma.codeSyntax})`} />
+          <CopyButton kind="dart" label="Dart" value={dartSemanticColorRef(group, tokenKey)} />
           <FigmaBadge />
         </div>
         <UsedInChip tokenName={fullName} />

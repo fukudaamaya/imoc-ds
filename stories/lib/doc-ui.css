@@ -176,11 +176,25 @@
   padding: 4px 8px;
   border-radius: var(--imoc-radius-small);
   cursor: pointer;
-  transition: background 120ms ease, border-color 120ms ease;
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
 }
 
 .copy-btn:hover {
   border-color: var(--imoc-border-brand);
+}
+
+/* CSS/Dart variants are color-coded so the two copy targets are distinguishable at a glance
+   without reading the label — CSS in ocean (matches --imoc-border-brand), Dart in flora. */
+.copy-btn[data-kind='css'] {
+  border-color: var(--imoc-border-brand);
+  color: var(--imoc-text-brand);
+  background: var(--imoc-surface-brand-subtle);
+}
+
+.copy-btn[data-kind='dart'] {
+  border-color: var(--imoc-flora-600, var(--imoc-border-success));
+  color: var(--imoc-flora-700, var(--imoc-text-success));
+  background: var(--imoc-flora-50, var(--imoc-surface-success));
 }
 
 .copy-btn[data-copied='true'] {
@@ -192,20 +206,21 @@
 .figma-badge {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  font-size: 11px;
+  gap: 6px;
+  font-size: 12px;
   font-weight: 600;
-  padding: 4px 8px;
-  border-radius: var(--imoc-radius-small);
-  border: 1px solid var(--imoc-border-default);
-  color: var(--imoc-text-secondary);
+  padding: 6px 12px;
+  border-radius: var(--imoc-radius-pill);
+  border: 1px solid var(--imoc-neutral-900);
+  color: var(--imoc-neutral-0);
   text-decoration: none;
-  background: var(--imoc-surface-page);
+  background: var(--imoc-neutral-900);
+  transition: background 120ms ease, transform 120ms ease;
 }
 
 .figma-badge:hover {
-  border-color: var(--imoc-border-brand);
-  color: var(--imoc-text-brand);
+  background: var(--imoc-neutral-700);
+  border-color: var(--imoc-neutral-700);
 }
 
 .doc-table {

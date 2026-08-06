@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 
-export function CopyButton({ label, value }: { label: string; value: string }) {
+export function CopyButton({
+  label,
+  value,
+  kind = 'default',
+}: {
+  label: string;
+  value: string;
+  kind?: 'css' | 'dart' | 'default';
+}) {
   const [copied, setCopied] = useState(false);
 
   const onClick = async () => {
@@ -15,7 +23,7 @@ export function CopyButton({ label, value }: { label: string; value: string }) {
   };
 
   return (
-    <button className="copy-btn" data-copied={copied} onClick={onClick} title={value}>
+    <button className="copy-btn" data-kind={kind} data-copied={copied} onClick={onClick} title={value}>
       {copied ? '✓ Copied' : label}
     </button>
   );

@@ -111,8 +111,8 @@ function TypographyPage() {
             <p className="swatch-desc">{s.size.description}</p>
 
             <div className="action-row">
-              <CopyButton label="CSS" value={css(s.name)} />
-              <CopyButton label="Dart" value={dartTypeStyleRef(s.name)} />
+              <CopyButton kind="css" label="CSS" value={css(s.name)} />
+              <CopyButton kind="dart" label="Dart" value={dartTypeStyleRef(s.name)} />
               <FigmaBadge />
             </div>
           </div>
