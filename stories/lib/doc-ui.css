@@ -278,12 +278,6 @@
   color: var(--imoc-text-error);
 }
 
-/* Decorative pairings WCAG doesn't require to meet any bar — neutral, not a pass or a fail. */
-.tier-badge.tier-exempt {
-  background: var(--imoc-surface-disabled);
-  color: var(--imoc-text-tertiary);
-}
-
 .type-specimen {
   background: var(--imoc-surface-card);
   border: 1px solid var(--imoc-border-default);

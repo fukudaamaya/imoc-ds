@@ -10,9 +10,6 @@ interface Pairing {
   bg: [string, string];
   context: string;
   kind: 'text' | 'non-text';
-  /** Decorative — WCAG 1.4.11 doesn't require these to meet 3:1 at all (they carry no
-   * information on their own). Shown as "Exempt" rather than a computed pass/fail. */
-  exempt?: boolean;
 }
 
 // Curated from the "used for" language in each token's own Figma description — not every
@@ -41,12 +38,9 @@ const PAIRINGS: Pairing[] = [
   { fg: ['text', 'error'], bg: ['surface', 'error'], context: 'Validation messages', kind: 'text' },
   { fg: ['text', 'info'], bg: ['surface', 'info'], context: 'Explanatory callouts', kind: 'text' },
   { fg: ['text', 'placeholder'], bg: ['surface', 'input'], context: 'Empty form-field placeholder', kind: 'text' },
-  { fg: ['border', 'subtle'], bg: ['surface', 'background'], context: 'Dividers, table rules', kind: 'non-text', exempt: true },
-  { fg: ['border', 'default'], bg: ['surface', 'card'], context: 'Card outlines (never the sole indicator of a control)', kind: 'non-text', exempt: true },
   { fg: ['border', 'strong'], bg: ['surface', 'card'], context: 'Input / checkbox / radio outlines', kind: 'non-text' },
   { fg: ['border', 'focus'], bg: ['surface', 'background'], context: 'Keyboard focus ring', kind: 'non-text' },
   { fg: ['border', 'brand'], bg: ['surface', 'background'], context: 'Selected filter chip, active tab', kind: 'non-text' },
-  { fg: ['border', 'accent'], bg: ['surface', 'card'], context: 'Pull-quote rule, card dividers', kind: 'non-text', exempt: true },
   { fg: ['border', 'success'], bg: ['surface', 'background'], context: 'Confirmation panel rule', kind: 'non-text' },
   { fg: ['border', 'warning'], bg: ['surface', 'background'], context: 'Advisory panel rule', kind: 'non-text' },
   { fg: ['border', 'error'], bg: ['surface', 'background'], context: 'Failed input outline', kind: 'non-text' },
@@ -66,10 +60,6 @@ function NotApplicable() {
   return <span style={{ color: 'var(--imoc-text-tertiary)', fontSize: 13 }}>—</span>;
 }
 
-function ExemptBadge() {
-  return <span className="tier-badge tier-exempt">Exempt</span>;
-}
-
 function AccessibilityPage() {
   const [filter, setFilter] = React.useState<'all' | 'text' | 'non-text' | 'fail'>('all');
 
@@ -79,8 +69,8 @@ function AccessibilityPage() {
     const ratio = contrastRatio(fgToken.value, bgToken.value);
     const normalText = p.kind === 'text' ? tierNormalText(ratio) : null;
     const largeText = p.kind === 'text' ? tierLargeText(ratio) : null;
-    const iconsUI = p.exempt ? null : tierIconsUI(ratio);
-    const primaryTier = p.kind === 'text' ? normalText! : p.exempt ? 'AAA' /* exempt never counts as failing */ : iconsUI!;
+    const iconsUI = p.kind === 'non-text' ? tierIconsUI(ratio) : null;
+    const primaryTier = p.kind === 'text' ? normalText! : iconsUI!;
     return { ...p, fgToken, bgToken, ratio, normalText, largeText, iconsUI, primaryTier };
   });
 
@@ -108,8 +98,8 @@ function AccessibilityPage() {
         AA/AAA are real conformance levels there. <strong>Icons / UI</strong> comes from WCAG 1.4.11, which
         defines only a single AA bar (3:1) and no stricter tier — the "AAA" shown there is an informal
         convention (≥4.5:1, borrowed from the Large Text AAA bar) meaning "extra headroom," not an official
-        WCAG pass level. Rows marked <strong>Exempt</strong> are decorative and WCAG doesn't require them to
-        meet any bar.
+        WCAG pass level. Purely decorative pairings (dividers, card outlines, the pull-quote rule) aren't
+        listed at all — WCAG doesn't regulate them, so they're not part of this compliance checklist.
       </p>
 
       <div className="doc-tabs">
@@ -161,7 +151,7 @@ function AccessibilityPage() {
                 <td style={{ fontFamily: 'ui-monospace, monospace', fontWeight: 700 }}>{formatRatio(r.ratio)}</td>
                 <td>{r.normalText ? <TierBadge tier={r.normalText} /> : <NotApplicable />}</td>
                 <td>{r.largeText ? <TierBadge tier={r.largeText} /> : <NotApplicable />}</td>
-                <td>{r.exempt ? <ExemptBadge /> : r.iconsUI ? <TierBadge tier={r.iconsUI} /> : <NotApplicable />}</td>
+                <td>{r.iconsUI ? <TierBadge tier={r.iconsUI} /> : <NotApplicable />}</td>
                 <td style={{ fontSize: 13, color: 'var(--imoc-text-secondary)' }}>{r.context}</td>
               </tr>
             ))}
