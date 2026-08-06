@@ -1,0 +1,779 @@
+{
+  "text": {
+    "primary": {
+      "value": "#272420",
+      "alias": "{color.primitive.neutral.900}",
+      "aliasOf": "neutral/900",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Body copy, treatment descriptions, headings, form labels — the default reading colour. 14.78:1 on surface/page, 15.45:1 on surface/card.",
+      "figma": {
+        "id": "VariableID:9110:1250",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-primary"
+      }
+    },
+    "secondary": {
+      "value": "#5e5a52",
+      "alias": "{color.primitive.neutral.700}",
+      "aliasOf": "neutral/700",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Card subtitles, treatment duration lines, metadata, breadcrumbs, \"last updated\" stamps. 6.57:1 on surface/page, 6.86:1 on surface/card.",
+      "figma": {
+        "id": "VariableID:9110:1251",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-secondary"
+      }
+    },
+    "tertiary": {
+      "value": "#767266",
+      "alias": "{color.primitive.neutral.600}",
+      "aliasOf": "neutral/600",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Helper text under form inputs, footnotes, supporting detail inside cards. 4.60:1 on surface/page, 4.81:1 on surface/card — passes AA body.",
+      "figma": {
+        "id": "VariableID:9110:1252",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-tertiary"
+      }
+    },
+    "disabled": {
+      "value": "#9e9a90",
+      "alias": "{color.primitive.neutral.500}",
+      "aliasOf": "neutral/500",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Disabled button labels, unavailable appointment slot text, locked form step labels. 2.54:1 on surface/disabled — intentional WCAG 1.4.3 exemption. Always pair with a non-colour cue.",
+      "figma": {
+        "id": "VariableID:9110:1253",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-disabled"
+      }
+    },
+    "inverse": {
+      "value": "#fafaf8",
+      "alias": "{color.primitive.neutral.50}",
+      "aliasOf": "neutral/50",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Body copy and headings in the footer and dark longevity sections. 17.88:1 on surface/inverse.",
+      "figma": {
+        "id": "VariableID:9110:1254",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-inverse"
+      }
+    },
+    "link": {
+      "value": "#0a6b6d",
+      "alias": "{color.primitive.ocean.700}",
+      "aliasOf": "ocean/700",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Inline links in body copy, \"see related treatments\", in-page nav links. 6.02:1 on surface/page, 6.29:1 on surface/card. Always underlined — colour is never the sole cue.",
+      "figma": {
+        "id": "VariableID:9110:1255",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-link"
+      }
+    },
+    "link-hover": {
+      "value": "#075052",
+      "alias": "{color.primitive.ocean.800}",
+      "aliasOf": "ocean/800",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Hover and focus state on inline links. 8.82:1 on surface/page.",
+      "figma": {
+        "id": "VariableID:9110:1256",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-link-hover"
+      }
+    },
+    "link-inverse": {
+      "value": "#6ec7ca",
+      "alias": "{color.primitive.ocean.300}",
+      "aliasOf": "ocean/300",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Links inside the footer and dark longevity sections. 9.51:1 on surface/inverse.",
+      "figma": {
+        "id": "VariableID:9110:1257",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-link-inverse"
+      }
+    },
+    "brand": {
+      "value": "#0a6b6d",
+      "alias": "{color.primitive.ocean.700}",
+      "aliasOf": "ocean/700",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Ocean-coloured headings, eyebrow labels above section titles, step numerals in the intake flow. 6.02:1 on surface/page.",
+      "figma": {
+        "id": "VariableID:9110:1258",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-brand"
+      }
+    },
+    "accent": {
+      "value": "#6c3f27",
+      "alias": "{color.primitive.earth.700}",
+      "aliasOf": "earth/700",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Earth-coloured editorial headings, pull quotes, treatment category labels. 8.45:1 on surface/page.",
+      "figma": {
+        "id": "VariableID:9110:1259",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-accent"
+      }
+    },
+    "on-fill": {
+      "value": "#ffffff",
+      "alias": "{color.primitive.neutral.0}",
+      "aliasOf": "neutral/0",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Text and icons on any dark filled surface — primary button labels on surface/action, headings on surface/brand, copy on surface/accent editorial blocks. 6.29:1 on surface/action and surface/brand (ocean/700), 8.83:1 on surface/accent (earth/700). Replaces the former text/on-brand and text/on-accent, which were the same white doing the same job.",
+      "figma": {
+        "id": "VariableID:9110:1260",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-on-fill"
+      }
+    },
+    "success": {
+      "value": "#235517",
+      "alias": "{color.primitive.success.700}",
+      "aliasOf": "success/700",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Confirmation copy — \"Your request is in, we'll call within one business day.\" 8.01:1 on surface/success.",
+      "figma": {
+        "id": "VariableID:9110:1262",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-success"
+      }
+    },
+    "warning": {
+      "value": "#6e4207",
+      "alias": "{color.primitive.warning.700}",
+      "aliasOf": "warning/700",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Advisory copy — out-of-state travel notes, limited availability messages. 7.81:1 on surface/warning.",
+      "figma": {
+        "id": "VariableID:9110:1263",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-warning"
+      }
+    },
+    "error": {
+      "value": "#7c1f17",
+      "alias": "{color.primitive.error.700}",
+      "aliasOf": "error/700",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Validation messages beside the failing field. Supportive tone, never blaming. 8.89:1 on surface/error.",
+      "figma": {
+        "id": "VariableID:9110:1264",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-error"
+      }
+    },
+    "info": {
+      "value": "#144468",
+      "alias": "{color.primitive.info.700}",
+      "aliasOf": "info/700",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Explanatory copy — cash-pay policy, what to bring, telehealth eligibility. 8.94:1 on surface/info.",
+      "figma": {
+        "id": "VariableID:9110:1265",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-info"
+      }
+    },
+    "placeholder": {
+      "value": "#767266",
+      "alias": "{color.primitive.neutral.600}",
+      "aliasOf": "neutral/600",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "description": "Placeholder text inside empty form fields — \"you@example.com\", \"Search conditions\". 4.81:1 on surface/input. Distinct from text/tertiary (helper text below a field) and text/disabled (inactive control).",
+      "figma": {
+        "id": "VariableID:9117:1420",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-text-placeholder"
+      }
+    }
+  },
+  "surface": {
+    "background": {
+      "value": "#fafaf8",
+      "alias": "{color.primitive.neutral.50}",
+      "aliasOf": "neutral/50",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Base page canvas behind all content on every route. Warm off-white rather than pure white to reduce glare for light-sensitive readers.",
+      "figma": {
+        "id": "VariableID:9110:1266",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-page"
+      }
+    },
+    "card": {
+      "value": "#ffffff",
+      "alias": "{color.primitive.neutral.0}",
+      "aliasOf": "neutral/0",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Treatment cards, condition cards, practitioner bio panels, FAQ accordions. Lifts off the page without needing a border.",
+      "figma": {
+        "id": "VariableID:9110:1267",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-card"
+      }
+    },
+    "input": {
+      "value": "#ffffff",
+      "alias": "{color.primitive.neutral.0}",
+      "aliasOf": "neutral/0",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Text fields, selects, textareas, date pickers in the booking and intake forms. Always pair with border/strong.",
+      "figma": {
+        "id": "VariableID:9110:1268",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-input"
+      }
+    },
+    "inverse": {
+      "value": "#141210",
+      "alias": "{color.primitive.neutral.950}",
+      "aliasOf": "neutral/950",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Footer, longevity programme sections, testimonial features. The primary aspirational register for longevity-seeking visitors.",
+      "figma": {
+        "id": "VariableID:9110:1270",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-inverse"
+      }
+    },
+    "disabled": {
+      "value": "#e9e6e1",
+      "alias": "{color.primitive.neutral.200}",
+      "aliasOf": "neutral/200",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Disabled buttons, unavailable appointment slots, locked form steps.",
+      "figma": {
+        "id": "VariableID:9110:1271",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-disabled"
+      }
+    },
+    "brand": {
+      "value": "#0a6b6d",
+      "alias": "{color.primitive.ocean.700}",
+      "aliasOf": "ocean/700",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Ocean feature panels, condition-finder headers, quiz intro blocks. Pair with text/on-fill — 6.29:1.",
+      "figma": {
+        "id": "VariableID:9110:1272",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-brand"
+      }
+    },
+    "brand-subtle": {
+      "value": "#f0fafa",
+      "alias": "{color.primitive.ocean.50}",
+      "aliasOf": "ocean/50",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Condition-match banners, \"yes, we treat this\" confirmation strips, selected filter chips. The recognition moment for chronic-illness visitors.",
+      "figma": {
+        "id": "VariableID:9110:1273",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-brand-subtle"
+      }
+    },
+    "accent": {
+      "value": "#6c3f27",
+      "alias": "{color.primitive.earth.700}",
+      "aliasOf": "earth/700",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Editorial feature blocks, methodology callouts, \"why physician-led\" panels. Pair with text/on-fill — 8.83:1.",
+      "figma": {
+        "id": "VariableID:9110:1274",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-accent"
+      }
+    },
+    "accent-subtle": {
+      "value": "#f6eee3",
+      "alias": "{color.primitive.earth.100}",
+      "aliasOf": "earth/100",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Alternating warm section washes, quote blocks, patient story sections. text/primary reads 13.43:1 here.",
+      "figma": {
+        "id": "VariableID:9110:1275",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-accent-subtle"
+      }
+    },
+    "action": {
+      "value": "#0a6b6d",
+      "alias": "{color.primitive.ocean.700}",
+      "aliasOf": "ocean/700",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Primary buttons — \"Book an appointment\", \"Start intake\". NOT ocean/600: white on 600 measures 4.44:1 and fails body text.",
+      "figma": {
+        "id": "VariableID:9110:1276",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-action"
+      }
+    },
+    "action-hover": {
+      "value": "#075052",
+      "alias": "{color.primitive.ocean.800}",
+      "aliasOf": "ocean/800",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Hover state on primary buttons. White label reads 9.22:1.",
+      "figma": {
+        "id": "VariableID:9110:1277",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-action-hover"
+      }
+    },
+    "action-pressed": {
+      "value": "#04302f",
+      "alias": "{color.primitive.ocean.900}",
+      "aliasOf": "ocean/900",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Active and pressed state on primary buttons.",
+      "figma": {
+        "id": "VariableID:9110:1278",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-action-pressed"
+      }
+    },
+    "success": {
+      "value": "#edf7e9",
+      "alias": "{color.primitive.success.50}",
+      "aliasOf": "success/50",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Booking confirmed panels, \"request received\" states, saved-intake banners.",
+      "figma": {
+        "id": "VariableID:9110:1280",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-success"
+      }
+    },
+    "warning": {
+      "value": "#fdf3e3",
+      "alias": "{color.primitive.warning.50}",
+      "aliasOf": "warning/50",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Out-of-state logistics notices, \"call to confirm availability\" strips.",
+      "figma": {
+        "id": "VariableID:9110:1281",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-warning"
+      }
+    },
+    "error": {
+      "value": "#fdecea",
+      "alias": "{color.primitive.error.50}",
+      "aliasOf": "error/50",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Form validation summaries, failed submission banners.",
+      "figma": {
+        "id": "VariableID:9110:1282",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-error"
+      }
+    },
+    "info": {
+      "value": "#e8f1f9",
+      "alias": "{color.primitive.info.50}",
+      "aliasOf": "info/50",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Cash-pay policy notes, what-to-bring callouts, first-visit and telehealth explainers.",
+      "figma": {
+        "id": "VariableID:9110:1283",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-info"
+      }
+    },
+    "overlay": {
+      "value": "rgba(20, 18, 16, 0.6)",
+      "alias": null,
+      "aliasOf": null,
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Scrim behind modals and the mobile navigation drawer. Raw rgba(20,18,16,0.60) — transparency cannot alias a primitive. Warm-tinted to match neutral/950.",
+      "figma": {
+        "id": "VariableID:9110:1294",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-overlay"
+      }
+    },
+    "decorative": {
+      "value": "#dfc3a4",
+      "alias": "{color.primitive.earth.300}",
+      "aliasOf": "earth/300",
+      "type": "color",
+      "scopes": [
+        "SHAPE_FILL"
+      ],
+      "description": "Illustration fills, image mattes, mascot colourways, decorative shapes behind content. The Sand brand value. SHAPE_FILL only — never text or borders (1.61:1 on surface/page).",
+      "figma": {
+        "id": "VariableID:9114:1295",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-decorative"
+      }
+    },
+    "hover": {
+      "value": "#f5f3f0",
+      "alias": "{color.primitive.neutral.100}",
+      "aliasOf": "neutral/100",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Hover state on clickable cards and list rows — treatment cards, condition rows, FAQ headers. Shares a value with surface/disabled today but is a distinct state that will diverge. Pair with an elevation lift; hover is never the only route to content.",
+      "figma": {
+        "id": "VariableID:9117:1418",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-hover"
+      }
+    },
+    "selected": {
+      "value": "#d6f0f1",
+      "alias": "{color.primitive.ocean.100}",
+      "aliasOf": "ocean/100",
+      "type": "color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "description": "Selected state — the chosen condition card, active filter chip, current step in the intake flow. Stronger than surface/brand-subtle so selection reads as a deliberate act rather than a highlight. text/primary reads 12.8:1 here.",
+      "figma": {
+        "id": "VariableID:9117:1419",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-surface-selected"
+      }
+    }
+  },
+  "border": {
+    "subtle": {
+      "value": "#e9e6e1",
+      "alias": "{color.primitive.neutral.200}",
+      "aliasOf": "neutral/200",
+      "type": "color",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "description": "Dividers between list items, table row rules, section separators. Decorative at 1.19:1 — exempt from 3:1 because it carries no information.",
+      "figma": {
+        "id": "VariableID:9110:1284",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-border-subtle"
+      }
+    },
+    "default": {
+      "value": "#d6d2ca",
+      "alias": "{color.primitive.neutral.300}",
+      "aliasOf": "neutral/300",
+      "type": "color",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "description": "Card outlines, non-interactive container edges. 1.51:1 on surface/card — never the sole indicator of an interactive control.",
+      "figma": {
+        "id": "VariableID:9110:1285",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-border-default"
+      }
+    },
+    "strong": {
+      "value": "#767266",
+      "alias": "{color.primitive.neutral.600}",
+      "aliasOf": "neutral/600",
+      "type": "color",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "description": "Input borders, checkbox and radio outlines, select field edges. 4.81:1 on surface/card, clears the 3:1 non-text requirement. Every form control uses this.",
+      "figma": {
+        "id": "VariableID:9110:1286",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-border-strong"
+      }
+    },
+    "focus": {
+      "value": "#0a6b6d",
+      "alias": "{color.primitive.ocean.700}",
+      "aliasOf": "ocean/700",
+      "type": "color",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "description": "Keyboard focus ring on every interactive element — 2px weight, 2px offset. 6.02:1 on surface/background. Never removable.",
+      "figma": {
+        "id": "VariableID:9110:1287",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-border-focus"
+      }
+    },
+    "brand": {
+      "value": "#0d8588",
+      "alias": "{color.primitive.ocean.600}",
+      "aliasOf": "ocean/600",
+      "type": "color",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "description": "Selected filter chips, active tab underline, chosen condition card outline. 4.25:1 on surface/background.",
+      "figma": {
+        "id": "VariableID:9110:1288",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-border-brand"
+      }
+    },
+    "accent": {
+      "value": "#8e6039",
+      "alias": "{color.primitive.earth.600}",
+      "aliasOf": "earth/600",
+      "type": "color",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "description": "Left rule on editorial pull quotes, category dividers on treatment cards. 5.41:1 on surface/card.",
+      "figma": {
+        "id": "VariableID:9110:1289",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-border-accent"
+      }
+    },
+    "success": {
+      "value": "#3e8e2e",
+      "alias": "{color.primitive.success.500}",
+      "aliasOf": "success/500",
+      "type": "color",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "description": "Left rule on confirmation panels, validated field outline. 3.93:1 on surface/background.",
+      "figma": {
+        "id": "VariableID:9110:1290",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-border-success"
+      }
+    },
+    "warning": {
+      "value": "#b8730e",
+      "alias": "{color.primitive.warning.500}",
+      "aliasOf": "warning/500",
+      "type": "color",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "description": "Left rule on advisory panels. 3.66:1 on surface/background.",
+      "figma": {
+        "id": "VariableID:9110:1291",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-border-warning"
+      }
+    },
+    "error": {
+      "value": "#c8352a",
+      "alias": "{color.primitive.error.500}",
+      "aliasOf": "error/500",
+      "type": "color",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "description": "Failed input field outline. 5.03:1 on surface/background. Always paired with an icon and a message.",
+      "figma": {
+        "id": "VariableID:9110:1292",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-border-error"
+      }
+    },
+    "info": {
+      "value": "#2172ac",
+      "alias": "{color.primitive.info.500}",
+      "aliasOf": "info/500",
+      "type": "color",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "description": "Left rule on informational callouts. 4.94:1 on surface/background.",
+      "figma": {
+        "id": "VariableID:9110:1293",
+        "collection": "Colour",
+        "mode": "Clinic",
+        "codeSyntax": "--imoc-border-info"
+      }
+    }
+  }
+}

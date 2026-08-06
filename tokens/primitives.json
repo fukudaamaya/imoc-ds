@@ -1,0 +1,797 @@
+{
+  "color": {
+    "ocean": {
+      "50": {
+        "value": "#f0fafa",
+        "type": "color",
+        "description": "Ocean 50. Lightest brand wash. Aliased by surface/brand-subtle for condition-match banners and selected filter chips.",
+        "figma": {
+          "id": "VariableID:9110:1194",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-ocean-50"
+        }
+      },
+      "100": {
+        "value": "#d6f0f1",
+        "type": "color",
+        "description": "Ocean 100. Light brand tint. Unaliased — reserved for hover states on brand-subtle surfaces.",
+        "figma": {
+          "id": "VariableID:9110:1195",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-ocean-100"
+        }
+      },
+      "200": {
+        "value": "#a8dfe1",
+        "type": "color",
+        "description": "Ocean 200. Absorbs the retired Sky #9BD6CF. Unaliased — available for illustration and decorative fills.",
+        "figma": {
+          "id": "VariableID:9110:1196",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-ocean-200"
+        }
+      },
+      "300": {
+        "value": "#6ec7ca",
+        "type": "color",
+        "description": "Ocean 300. Aliased by text/link-inverse. 9.51:1 on neutral/950 — the only ocean step safe for text on dark surfaces.",
+        "figma": {
+          "id": "VariableID:9110:1197",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-ocean-300"
+        }
+      },
+      "400": {
+        "value": "#2fadb0",
+        "type": "color",
+        "description": "Ocean 400. Mid brand tone. Unaliased — available for illustration and data visualisation.",
+        "figma": {
+          "id": "VariableID:9110:1198",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-ocean-400"
+        }
+      },
+      "500": {
+        "value": "#158f92",
+        "type": "color",
+        "description": "Ocean 500. Unaliased — sits between the mid tones and the brand value.",
+        "figma": {
+          "id": "VariableID:9110:1199",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-ocean-500"
+        }
+      },
+      "600": {
+        "value": "#0d8588",
+        "type": "color",
+        "description": "Ocean 600. THE BRAND VALUE from the style tile. Aliased by border/brand. Fails body text on white (4.44:1) — never use for text under 24px.",
+        "figma": {
+          "id": "VariableID:9110:1200",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-ocean-600"
+        }
+      },
+      "700": {
+        "value": "#0a6b6d",
+        "type": "color",
+        "description": "Ocean 700. The text and action step. Aliased by surface/brand, surface/action, text/link, text/brand, border/focus. 6.29:1 on white.",
+        "figma": {
+          "id": "VariableID:9110:1201",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-ocean-700"
+        }
+      },
+      "800": {
+        "value": "#075052",
+        "type": "color",
+        "description": "Ocean 800. Aliased by surface/action-hover and text/link-hover. 9.22:1 with white.",
+        "figma": {
+          "id": "VariableID:9110:1202",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-ocean-800"
+        }
+      },
+      "900": {
+        "value": "#04302f",
+        "type": "color",
+        "description": "Ocean 900. Aliased by surface/action-pressed for the active state on primary buttons.",
+        "figma": {
+          "id": "VariableID:9110:1203",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-ocean-900"
+        }
+      }
+    },
+    "earth": {
+      "50": {
+        "value": "#fbf8f5",
+        "type": "color",
+        "description": "Earth 50. Lightest warm tint. Unaliased — available as an alternate page wash.",
+        "figma": {
+          "id": "VariableID:9110:1205",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-earth-50"
+        }
+      },
+      "100": {
+        "value": "#f6eee3",
+        "type": "color",
+        "description": "Earth 100. Aliased by surface/accent-subtle for alternating warm section washes, quote blocks, story sections.",
+        "figma": {
+          "id": "VariableID:9110:1206",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-earth-100"
+        }
+      },
+      "200": {
+        "value": "#eddcc7",
+        "type": "color",
+        "description": "Earth 200. Unaliased — available for illustration fills and image mattes.",
+        "figma": {
+          "id": "VariableID:9110:1207",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-earth-200"
+        }
+      },
+      "300": {
+        "value": "#dfc3a4",
+        "type": "color",
+        "description": "Earth 300. THE SAND BRAND VALUE from the style tile. Aliased by surface/decorative for illustration and image mattes. Never text (1.61:1 on surface/page).",
+        "figma": {
+          "id": "VariableID:9110:1208",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-earth-300"
+        }
+      },
+      "400": {
+        "value": "#c9a177",
+        "type": "color",
+        "description": "Earth 400. Unaliased — illustration and decorative fills only. Fails all text contrast (2.37:1 on white).",
+        "figma": {
+          "id": "VariableID:9110:1209",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-earth-400"
+        }
+      },
+      "500": {
+        "value": "#b0814f",
+        "type": "color",
+        "description": "Earth 500. Unaliased. 3.44:1 on white — large text and UI only, never body copy.",
+        "figma": {
+          "id": "VariableID:9110:1210",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-earth-500"
+        }
+      },
+      "600": {
+        "value": "#8e6039",
+        "type": "color",
+        "description": "Earth 600. Lightest text-safe warm step. Aliased by border/accent for pull-quote rules and treatment card dividers. 5.41:1 on white.",
+        "figma": {
+          "id": "VariableID:9110:1211",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-earth-600"
+        }
+      },
+      "700": {
+        "value": "#6c3f27",
+        "type": "color",
+        "description": "Earth 700. THE EARTH BRAND VALUE from the style tile. Aliased by surface/accent and text/accent. 8.83:1 on white.",
+        "figma": {
+          "id": "VariableID:9110:1212",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-earth-700"
+        }
+      },
+      "800": {
+        "value": "#4a2a1a",
+        "type": "color",
+        "description": "Earth 800. Unaliased — reserved for deep editorial surfaces. 12.83:1 with white.",
+        "figma": {
+          "id": "VariableID:9110:1213",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-earth-800"
+        }
+      },
+      "900": {
+        "value": "#2a170d",
+        "type": "color",
+        "description": "Earth 900. Deepest warm tone. Source hue for the warm-tinted elevation shadows.",
+        "figma": {
+          "id": "VariableID:9110:1214",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-earth-900"
+        }
+      }
+    },
+    "flora": {
+      "50": {
+        "value": "#f6fbf0",
+        "type": "color",
+        "description": "Flora 50. Lightest botanical tint. Supplement line only — reserved for surface/page or surface/brand-subtle when the Supplement mode is rebuilt. Unaliased in Clinic.",
+        "figma": {
+          "id": "VariableID:9110:1215",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-flora-50"
+        }
+      },
+      "100": {
+        "value": "#eaf6dc",
+        "type": "color",
+        "description": "Flora 100. Supplement line only. Reserved for surface/brand-subtle when the Supplement mode is filled in.",
+        "figma": {
+          "id": "VariableID:9110:1216",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-flora-100"
+        }
+      },
+      "200": {
+        "value": "#cfe9b5",
+        "type": "color",
+        "description": "Flora 200. Light botanical tint. Supplement line only — candidate for surface/selected and hover states in the Supplement theme. Unaliased in Clinic.",
+        "figma": {
+          "id": "VariableID:9110:1217",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-flora-200"
+        }
+      },
+      "300": {
+        "value": "#b2d78b",
+        "type": "color",
+        "description": "Flora 300. THE FLORA BRAND VALUE from the style tile. RESTRICTED: surface and illustration fills only, never status indicators — it would collide with success green.",
+        "figma": {
+          "id": "VariableID:9110:1218",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-flora-300"
+        }
+      },
+      "400": {
+        "value": "#93c165",
+        "type": "color",
+        "description": "Flora 400. Mid botanical tone. Supplement line only — illustration and packaging-adjacent fills. Fails text contrast on white; never use for copy.",
+        "figma": {
+          "id": "VariableID:9110:1219",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-flora-400"
+        }
+      },
+      "500": {
+        "value": "#74a445",
+        "type": "color",
+        "description": "Flora 500. Supplement line only — candidate for border/brand and non-text indicators in the Supplement theme. Verify against 3:1 before committing.",
+        "figma": {
+          "id": "VariableID:9110:1220",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-flora-500"
+        }
+      },
+      "600": {
+        "value": "#5a8434",
+        "type": "color",
+        "description": "Flora 600. Supplement line only. Candidate for surface/action in Supplement mode — verify white contrast before use.",
+        "figma": {
+          "id": "VariableID:9110:1221",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-flora-600"
+        }
+      },
+      "700": {
+        "value": "#436327",
+        "type": "color",
+        "description": "Flora 700. Supplement line only. Candidate for text/link in Supplement mode. 6.54:1 on flora/50.",
+        "figma": {
+          "id": "VariableID:9110:1222",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-flora-700"
+        }
+      },
+      "800": {
+        "value": "#2c421a",
+        "type": "color",
+        "description": "Flora 800. Deep botanical tone. Supplement line only — reserved for dark editorial surfaces in the Supplement theme. Unaliased in Clinic.",
+        "figma": {
+          "id": "VariableID:9110:1223",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-flora-800"
+        }
+      },
+      "900": {
+        "value": "#17230e",
+        "type": "color",
+        "description": "Flora 900. Deepest botanical tone. Supplement line only — reserved for surface/inverse in the Supplement theme if it needs to differ from neutral/950. Unaliased in Clinic.",
+        "figma": {
+          "id": "VariableID:9110:1224",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-flora-900"
+        }
+      }
+    },
+    "neutral": {
+      "0": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "Neutral 0. Pure white. Aliased by surface/card, surface/input, surface/elevated, text/on-brand, text/on-accent.",
+        "figma": {
+          "id": "VariableID:9110:1225",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-neutral-0"
+        }
+      },
+      "50": {
+        "value": "#fafaf8",
+        "type": "color",
+        "description": "Neutral 50. Warm off-white. Aliased by surface/page and text/inverse. Chosen over pure white to reduce glare for light-sensitive readers.",
+        "figma": {
+          "id": "VariableID:9110:1226",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-neutral-50"
+        }
+      },
+      "100": {
+        "value": "#f5f3f0",
+        "type": "color",
+        "description": "Neutral 100. Aliased by surface/disabled and surface/action-disabled for inactive buttons and unavailable appointment slots.",
+        "figma": {
+          "id": "VariableID:9110:1227",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-neutral-100"
+        }
+      },
+      "200": {
+        "value": "#e9e6e1",
+        "type": "color",
+        "description": "Neutral 200. Aliased by border/subtle for list dividers, table row rules, section separators.",
+        "figma": {
+          "id": "VariableID:9110:1228",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-neutral-200"
+        }
+      },
+      "300": {
+        "value": "#d6d2ca",
+        "type": "color",
+        "description": "Neutral 300. Aliased by border/default for card outlines and non-interactive container edges.",
+        "figma": {
+          "id": "VariableID:9110:1229",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-neutral-300"
+        }
+      },
+      "400": {
+        "value": "#bfbbb1",
+        "type": "color",
+        "description": "Neutral 400. Unaliased — available for decorative rules on dark surfaces.",
+        "figma": {
+          "id": "VariableID:9110:1230",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-neutral-400"
+        }
+      },
+      "500": {
+        "value": "#9e9a90",
+        "type": "color",
+        "description": "Neutral 500. Aliased by text/disabled. 2.54:1 on surface/disabled — an intentional WCAG 1.4.3 exemption for inactive controls.",
+        "figma": {
+          "id": "VariableID:9110:1231",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-neutral-500"
+        }
+      },
+      "600": {
+        "value": "#767266",
+        "type": "color",
+        "description": "Neutral 600. RETUNED from #7D7970 so tertiary text passes AA. Aliased by text/tertiary and border/strong. 4.60:1 on page, 4.81:1 on card.",
+        "figma": {
+          "id": "VariableID:9110:1232",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-neutral-600"
+        }
+      },
+      "700": {
+        "value": "#5e5a52",
+        "type": "color",
+        "description": "Neutral 700. Aliased by text/secondary for card subtitles, treatment duration, metadata, breadcrumbs. 6.57:1 on page.",
+        "figma": {
+          "id": "VariableID:9110:1233",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-neutral-700"
+        }
+      },
+      "800": {
+        "value": "#3f3c36",
+        "type": "color",
+        "description": "Neutral 800. Unaliased — available for a fourth text tier if long treatment pages need one.",
+        "figma": {
+          "id": "VariableID:9110:1234",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-neutral-800"
+        }
+      },
+      "900": {
+        "value": "#272420",
+        "type": "color",
+        "description": "Neutral 900. Aliased by text/primary — the default reading colour for all body copy and headings. 14.78:1 on page.",
+        "figma": {
+          "id": "VariableID:9110:1235",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-neutral-900"
+        }
+      },
+      "950": {
+        "value": "#141210",
+        "type": "color",
+        "description": "Neutral 950. The brand near-black from the style tile. Aliased by surface/inverse for the footer and longevity sections. Also the source of the overlay scrim.",
+        "figma": {
+          "id": "VariableID:9110:1236",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-neutral-950"
+        }
+      }
+    },
+    "success": {
+      "50": {
+        "value": "#edf7e9",
+        "type": "color",
+        "description": "Success 50. Aliased by surface/success for booking confirmed panels and saved-intake banners.",
+        "figma": {
+          "id": "VariableID:9110:1237",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-success-50"
+        }
+      },
+      "500": {
+        "value": "#3e8e2e",
+        "type": "color",
+        "description": "Success 500. Aliased by border/success. 3.93:1 on page — clears 3:1 for non-text UI, not for body copy.",
+        "figma": {
+          "id": "VariableID:9110:1238",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-success-500"
+        }
+      },
+      "700": {
+        "value": "#235517",
+        "type": "color",
+        "description": "Success 700. Aliased by text/success. 8.01:1 on surface/success.",
+        "figma": {
+          "id": "VariableID:9110:1239",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-success-700"
+        }
+      }
+    },
+    "warning": {
+      "50": {
+        "value": "#fdf3e3",
+        "type": "color",
+        "description": "Warning 50. Aliased by surface/warning for out-of-state logistics notices and limited-availability strips.",
+        "figma": {
+          "id": "VariableID:9110:1240",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-warning-50"
+        }
+      },
+      "500": {
+        "value": "#b8730e",
+        "type": "color",
+        "description": "Warning 500. Aliased by border/warning. 3.66:1 on page — non-text UI only.",
+        "figma": {
+          "id": "VariableID:9110:1241",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-warning-500"
+        }
+      },
+      "700": {
+        "value": "#6e4207",
+        "type": "color",
+        "description": "Warning 700. Aliased by text/warning. 7.81:1 on surface/warning.",
+        "figma": {
+          "id": "VariableID:9110:1242",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-warning-700"
+        }
+      }
+    },
+    "error": {
+      "50": {
+        "value": "#fdecea",
+        "type": "color",
+        "description": "Error 50. Aliased by surface/error for validation summaries and failed submission banners.",
+        "figma": {
+          "id": "VariableID:9110:1243",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-error-50"
+        }
+      },
+      "500": {
+        "value": "#c8352a",
+        "type": "color",
+        "description": "Error 500. Aliased by border/error for failed input outlines. 5.03:1 on page.",
+        "figma": {
+          "id": "VariableID:9110:1244",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-error-500"
+        }
+      },
+      "700": {
+        "value": "#7c1f17",
+        "type": "color",
+        "description": "Error 700. Aliased by text/error. 8.89:1 on surface/error.",
+        "figma": {
+          "id": "VariableID:9110:1245",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-error-700"
+        }
+      }
+    },
+    "info": {
+      "50": {
+        "value": "#e8f1f9",
+        "type": "color",
+        "description": "Info 50. Aliased by surface/info for cash-pay policy notes and what-to-bring callouts.",
+        "figma": {
+          "id": "VariableID:9110:1246",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-info-50"
+        }
+      },
+      "500": {
+        "value": "#2172ac",
+        "type": "color",
+        "description": "Info 500. Aliased by border/info. 4.94:1 on page. True blue, deliberately not Ocean, so system state never reads as brand.",
+        "figma": {
+          "id": "VariableID:9110:1247",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-info-500"
+        }
+      },
+      "700": {
+        "value": "#144468",
+        "type": "color",
+        "description": "Info 700. Aliased by text/info. 8.94:1 on surface/info.",
+        "figma": {
+          "id": "VariableID:9110:1248",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-info-700"
+        }
+      }
+    }
+  },
+  "typography": {
+    "family": {
+      "display": {
+        "value": "Fraunces",
+        "type": "fontFamily",
+        "description": "Display typeface. Used by display, heading-1, heading-2, heading-3. Change this one value to swap the entire display typeface.",
+        "figma": {
+          "id": "VariableID:9116:1306",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-family-display"
+        }
+      },
+      "body": {
+        "value": "Satoshi",
+        "type": "fontFamily",
+        "description": "Body typeface. Used by body-large, body, label, caption, overline. Change this one value to swap the entire body typeface.",
+        "figma": {
+          "id": "VariableID:9116:1307",
+          "collection": "Primitives",
+          "codeSyntax": "--imoc-family-body"
+        }
+      }
+    }
+  },
+  "spacing": {
+    "50": {
+      "value": 2,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 50 (2px). Hairline optical nudges only. If this appears in a layout, something is wrong — no semantic token aliases it.",
+      "figma": {
+        "id": "VariableID:9116:1365",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-50"
+      }
+    },
+    "100": {
+      "value": 4,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 100 (4px). Fine-adjustment step. Aliased by spacing/micro-gap.",
+      "figma": {
+        "id": "VariableID:9116:1366",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-100"
+      }
+    },
+    "200": {
+      "value": 8,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 200 (8px). Aliased by spacing/inline-gap. Also the minimum separation between adjacent touch targets.",
+      "figma": {
+        "id": "VariableID:9116:1367",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-200"
+      }
+    },
+    "300": {
+      "value": 12,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 300 (12px). Fine-adjustment step. Aliased by spacing/content-gap and spacing/component-padding on mobile.",
+      "figma": {
+        "id": "VariableID:9116:1368",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-300"
+      }
+    },
+    "400": {
+      "value": 16,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 400 (16px). Aliased by spacing/page-margin, card-padding, content-gap, stack-gap, grid-gap on mobile.",
+      "figma": {
+        "id": "VariableID:9116:1369",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-400"
+      }
+    },
+    "500": {
+      "value": 24,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 500 (24px). Aliased by spacing/card-padding, card-padding-loose, grid-gap on web.",
+      "figma": {
+        "id": "VariableID:9116:1370",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-500"
+      }
+    },
+    "600": {
+      "value": 32,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 600 (32px). Aliased by spacing/page-margin and block-gap on web, card-padding-loose on web.",
+      "figma": {
+        "id": "VariableID:9116:1371",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-600"
+      }
+    },
+    "700": {
+      "value": 40,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 700 (40px). Aliased by spacing/block-gap on web.",
+      "figma": {
+        "id": "VariableID:9116:1372",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-700"
+      }
+    },
+    "800": {
+      "value": 48,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 800 (48px). Aliased by spacing/section-gap on mobile. Matches the platform constraint for mobile section padding.",
+      "figma": {
+        "id": "VariableID:9116:1373",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-800"
+      }
+    },
+    "900": {
+      "value": 56,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 900 (56px). Unaliased — available between section-gap steps.",
+      "figma": {
+        "id": "VariableID:9116:1374",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-900"
+      }
+    },
+    "1000": {
+      "value": 64,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 1000 (64px). Aliased by spacing/section-gap-loose on mobile.",
+      "figma": {
+        "id": "VariableID:9116:1375",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-1000"
+      }
+    },
+    "1100": {
+      "value": 80,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 1100 (80px). Aliased by spacing/section-gap on web. Matches the platform constraint for desktop section padding.",
+      "figma": {
+        "id": "VariableID:9116:1376",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-1100"
+      }
+    },
+    "1200": {
+      "value": 96,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 1200 (96px). Aliased by spacing/section-gap-loose on web — signature moments only.",
+      "figma": {
+        "id": "VariableID:9116:1377",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-1200"
+      }
+    },
+    "1300": {
+      "value": 128,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Space 1300 (128px). Unaliased — reserved for full-bleed editorial breaks.",
+      "figma": {
+        "id": "VariableID:9116:1378",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-space-1300"
+      }
+    }
+  },
+  "radius": {
+    "100": {
+      "value": 4,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Radius 100 (4px). Aliased by radius/small.",
+      "figma": {
+        "id": "VariableID:9116:1379",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-radius-100"
+      }
+    },
+    "200": {
+      "value": 8,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Radius 200 (8px). Aliased by radius/medium — the system default.",
+      "figma": {
+        "id": "VariableID:9116:1380",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-radius-200"
+      }
+    },
+    "300": {
+      "value": 12,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Radius 300 (12px). Aliased by radius/large.",
+      "figma": {
+        "id": "VariableID:9116:1381",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-radius-300"
+      }
+    },
+    "400": {
+      "value": 24,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Radius 400 (24px). Aliased by radius/xl. Note the jump from 12 — 16px was deliberately removed as an unused escape hatch.",
+      "figma": {
+        "id": "VariableID:9116:1382",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-radius-400"
+      }
+    },
+    "full": {
+      "value": 9999,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Radius full (9999px). Aliased by radius/pill for fully rounded shapes.",
+      "figma": {
+        "id": "VariableID:9116:1383",
+        "collection": "Primitives",
+        "codeSyntax": "--imoc-radius-full"
+      }
+    }
+  }
+}

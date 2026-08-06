@@ -1,0 +1,1506 @@
+[
+  {
+    "tokenName": "ocean/50",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#f0fafa",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "ocean/100",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#d6f0f1",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "ocean/200",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#a8dfe1",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "ocean/300",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#6ec7ca",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "ocean/400",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#2fadb0",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "ocean/500",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#158f92",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "ocean/600",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#0d8588",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "ocean/700",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#0a6b6d",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "ocean/800",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#075052",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "ocean/900",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#04302f",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "earth/50",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#fbf8f5",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "earth/100",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#f6eee3",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "earth/200",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#eddcc7",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "earth/300",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#dfc3a4",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "earth/400",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#c9a177",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "earth/500",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#b0814f",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "earth/600",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#8e6039",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "earth/700",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#6c3f27",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "earth/800",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#4a2a1a",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "earth/900",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#2a170d",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "flora/50",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#f6fbf0",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "flora/100",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#eaf6dc",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "flora/200",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#cfe9b5",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "flora/300",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#b2d78b",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "flora/400",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#93c165",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "flora/500",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#74a445",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "flora/600",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#5a8434",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "flora/700",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#436327",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "flora/800",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#2c421a",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "flora/900",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#17230e",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "neutral/0",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#ffffff",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "neutral/50",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#fafaf8",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "neutral/100",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#f5f3f0",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "neutral/200",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#e9e6e1",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "neutral/300",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#d6d2ca",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "neutral/400",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#bfbbb1",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "neutral/500",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#9e9a90",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "neutral/600",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#767266",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "neutral/700",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#5e5a52",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "neutral/800",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#3f3c36",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "neutral/900",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#272420",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "neutral/950",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#141210",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "success/50",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#edf7e9",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "success/500",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#3e8e2e",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "success/700",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#235517",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "warning/50",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#fdf3e3",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "warning/500",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#b8730e",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "warning/700",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#6e4207",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "error/50",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#fdecea",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "error/500",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#c8352a",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "error/700",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#7c1f17",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "info/50",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#e8f1f9",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "info/500",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#2172ac",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "info/700",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "#144468",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "family/display",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "Fraunces",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "family/body",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "Satoshi",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/50",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "2px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/100",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "4px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/200",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "8px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/300",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "12px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/400",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "16px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/500",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "24px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/600",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "32px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/700",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "40px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/800",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "48px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/900",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "56px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/1000",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "64px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/1100",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "80px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/1200",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "96px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "space/1300",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "128px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "radius/100",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "4px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "radius/200",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "8px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "radius/300",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "12px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "radius/400",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "24px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "radius/full",
+    "collection": "Primitives",
+    "oldValue": null,
+    "newValue": "9999px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/primary",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#272420",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/secondary",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#5e5a52",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/tertiary",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#767266",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/disabled",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#9e9a90",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/inverse",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#fafaf8",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/link",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#0a6b6d",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/link-hover",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#075052",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/link-inverse",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#6ec7ca",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/brand",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#0a6b6d",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/accent",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#6c3f27",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/on-fill",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#ffffff",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/success",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#235517",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/warning",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#6e4207",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/error",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#7c1f17",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/info",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#144468",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "text/placeholder",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#767266",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/background",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#fafaf8",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/card",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#ffffff",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/input",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#ffffff",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/inverse",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#141210",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/disabled",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#e9e6e1",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/brand",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#0a6b6d",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/brand-subtle",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#f0fafa",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/accent",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#6c3f27",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/accent-subtle",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#f6eee3",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/action",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#0a6b6d",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/action-hover",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#075052",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/action-pressed",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#04302f",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/success",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#edf7e9",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/warning",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#fdf3e3",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/error",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#fdecea",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/info",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#e8f1f9",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/overlay",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "rgba(20, 18, 16, 0.6)",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/decorative",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#dfc3a4",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/hover",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#f5f3f0",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "surface/selected",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#d6f0f1",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "border/subtle",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#e9e6e1",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "border/default",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#d6d2ca",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "border/strong",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#767266",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "border/focus",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#0a6b6d",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "border/brand",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#0d8588",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "border/accent",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#8e6039",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "border/success",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#3e8e2e",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "border/warning",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#b8730e",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "border/error",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#c8352a",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "border/info",
+    "collection": "Colour",
+    "oldValue": null,
+    "newValue": "#2172ac",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/display/family",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: Fraunces, web: Fraunces",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/display/size",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 42, web: 72",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/display/weight",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 600, web: 600",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/display/line-height",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 44, web: 76",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/display/letter-spacing",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: -1.05, web: -1.8",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-1/family",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: Fraunces, web: Fraunces",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-1/size",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 34, web: 52",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-1/weight",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 600, web: 600",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-1/line-height",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 38, web: 58",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-1/letter-spacing",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: -0.68, web: -1.04",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-2/family",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: Fraunces, web: Fraunces",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-2/size",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 28, web: 36",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-2/weight",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 600, web: 600",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-2/line-height",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 34, web: 43",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-2/letter-spacing",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: -0.42, web: -0.54",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-3/family",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: Fraunces, web: Fraunces",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-3/size",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 22, web: 24",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-3/weight",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 600, web: 600",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-3/line-height",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 28, web: 31",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/heading-3/letter-spacing",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: -0.22, web: -0.24",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-large/family",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: Satoshi, web: Satoshi",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-large/size",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 20, web: 20",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-large/weight",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 400, web: 400",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-large/line-height",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 31, web: 31",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-large/letter-spacing",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 0, web: 0",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-medium/family",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: Satoshi, web: Satoshi",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-medium/size",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 16, web: 16",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-medium/weight",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 400, web: 400",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-medium/line-height",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 26, web: 26",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-medium/letter-spacing",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 0, web: 0",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/label/family",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: Satoshi, web: Satoshi",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/label/size",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 16, web: 16",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/label/weight",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 500, web: 500",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/label/line-height",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 22, web: 22",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/label/letter-spacing",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 0, web: 0",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-small/family",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: Satoshi, web: Satoshi",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-small/size",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 14, web: 14",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-small/weight",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 400, web: 400",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-small/line-height",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 21, web: 21",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/body-small/letter-spacing",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 0, web: 0",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/overline/family",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: Satoshi, web: Satoshi",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/overline/size",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 13, web: 13",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/overline/weight",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 700, web: 700",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/overline/line-height",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 16, web: 16",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "type/overline/letter-spacing",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 1.04, web: 1.04",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "spacing/page-margin",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 16px, web: 32px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "spacing/section-gap",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 48px, web: 80px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "spacing/section-gap-loose",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 64px, web: 96px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "spacing/block-gap",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 32px, web: 40px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "spacing/card-padding",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 16px, web: 24px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "spacing/card-padding-loose",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 24px, web: 32px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "spacing/content-gap",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 12px, web: 16px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "spacing/stack-gap",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 16px, web: 16px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "spacing/grid-gap",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 16px, web: 24px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "spacing/inline-gap",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 8px, web: 8px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "spacing/component-padding",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 12px, web: 16px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "spacing/micro-gap",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 4px, web: 4px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "radius/small",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 4px, web: 4px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "radius/medium",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 8px, web: 8px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "radius/large",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 12px, web: 12px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "radius/xl",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 24px, web: 24px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "radius/pill",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 9999px, web: 9999px",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "layout/max-width-container",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 9999, web: 1440",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "layout/max-width-text",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 9999, web: 512",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "layout/max-width-narrow",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 9999, web: 400",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "layout/header-height",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 64, web: 80",
+    "date": "2026-08-06",
+    "status": "added"
+  },
+  {
+    "tokenName": "layout/sticky-bar-height",
+    "collection": "Dimensions",
+    "oldValue": null,
+    "newValue": "mobile: 64, web: 0",
+    "date": "2026-08-06",
+    "status": "added"
+  }
+]

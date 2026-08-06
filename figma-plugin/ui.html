@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 12px;
+        padding: 14px;
+        color: #272420;
+      }
+      p {
+        line-height: 1.5;
+      }
+      code {
+        background: #f0f0ee;
+        padding: 1px 4px;
+        border-radius: 3px;
+        font-family: ui-monospace, monospace;
+      }
+      .error {
+        color: #7c1f18;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="status">Exporting variables…</p>
+    <script>
+      window.onmessage = (event) => {
+        const msg = event.data.pluginMessage;
+        const status = document.getElementById('status');
+
+        if (msg.type === 'export-error') {
+          status.className = 'error';
+          status.textContent = 'Export failed: ' + msg.message;
+          return;
+        }
+
+        if (msg.type === 'export-ready') {
+          const blob = new Blob([JSON.stringify(msg.payload, null, 2)], { type: 'application/json' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'figma-variables-export.json';
+          document.body.appendChild(a);
+          a.click();
+          status.innerHTML =
+            'Downloaded <code>figma-variables-export.json</code> (' +
+            msg.count +
+            ' variables). Move it into the repo root, then run:<br><br><code>npm run sync-figma -- --from-file figma-variables-export.json</code>';
+        }
+      };
+    </script>
+  </body>
+</html>

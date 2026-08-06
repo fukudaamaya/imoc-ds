@@ -1,0 +1,339 @@
+.doc-page {
+  padding: 32px 40px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.doc-h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: var(--imoc-text-primary);
+}
+
+.doc-lede {
+  font-size: 16px;
+  color: var(--imoc-text-secondary);
+  max-width: 640px;
+  margin: 0 0 32px;
+  line-height: 1.5;
+}
+
+.doc-section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 40px 0 4px;
+  color: var(--imoc-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.doc-section-note {
+  font-size: 13px;
+  color: var(--imoc-text-tertiary);
+  margin: 0 0 16px;
+}
+
+.doc-tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--imoc-border-subtle);
+  margin-bottom: 24px;
+}
+
+.doc-tab {
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--imoc-text-secondary);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.doc-tab[data-active='true'] {
+  color: var(--imoc-text-brand);
+  border-bottom-color: var(--imoc-border-brand);
+}
+
+.doc-tab:hover {
+  color: var(--imoc-text-primary);
+}
+
+.doc-card {
+  background: var(--imoc-surface-card);
+  border: 1px solid var(--imoc-border-default);
+  border-radius: var(--imoc-radius-medium);
+  padding: 16px;
+}
+
+.doc-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.doc-color-grid {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.swatch-card {
+  background: var(--imoc-surface-card);
+  border: 1px solid var(--imoc-border-default);
+  border-radius: var(--imoc-radius-medium);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.swatch-preview {
+  height: 88px;
+  width: 100%;
+  border-bottom: 1px solid var(--imoc-border-default);
+}
+
+.swatch-body {
+  padding: 12px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.swatch-name {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  color: var(--imoc-text-primary);
+}
+
+.swatch-hex {
+  font-size: 12px;
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  color: var(--imoc-text-tertiary);
+}
+
+.swatch-alias {
+  font-size: 11px;
+  color: var(--imoc-text-tertiary);
+}
+
+.swatch-alias code {
+  background: var(--imoc-surface-brand-subtle);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+.swatch-desc {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--imoc-text-secondary);
+  margin: 4px 0;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 2px 0;
+}
+
+.chip {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: var(--imoc-radius-small);
+  background: var(--imoc-surface-brand-subtle);
+  color: var(--imoc-text-brand);
+  white-space: nowrap;
+}
+
+.chip.used-in {
+  background: var(--imoc-surface-accent-subtle);
+  color: var(--imoc-text-accent);
+  text-transform: none;
+  cursor: default;
+}
+
+.action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.copy-btn {
+  appearance: none;
+  border: 1px solid var(--imoc-border-strong);
+  background: var(--imoc-surface-input);
+  color: var(--imoc-text-primary);
+  font-size: 11px;
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  padding: 4px 8px;
+  border-radius: var(--imoc-radius-small);
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.copy-btn:hover {
+  border-color: var(--imoc-border-brand);
+}
+
+.copy-btn[data-copied='true'] {
+  background: var(--imoc-surface-success);
+  border-color: var(--imoc-border-success);
+  color: var(--imoc-text-success);
+}
+
+.figma-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: var(--imoc-radius-small);
+  border: 1px solid var(--imoc-border-default);
+  color: var(--imoc-text-secondary);
+  text-decoration: none;
+  background: var(--imoc-surface-page);
+}
+
+.figma-badge:hover {
+  border-color: var(--imoc-border-brand);
+  color: var(--imoc-text-brand);
+}
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.doc-table th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--imoc-text-tertiary);
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--imoc-border-default);
+}
+
+.doc-table td {
+  padding: 10px;
+  border-bottom: 1px solid var(--imoc-border-subtle);
+  vertical-align: middle;
+}
+
+.pass-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--imoc-radius-pill);
+}
+
+.pass-badge.pass {
+  background: var(--imoc-surface-success);
+  color: var(--imoc-text-success);
+}
+
+.pass-badge.fail {
+  background: var(--imoc-surface-error);
+  color: var(--imoc-text-error);
+}
+
+.type-specimen {
+  background: var(--imoc-surface-card);
+  border: 1px solid var(--imoc-border-default);
+  border-radius: var(--imoc-radius-large);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.type-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+  padding: 12px;
+  background: var(--imoc-surface-page);
+  border-radius: var(--imoc-radius-small);
+}
+
+.type-meta-item .label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--imoc-text-tertiary);
+  display: block;
+}
+
+.type-meta-item .value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--imoc-text-primary);
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+}
+
+.ruler-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.ruler-label {
+  width: 220px;
+  font-size: 12px;
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  color: var(--imoc-text-secondary);
+  flex-shrink: 0;
+}
+
+.ruler-bar {
+  height: 20px;
+  background: var(--imoc-surface-brand);
+  border-radius: 2px;
+}
+
+.ruler-value {
+  font-size: 12px;
+  color: var(--imoc-text-tertiary);
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  white-space: nowrap;
+}
+
+.radius-demo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.radius-demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.radius-box {
+  width: 72px;
+  height: 72px;
+  background: var(--imoc-surface-brand);
+}
+
+.used-in-demo {
+  border: 1px dashed var(--imoc-border-default);
+  border-radius: var(--imoc-radius-small);
+  padding: 12px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,7 @@
+node_modules/
+storybook-static/
+*.log
+.DS_Store
+.env
+.claude/settings.local.json
+figma-variables-export.json

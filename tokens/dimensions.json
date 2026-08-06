@@ -1,0 +1,825 @@
+{
+  "typography": {
+    "display": {
+      "family": {
+        "mobile": "Fraunces",
+        "web": "Fraunces",
+        "aliasOf": "family/display",
+        "type": "fontFamily",
+        "description": "Homepage hero, condition-finder landing headline, longevity programme opener. The largest type in the system — one per page at most. Typeface: Fraunces.",
+        "figma": {
+          "id": "VariableID:9116:1309",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-display-family"
+        }
+      },
+      "size": {
+        "mobile": 42,
+        "web": 72,
+        "type": "dimension",
+        "description": "Homepage hero, condition-finder landing headline, longevity programme opener. The largest type in the system — one per page at most. Size: 42px mobile, 72px web.",
+        "figma": {
+          "id": "VariableID:9116:1310",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-display-size"
+        }
+      },
+      "weight": {
+        "mobile": 600,
+        "web": 600,
+        "type": "fontWeight",
+        "description": "Homepage hero, condition-finder landing headline, longevity programme opener. Weight 600. Same on both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1311",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-display-weight"
+        }
+      },
+      "line-height": {
+        "mobile": 44,
+        "web": 76,
+        "type": "dimension",
+        "description": "Homepage hero, condition-finder landing headline, longevity programme opener. Line height 105%: 44px mobile, 76px web.",
+        "figma": {
+          "id": "VariableID:9116:1312",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-display-line-height"
+        }
+      },
+      "letter-spacing": {
+        "mobile": -1.05,
+        "web": -1.8,
+        "type": "dimension",
+        "description": "Homepage hero, condition-finder landing headline, longevity programme opener. Tracking -2.5%: -1.05px mobile, -1.8px web.",
+        "figma": {
+          "id": "VariableID:9116:1313",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-display-letter-spacing"
+        }
+      }
+    },
+    "heading-1": {
+      "family": {
+        "mobile": "Fraunces",
+        "web": "Fraunces",
+        "aliasOf": "family/display",
+        "type": "fontFamily",
+        "description": "Page titles — treatment name, condition name, \"About Dr. Kinaly\". One per page, maps to the H1 element. Typeface: Fraunces.",
+        "figma": {
+          "id": "VariableID:9116:1314",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-1-family"
+        }
+      },
+      "size": {
+        "mobile": 34,
+        "web": 52,
+        "type": "dimension",
+        "description": "Page titles — treatment name, condition name, \"About Dr. Kinaly\". Maps to H1. Size: 34px mobile, 52px web.",
+        "figma": {
+          "id": "VariableID:9116:1315",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-1-size"
+        }
+      },
+      "weight": {
+        "mobile": 600,
+        "web": 600,
+        "type": "fontWeight",
+        "description": "Page titles. Weight 600. Same on both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1316",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-1-weight"
+        }
+      },
+      "line-height": {
+        "mobile": 38,
+        "web": 58,
+        "type": "dimension",
+        "description": "Page titles. Line height 112%: 38px mobile, 58px web.",
+        "figma": {
+          "id": "VariableID:9116:1317",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-1-line-height"
+        }
+      },
+      "letter-spacing": {
+        "mobile": -0.68,
+        "web": -1.04,
+        "type": "dimension",
+        "description": "Page titles. Tracking -2%: -0.68px mobile, -1.04px web.",
+        "figma": {
+          "id": "VariableID:9116:1318",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-1-letter-spacing"
+        }
+      }
+    },
+    "heading-2": {
+      "family": {
+        "mobile": "Fraunces",
+        "web": "Fraunces",
+        "aliasOf": "family/display",
+        "type": "fontFamily",
+        "description": "Section titles — \"What to expect\", \"Related conditions\", \"Who this is for\". Maps to H2. Typeface: Fraunces.",
+        "figma": {
+          "id": "VariableID:9116:1319",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-2-family"
+        }
+      },
+      "size": {
+        "mobile": 28,
+        "web": 36,
+        "type": "dimension",
+        "description": "Section titles. Maps to H2. Size: 28px mobile, 36px web.",
+        "figma": {
+          "id": "VariableID:9116:1320",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-2-size"
+        }
+      },
+      "weight": {
+        "mobile": 600,
+        "web": 600,
+        "type": "fontWeight",
+        "description": "Section titles. Weight 600. Same on both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1321",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-2-weight"
+        }
+      },
+      "line-height": {
+        "mobile": 34,
+        "web": 43,
+        "type": "dimension",
+        "description": "Section titles. Line height 120%: 34px mobile, 43px web.",
+        "figma": {
+          "id": "VariableID:9116:1322",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-2-line-height"
+        }
+      },
+      "letter-spacing": {
+        "mobile": -0.42,
+        "web": -0.54,
+        "type": "dimension",
+        "description": "Section titles. Tracking -1.5%: -0.42px mobile, -0.54px web.",
+        "figma": {
+          "id": "VariableID:9116:1323",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-2-letter-spacing"
+        }
+      }
+    },
+    "heading-3": {
+      "family": {
+        "mobile": "Fraunces",
+        "web": "Fraunces",
+        "aliasOf": "family/display",
+        "type": "fontFamily",
+        "description": "Sub-sections inside long treatment content, card titles, FAQ questions. Maps to H3 — the level the current site is missing. Typeface: Fraunces.",
+        "figma": {
+          "id": "VariableID:9116:1324",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-3-family"
+        }
+      },
+      "size": {
+        "mobile": 22,
+        "web": 24,
+        "type": "dimension",
+        "description": "Sub-sections, card titles, FAQ questions. Maps to H3. Size: 22px mobile, 24px web.",
+        "figma": {
+          "id": "VariableID:9116:1325",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-3-size"
+        }
+      },
+      "weight": {
+        "mobile": 600,
+        "web": 600,
+        "type": "fontWeight",
+        "description": "Sub-sections. Weight 600. Same on both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1326",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-3-weight"
+        }
+      },
+      "line-height": {
+        "mobile": 28,
+        "web": 31,
+        "type": "dimension",
+        "description": "Sub-sections. Line height 128%: 28px mobile, 31px web.",
+        "figma": {
+          "id": "VariableID:9116:1327",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-3-line-height"
+        }
+      },
+      "letter-spacing": {
+        "mobile": -0.22,
+        "web": -0.24,
+        "type": "dimension",
+        "description": "Sub-sections. Tracking -1%: -0.22px mobile, -0.24px web.",
+        "figma": {
+          "id": "VariableID:9116:1328",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-heading-3-letter-spacing"
+        }
+      }
+    },
+    "body-large": {
+      "family": {
+        "mobile": "Satoshi",
+        "web": "Satoshi",
+        "aliasOf": "family/body",
+        "type": "fontFamily",
+        "description": "Page intros, hero subheads, pull quotes, the opening paragraph of a treatment page. Fixed at 20 on both platforms. Typeface: Satoshi.",
+        "figma": {
+          "id": "VariableID:9116:1329",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-large-family"
+        }
+      },
+      "size": {
+        "mobile": 20,
+        "web": 20,
+        "type": "dimension",
+        "description": "Page intros, hero subheads, pull quotes. Fixed at 20 on both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1330",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-large-size"
+        }
+      },
+      "weight": {
+        "mobile": 400,
+        "web": 400,
+        "type": "fontWeight",
+        "description": "Page intros. Weight 400. Same on both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1331",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-large-weight"
+        }
+      },
+      "line-height": {
+        "mobile": 31,
+        "web": 31,
+        "type": "dimension",
+        "description": "Page intros. Line height 155%: 31px both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1332",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-large-line-height"
+        }
+      },
+      "letter-spacing": {
+        "mobile": 0,
+        "web": 0,
+        "type": "dimension",
+        "description": "Page intros. Tracking 0%.",
+        "figma": {
+          "id": "VariableID:9116:1333",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-large-letter-spacing"
+        }
+      }
+    },
+    "body-medium": {
+      "family": {
+        "mobile": "Satoshi",
+        "web": "Satoshi",
+        "aliasOf": "family/body",
+        "type": "fontFamily",
+        "description": "All reading text — treatment and condition copy, card body, list items. 16px floor on both platforms. Apply italic at layer level for disclaimers. Typeface: Satoshi.",
+        "figma": {
+          "id": "VariableID:9116:1334",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-family"
+        }
+      },
+      "size": {
+        "mobile": 16,
+        "web": 16,
+        "type": "dimension",
+        "description": "All reading text. 16px floor on both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1335",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-size"
+        }
+      },
+      "weight": {
+        "mobile": 400,
+        "web": 400,
+        "type": "fontWeight",
+        "description": "All reading text. Weight 400. Same on both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1336",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-weight"
+        }
+      },
+      "line-height": {
+        "mobile": 26,
+        "web": 26,
+        "type": "dimension",
+        "description": "All reading text. Line height 163%: 26px both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1337",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-line-height"
+        }
+      },
+      "letter-spacing": {
+        "mobile": 0,
+        "web": 0,
+        "type": "dimension",
+        "description": "All reading text. Tracking 0%.",
+        "figma": {
+          "id": "VariableID:9116:1338",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-letter-spacing"
+        }
+      }
+    },
+    "label": {
+      "family": {
+        "mobile": "Satoshi",
+        "web": "Satoshi",
+        "aliasOf": "family/body",
+        "type": "fontFamily",
+        "description": "Form field labels, button text, navigation items, and fourth-level sub-heads. Matches body size so buttons and nav read at the same weight as content. Typeface: Satoshi.",
+        "figma": {
+          "id": "VariableID:9116:1339",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-label-family"
+        }
+      },
+      "size": {
+        "mobile": 16,
+        "web": 16,
+        "type": "dimension",
+        "description": "Form field labels, button text, nav items. 16px both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1340",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-label-size"
+        }
+      },
+      "weight": {
+        "mobile": 500,
+        "web": 500,
+        "type": "fontWeight",
+        "description": "Form field labels. Weight 500. Same on both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1341",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-label-weight"
+        }
+      },
+      "line-height": {
+        "mobile": 22,
+        "web": 22,
+        "type": "dimension",
+        "description": "Form field labels. Line height 140%: 22px both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1342",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-label-line-height"
+        }
+      },
+      "letter-spacing": {
+        "mobile": 0,
+        "web": 0,
+        "type": "dimension",
+        "description": "Form field labels. Tracking 0%.",
+        "figma": {
+          "id": "VariableID:9116:1343",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-label-letter-spacing"
+        }
+      }
+    },
+    "body-small": {
+      "family": {
+        "mobile": "Satoshi",
+        "web": "Satoshi",
+        "aliasOf": "family/body",
+        "type": "fontFamily",
+        "description": "Card body, table cells, dense list items, form helper text, image credits, footnotes and timestamps. NOT for reading copy — long-form body text stays at 16px per the platform constraint (fatigue, cognitive fog, and iOS Safari input zoom). Typeface: Satoshi.",
+        "figma": {
+          "id": "VariableID:9116:1344",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-small-family"
+        }
+      },
+      "size": {
+        "mobile": 14,
+        "web": 14,
+        "type": "dimension",
+        "description": "Card body, table cells, dense list items. 14px, fixed on both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1345",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-small-size"
+        }
+      },
+      "weight": {
+        "mobile": 400,
+        "web": 400,
+        "type": "fontWeight",
+        "description": "Card body etc. Weight 400. Same on both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1346",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-small-weight"
+        }
+      },
+      "line-height": {
+        "mobile": 21,
+        "web": 21,
+        "type": "dimension",
+        "description": "Card body etc. Line height 150%: 21px on both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1347",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-small-line-height"
+        }
+      },
+      "letter-spacing": {
+        "mobile": 0,
+        "web": 0,
+        "type": "dimension",
+        "description": "Card body etc. Tracking 0.",
+        "figma": {
+          "id": "VariableID:9116:1348",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-body-small-letter-spacing"
+        }
+      }
+    },
+    "overline": {
+      "family": {
+        "mobile": "Satoshi",
+        "web": "Satoshi",
+        "aliasOf": "family/body",
+        "type": "fontFamily",
+        "description": "Category kickers above headings — \"TREATMENT\", \"CONDITION\", \"LONGEVITY\". Uppercase, wide tracking. Orients the reader without spending a heading level. Typeface: Satoshi.",
+        "figma": {
+          "id": "VariableID:9116:1349",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-overline-family"
+        }
+      },
+      "size": {
+        "mobile": 13,
+        "web": 13,
+        "type": "dimension",
+        "description": "Category kickers. 13px both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1350",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-overline-size"
+        }
+      },
+      "weight": {
+        "mobile": 700,
+        "web": 700,
+        "type": "fontWeight",
+        "description": "Category kickers. Weight 700 — Bold, because Satoshi has no SemiBold. Same on both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1351",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-overline-weight"
+        }
+      },
+      "line-height": {
+        "mobile": 16,
+        "web": 16,
+        "type": "dimension",
+        "description": "Category kickers. Line height 120%: 16px both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1352",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-overline-line-height"
+        }
+      },
+      "letter-spacing": {
+        "mobile": 1.04,
+        "web": 1.04,
+        "type": "dimension",
+        "description": "Category kickers. Tracking 8%: 1.04px both platforms.",
+        "figma": {
+          "id": "VariableID:9116:1353",
+          "collection": "Dimensions",
+          "codeSyntax": "--imoc-type-overline-letter-spacing"
+        }
+      }
+    }
+  },
+  "spacing": {
+    "page-margin": {
+      "mobile": 16,
+      "web": 32,
+      "mobileAliasOf": "space/400",
+      "webAliasOf": "space/600",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Left and right page gutters on every route. Matches the grid margin — always use this, never a raw value. 16 mobile / 32 web.",
+      "figma": {
+        "id": "VariableID:9116:1384",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-spacing-page-margin"
+      }
+    },
+    "section-gap": {
+      "mobile": 48,
+      "web": 80,
+      "mobileAliasOf": "space/800",
+      "webAliasOf": "space/1100",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Vertical space between major page sections — hero to intro, intro to treatment grid, grid to CTA band. 48 mobile / 80 web.",
+      "figma": {
+        "id": "VariableID:9116:1385",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-spacing-section-gap"
+      }
+    },
+    "section-gap-loose": {
+      "mobile": 64,
+      "web": 96,
+      "mobileAliasOf": "space/1000",
+      "webAliasOf": "space/1200",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Signature moments only — around the hero, the longevity programme block, the booking CTA. Use sparingly. 64 mobile / 96 web.",
+      "figma": {
+        "id": "VariableID:9116:1386",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-spacing-section-gap-loose"
+      }
+    },
+    "block-gap": {
+      "mobile": 32,
+      "web": 40,
+      "mobileAliasOf": "space/600",
+      "webAliasOf": "space/700",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Between content blocks inside a section — heading group to card grid, paragraph cluster to image. 32 mobile / 40 web.",
+      "figma": {
+        "id": "VariableID:9116:1387",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-spacing-block-gap"
+      }
+    },
+    "card-padding": {
+      "mobile": 16,
+      "web": 24,
+      "mobileAliasOf": "space/400",
+      "webAliasOf": "space/500",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Internal padding on treatment cards, condition cards, FAQ panels, practitioner bios. 16 mobile / 24 web.",
+      "figma": {
+        "id": "VariableID:9116:1388",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-spacing-card-padding"
+      }
+    },
+    "card-padding-loose": {
+      "mobile": 24,
+      "web": 32,
+      "mobileAliasOf": "space/500",
+      "webAliasOf": "space/600",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Featured cards, methodology callouts, testimonial panels. 24 mobile / 32 web.",
+      "figma": {
+        "id": "VariableID:9116:1389",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-spacing-card-padding-loose"
+      }
+    },
+    "content-gap": {
+      "mobile": 12,
+      "web": 16,
+      "mobileAliasOf": "space/300",
+      "webAliasOf": "space/400",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Between related text elements — overline to heading, heading to body, label to input. 12 mobile / 16 web.",
+      "figma": {
+        "id": "VariableID:9116:1390",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-spacing-content-gap"
+      }
+    },
+    "stack-gap": {
+      "mobile": 16,
+      "web": 16,
+      "mobileAliasOf": "space/400",
+      "webAliasOf": "space/400",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Between repeated items in a vertical list — condition rows, FAQ items, form fields. Fixed at 16: list rhythm should not change by platform.",
+      "figma": {
+        "id": "VariableID:9116:1391",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-spacing-stack-gap"
+      }
+    },
+    "grid-gap": {
+      "mobile": 16,
+      "web": 24,
+      "mobileAliasOf": "space/400",
+      "webAliasOf": "space/500",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Between cards in a grid or horizontal rail. Matches the grid gutter. 16 mobile / 24 web.",
+      "figma": {
+        "id": "VariableID:9116:1392",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-spacing-grid-gap"
+      }
+    },
+    "inline-gap": {
+      "mobile": 8,
+      "web": 8,
+      "mobileAliasOf": "space/200",
+      "webAliasOf": "space/200",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Between elements on one line — icon to label, chip to chip, button to button. Fixed at 8. Also the minimum gap between adjacent touch targets.",
+      "figma": {
+        "id": "VariableID:9116:1393",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-spacing-inline-gap"
+      }
+    },
+    "component-padding": {
+      "mobile": 12,
+      "web": 16,
+      "mobileAliasOf": "space/300",
+      "webAliasOf": "space/400",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Internal padding on buttons, inputs, chips, badges, select fields. 12 mobile / 16 web. With type/label this yields a 46px button — clears the 44px minimum.",
+      "figma": {
+        "id": "VariableID:9116:1394",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-spacing-component-padding"
+      }
+    },
+    "micro-gap": {
+      "mobile": 4,
+      "web": 4,
+      "mobileAliasOf": "space/100",
+      "webAliasOf": "space/100",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Tightest relationship — badge internals, icon to count, required-field asterisk to label. Fixed at 4.",
+      "figma": {
+        "id": "VariableID:9116:1395",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-spacing-micro-gap"
+      }
+    }
+  },
+  "radius": {
+    "small": {
+      "mobile": 4,
+      "web": 4,
+      "aliasOf": "radius/100",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Checkboxes, small tags, colour swatches, inline code, image thumbnails under 48px. 4px, identical on both platforms.",
+      "figma": {
+        "id": "VariableID:9116:1396",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-radius-small"
+      }
+    },
+    "medium": {
+      "mobile": 8,
+      "web": 8,
+      "aliasOf": "radius/200",
+      "type": "dimension",
+      "unit": "px",
+      "description": "THE DEFAULT. Buttons, inputs, selects, textareas, treatment and condition cards, FAQ panels, dropdown menus. 8px — deliberately not a pill, which would read as wellness-franchise rather than physician-led.",
+      "figma": {
+        "id": "VariableID:9116:1397",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-radius-medium"
+      }
+    },
+    "large": {
+      "mobile": 12,
+      "web": 12,
+      "aliasOf": "radius/300",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Modals, mobile bottom sheets, featured cards, methodology callouts, image containers. 12px.",
+      "figma": {
+        "id": "VariableID:9116:1398",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-radius-large"
+      }
+    },
+    "xl": {
+      "mobile": 24,
+      "web": 24,
+      "aliasOf": "radius/400",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Full-bleed rounded sections, hero image containers, the longevity programme block. 24px.",
+      "figma": {
+        "id": "VariableID:9116:1399",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-radius-xl"
+      }
+    },
+    "pill": {
+      "mobile": 9999,
+      "web": 9999,
+      "aliasOf": "radius/full",
+      "type": "dimension",
+      "unit": "px",
+      "description": "Filter chips, condition tags, category badges, avatars, toggle switches, progress dots. Fully rounded — only for shapes that are genuinely pill or circular.",
+      "figma": {
+        "id": "VariableID:9116:1400",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-radius-pill"
+      }
+    }
+  },
+  "layout": {
+    "max-width-container": {
+      "mobile": 9999,
+      "web": 1440,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Outer bound for all page content, centred. Beyond 1440 the extra viewport width becomes page margin, not layout. Uncapped on mobile. Wraps every route.",
+      "figma": {
+        "id": "VariableID:9117:1401",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-layout-max-width-container"
+      }
+    },
+    "max-width-text": {
+      "mobile": 9999,
+      "web": 512,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Long-form reading measure — treatment descriptions, condition copy, about text. 512px on web is 73 characters at 16px Satoshi (measured, avg char 6.99px), inside the 65–75ch constraint. Uncapped on mobile. On desktop the remaining container width holds the related-conditions rail, in-page nav, and booking CTA.",
+      "figma": {
+        "id": "VariableID:9117:1402",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-layout-max-width-text"
+      }
+    },
+    "max-width-narrow": {
+      "mobile": 9999,
+      "web": 400,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Single-column forms — the intake flow, booking form, newsletter signup, error and empty states. 400px on web keeps forms from sprawling; uncapped on mobile where the viewport is the constraint.",
+      "figma": {
+        "id": "VariableID:9117:1403",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-layout-max-width-narrow"
+      }
+    },
+    "header-height": {
+      "mobile": 64,
+      "web": 80,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Fixed site header height. Sticky on both platforms. 64 mobile / 80 web.",
+      "figma": {
+        "id": "VariableID:9117:1405",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-layout-header-height"
+      }
+    },
+    "sticky-bar-height": {
+      "mobile": 64,
+      "web": 0,
+      "type": "dimension",
+      "unit": "px",
+      "description": "Mobile persistent booking bar at the viewport bottom. Add this to bottom page padding so the last element is never covered. 0 on web — the bar is mobile-only.",
+      "figma": {
+        "id": "VariableID:9117:1407",
+        "collection": "Dimensions",
+        "codeSyntax": "--imoc-layout-sticky-bar-height"
+      }
+    }
+  }
+}

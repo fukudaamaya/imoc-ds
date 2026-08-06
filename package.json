@@ -1,0 +1,36 @@
+{
+  "name": "imoc-ds",
+  "version": "0.1.0",
+  "private": true,
+  "description": "IMOC design system — token pipeline (Style Dictionary) and living documentation (Storybook)",
+  "type": "module",
+  "scripts": {
+    "tokens:build": "node style-dictionary/build.mjs",
+    "sync-figma": "node scripts/sync-figma.mjs",
+    "storybook": "storybook dev -p ${PORT:-6006}",
+    "build-storybook": "npm run tokens:build && storybook build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "8.6.18",
+    "@storybook/addon-interactions": "8.6.18",
+    "@storybook/addon-links": "8.6.18",
+    "@storybook/blocks": "8.6.18",
+    "@storybook/manager-api": "8.6.18",
+    "@storybook/react": "8.6.18",
+    "@storybook/react-vite": "8.6.18",
+    "@storybook/test": "8.6.18",
+    "@storybook/theming": "8.6.18",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "storybook": "8.6.18",
+    "style-dictionary": "5.5.0",
+    "typescript": "7.0.2",
+    "vite": "6.4.3"
+  }
+}
