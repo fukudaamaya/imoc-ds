@@ -56,7 +56,7 @@ function ColorsPrimitivesPage() {
             {group}
           </h2>
           {PRIMITIVE_GROUP_DESCRIPTIONS[group] && (
-            <p className="doc-section-note" style={{ marginTop: -4 }}>
+            <p className="doc-section-note" style={{ marginTop: 8 }}>
               {PRIMITIVE_GROUP_DESCRIPTIONS[group]}
             </p>
           )}
