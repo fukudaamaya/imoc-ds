@@ -119,12 +119,19 @@ function ChangelogPage() {
 }
 
 const meta: Meta<typeof ChangelogPage> = {
-  title: 'Changelog',
+  title: 'Design System/Changelog',
   component: ChangelogPage,
-  parameters: { layout: 'fullscreen' },
+  parameters: {
+    layout: 'fullscreen',
+    docs: {
+      description: {
+        component: 'Every token sync from Figma, with before/after values. Run `npm run sync-figma` to add a new entry.',
+      },
+    },
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof ChangelogPage>;
 
-export const History: Story = {};
+export const Log: Story = {};

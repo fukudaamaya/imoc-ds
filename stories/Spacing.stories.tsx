@@ -199,12 +199,20 @@ function LayoutDiagram({ platform }: { platform: 'web' | 'mobile' }) {
 }
 
 const meta: Meta<typeof SpacingPage> = {
-  title: 'Spacing',
+  title: 'Design System/Spacing',
   component: SpacingPage,
-  parameters: { layout: 'fullscreen' },
+  parameters: {
+    layout: 'fullscreen',
+    docs: {
+      description: {
+        component:
+          'The raw scale (space/*) is platform-agnostic — semantic spacing, radius, and layout tokens map onto it per platform.',
+      },
+    },
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof SpacingPage>;
 
-export const AllTokens: Story = {};
+export const All: Story = {};

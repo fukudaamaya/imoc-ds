@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import React, { useState } from 'react';
+import React from 'react';
 import './lib/doc-ui.css';
 import { flatPrimitiveColors, flatSemanticColors } from './lib/tokens';
 import { PrimitiveSwatch, SemanticSwatch } from './components/ColorSwatch';
@@ -18,20 +18,49 @@ function groupBy<T>(items: T[], keyFn: (item: T) => string): Record<string, T[]>
   return out;
 }
 
-function ColorsPage() {
-  const [tab, setTab] = useState<'primitives' | 'semantic'>('primitives');
+function ColorsPrimitivesPage() {
   const primitives = groupBy(flatPrimitiveColors(), (c) => c.group);
+
+  return (
+    <div className="doc-page">
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+        <div>
+          <h1 className="doc-h1">Color Primitives</h1>
+          <p className="doc-lede">
+            Raw color values. Reach for these only when building a new semantic token or an illustration fill —
+            product code should use a semantic token below instead.
+          </p>
+        </div>
+        <FigmaBadge />
+      </div>
+
+      {PRIMITIVE_GROUP_ORDER.filter((g) => primitives[g]).map((group) => (
+        <section key={group}>
+          <h2 className="doc-section-title" style={{ textTransform: 'capitalize' }}>
+            {group}
+          </h2>
+          <div className="doc-grid doc-color-grid">
+            {primitives[group].map((c) => (
+              <PrimitiveSwatch key={c.name} group={c.group} step={c.step} token={c.token} />
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  );
+}
+
+function ColorsSemanticPage() {
   const semantics = groupBy(flatSemanticColors(), (c) => c.group);
 
   return (
     <div className="doc-page">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <div>
-          <h1 className="doc-h1">Colors</h1>
+          <h1 className="doc-h1">Semantic Colors</h1>
           <p className="doc-lede">
-            Primitives are the raw scales — reach for them only when building a new semantic token or an
-            illustration fill. Semantic tokens (text/surface/border) are what product code should actually use;
-            each one aliases back to a primitive step and carries the reasoning for that choice.
+            text/surface/border tokens — what product code should actually use. Each one aliases back to a
+            primitive step and carries the reasoning for that choice.
           </p>
         </div>
         <FigmaBadge />
@@ -42,53 +71,35 @@ function ColorsPage() {
         Mobile/Web toolbar toggle above won't change anything on this page; it affects Typography and Spacing.
       </p>
 
-      <div className="doc-tabs">
-        <button className="doc-tab" data-active={tab === 'primitives'} onClick={() => setTab('primitives')}>
-          Primitives
-        </button>
-        <button className="doc-tab" data-active={tab === 'semantic'} onClick={() => setTab('semantic')}>
-          Semantic
-        </button>
-      </div>
-
-      {tab === 'primitives' &&
-        PRIMITIVE_GROUP_ORDER.filter((g) => primitives[g]).map((group) => (
-          <section key={group}>
-            <h2 className="doc-section-title" style={{ textTransform: 'capitalize' }}>
-              {group}
-            </h2>
-            <div className="doc-grid doc-color-grid">
-              {primitives[group].map((c) => (
-                <PrimitiveSwatch key={c.name} group={c.group} step={c.step} token={c.token} />
-              ))}
-            </div>
-          </section>
-        ))}
-
-      {tab === 'semantic' &&
-        SEMANTIC_GROUP_ORDER.filter((g) => semantics[g]).map((group) => (
-          <section key={group}>
-            <h2 className="doc-section-title" style={{ textTransform: 'capitalize' }}>
-              {group}
-            </h2>
-            <div className="doc-grid doc-color-grid">
-              {semantics[group].map((c) => (
-                <SemanticSwatch key={c.name} group={c.group} tokenKey={c.key} token={c.token} />
-              ))}
-            </div>
-          </section>
-        ))}
+      {SEMANTIC_GROUP_ORDER.filter((g) => semantics[g]).map((group) => (
+        <section key={group}>
+          <h2 className="doc-section-title" style={{ textTransform: 'capitalize' }}>
+            {group}
+          </h2>
+          <div className="doc-grid doc-color-grid">
+            {semantics[group].map((c) => (
+              <SemanticSwatch key={c.name} group={c.group} tokenKey={c.key} token={c.token} />
+            ))}
+          </div>
+        </section>
+      ))}
     </div>
   );
 }
 
-const meta: Meta<typeof ColorsPage> = {
-  title: 'Colors',
-  component: ColorsPage,
-  parameters: { layout: 'fullscreen' },
+const meta: Meta = {
+  title: 'Design System/Colors',
+  parameters: {
+    layout: 'fullscreen',
+    docs: {
+      description: {
+        component: 'Raw color values and the semantic tokens built on top of them. Always reference semantic tokens — never a primitive — from product code.',
+      },
+    },
+  },
 };
 
 export default meta;
-type Story = StoryObj<typeof ColorsPage>;
 
-export const AllColors: Story = {};
+export const Primitives: StoryObj = { render: () => <ColorsPrimitivesPage /> };
+export const Semantic: StoryObj = { render: () => <ColorsSemanticPage /> };

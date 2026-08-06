@@ -12,11 +12,15 @@ const withPlatform = (Story: any, context: any) => {
 };
 
 const preview: Preview = {
+  tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
     options: {
       storySort: {
-        order: ['Overview', 'Colors', 'Typography', 'Spacing', 'Accessibility', 'Changelog'],
+        order: [
+          'Design System',
+          ['Overview', 'Colors', 'Typography', 'Spacing', 'Accessibility', 'Changelog'],
+        ],
       },
     },
     backgrounds: {

@@ -154,12 +154,20 @@ function AccessibilityPage() {
 }
 
 const meta: Meta<typeof AccessibilityPage> = {
-  title: 'Accessibility',
+  title: 'Design System/Accessibility',
   component: AccessibilityPage,
-  parameters: { layout: 'fullscreen' },
+  parameters: {
+    layout: 'fullscreen',
+    docs: {
+      description: {
+        component:
+          'WCAG 2.x contrast, computed from resolved RGB, for every foreground/background pairing the system actually uses.',
+      },
+    },
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof AccessibilityPage>;
 
-export const ContrastTable: Story = {};
+export const ContrastRatios: Story = { name: 'Contrast Ratios' };

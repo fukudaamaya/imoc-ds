@@ -123,12 +123,19 @@ function TypographyPage() {
 }
 
 const meta: Meta<typeof TypographyPage> = {
-  title: 'Typography',
+  title: 'Design System/Typography',
   component: TypographyPage,
-  parameters: { layout: 'fullscreen' },
+  parameters: {
+    layout: 'fullscreen',
+    docs: {
+      description: {
+        component: 'Nine styles cover the whole system. Sizes, line heights, and tracking shift between Mobile and Web.',
+      },
+    },
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof TypographyPage>;
 
-export const AllStyles: Story = {};
+export const AllStyles: Story = { name: 'All Styles' };

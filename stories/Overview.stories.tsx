@@ -95,8 +95,13 @@ function OverviewPage() {
 }
 
 const meta: Meta<typeof OverviewPage> = {
-  title: 'Overview',
+  title: 'Design System/Overview',
   component: OverviewPage,
+  // Overview *is* a landing page already — an auto-generated Docs wrapper around it would
+  // just duplicate itself, so it opts out of the global `tags: ['autodocs']` in preview.tsx.
+  // Note: an empty array does NOT unset an inherited tag (tags merge as a union across
+  // preview/meta/story) — the '!' prefix is what actually excludes it.
+  tags: ['!autodocs'],
   parameters: { layout: 'fullscreen' },
 };
 

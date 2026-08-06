@@ -14,9 +14,9 @@ const config: StorybookConfig = {
     defaultName: 'Docs',
   },
   staticDirs: ['../build'],
-  // GitHub Pages project sites serve from /<repo-name>/, not /. The deploy workflow sets
-  // STORYBOOK_BASE_PATH to match; local `npm run storybook` / a root-domain deploy don't
-  // need it.
+  // Escape hatch for deploying under a subpath (e.g. a project site served from /repo-name/
+  // rather than /). Vercel serves from root, so this is unused today — set STORYBOOK_BASE_PATH
+  // at build time if that ever changes.
   async viteFinal(config) {
     if (process.env.STORYBOOK_BASE_PATH) {
       config.base = process.env.STORYBOOK_BASE_PATH;
