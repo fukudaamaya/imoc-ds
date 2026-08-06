@@ -65,7 +65,7 @@ function TypographyPage() {
                 fontWeight: 600,
                 letterSpacing: '0.02em',
                 fontFamily: 'ui-monospace, monospace',
-                color: 'var(--imoc-text-secondary)',
+                color: 'var(--imoc-text-tertiary)',
                 textTransform: 'uppercase',
               }}
             >
