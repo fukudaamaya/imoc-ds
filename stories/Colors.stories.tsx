@@ -10,6 +10,20 @@ import { FigmaBadge } from './components/FigmaBadge';
 const PRIMITIVE_GROUP_ORDER = ['neutral', 'ocean', 'earth', 'flora', 'success', 'warning', 'error', 'info'];
 const SEMANTIC_GROUP_ORDER = ['text', 'surface', 'border'];
 
+// Not sourced from Figma — there's no collection-level description per group there, only
+// per-step. Written from what each ramp's own step descriptions actually say (e.g. ocean/600
+// literally calls itself "THE BRAND VALUE"; every flora/* step says "unaliased in Clinic").
+const PRIMITIVE_GROUP_DESCRIPTIONS: Record<string, string> = {
+  neutral: 'Backgrounds, surfaces, text, and structural elements — the minimum-hue, minimum-saturation base every other color sits on top of.',
+  ocean: 'The primary brand colour — used for primary actions, links, focus states, and brand headings.',
+  earth: 'The secondary brand colour — used for editorial accents, pull quotes, and decorative illustration fills.',
+  flora: 'Reserved for a future Supplement product line — not currently aliased to any semantic token in the live Clinic theme.',
+  success: 'Confirmation and success states — completed bookings, saved changes, positive feedback.',
+  warning: "Advisory and caution states — logistics notices, limited availability, anything that needs attention without being an error.",
+  error: 'Errors and validation failures — rejected form fields, failed submissions.',
+  info: 'Explanatory, informational callouts — policy notes, eligibility, what-to-bring guidance. Deliberately not ocean, so system status never reads as brand.',
+};
+
 function groupBy<T>(items: T[], keyFn: (item: T) => string): Record<string, T[]> {
   const out: Record<string, T[]> = {};
   for (const item of items) {
@@ -41,6 +55,11 @@ function ColorsPrimitivesPage() {
           <h2 className="doc-section-title" style={{ textTransform: 'capitalize' }}>
             {group}
           </h2>
+          {PRIMITIVE_GROUP_DESCRIPTIONS[group] && (
+            <p className="doc-section-note" style={{ marginTop: -4 }}>
+              {PRIMITIVE_GROUP_DESCRIPTIONS[group]}
+            </p>
+          )}
           <div className="swatch-list">
             {primitives[group].map((c) => (
               <PrimitiveSwatch key={c.name} group={c.group} step={c.step} token={c.token} />
