@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import './lib/doc-ui.css';
 import { semanticColor } from './lib/tokens';
-import { contrastRatio, formatRatio, passAA, passAAA, passUiNonText } from './lib/contrast';
+import { contrastRatio, formatRatio, tierNormalText, tierLargeText, tierIconsUI, type Tier } from './lib/contrast';
 import { FigmaBadge } from './components/FigmaBadge';
 
 interface Pairing {
@@ -10,6 +10,9 @@ interface Pairing {
   bg: [string, string];
   context: string;
   kind: 'text' | 'non-text';
+  /** Decorative — WCAG 1.4.11 doesn't require these to meet 3:1 at all (they carry no
+   * information on their own). Shown as "Exempt" rather than a computed pass/fail. */
+  exempt?: boolean;
 }
 
 // Curated from the "used for" language in each token's own Figma description — not every
@@ -38,12 +41,12 @@ const PAIRINGS: Pairing[] = [
   { fg: ['text', 'error'], bg: ['surface', 'error'], context: 'Validation messages', kind: 'text' },
   { fg: ['text', 'info'], bg: ['surface', 'info'], context: 'Explanatory callouts', kind: 'text' },
   { fg: ['text', 'placeholder'], bg: ['surface', 'input'], context: 'Empty form-field placeholder', kind: 'text' },
-  { fg: ['border', 'subtle'], bg: ['surface', 'background'], context: 'Dividers, table rules (decorative, exempt)', kind: 'non-text' },
-  { fg: ['border', 'default'], bg: ['surface', 'card'], context: 'Card outlines', kind: 'non-text' },
+  { fg: ['border', 'subtle'], bg: ['surface', 'background'], context: 'Dividers, table rules', kind: 'non-text', exempt: true },
+  { fg: ['border', 'default'], bg: ['surface', 'card'], context: 'Card outlines (never the sole indicator of a control)', kind: 'non-text', exempt: true },
   { fg: ['border', 'strong'], bg: ['surface', 'card'], context: 'Input / checkbox / radio outlines', kind: 'non-text' },
   { fg: ['border', 'focus'], bg: ['surface', 'background'], context: 'Keyboard focus ring', kind: 'non-text' },
   { fg: ['border', 'brand'], bg: ['surface', 'background'], context: 'Selected filter chip, active tab', kind: 'non-text' },
-  { fg: ['border', 'accent'], bg: ['surface', 'card'], context: 'Pull-quote rule, card dividers', kind: 'non-text' },
+  { fg: ['border', 'accent'], bg: ['surface', 'card'], context: 'Pull-quote rule, card dividers', kind: 'non-text', exempt: true },
   { fg: ['border', 'success'], bg: ['surface', 'background'], context: 'Confirmation panel rule', kind: 'non-text' },
   { fg: ['border', 'warning'], bg: ['surface', 'background'], context: 'Advisory panel rule', kind: 'non-text' },
   { fg: ['border', 'error'], bg: ['surface', 'background'], context: 'Failed input outline', kind: 'non-text' },
@@ -54,6 +57,19 @@ function tokenName([group, key]: [string, string]) {
   return `${group}/${key}`;
 }
 
+function TierBadge({ tier }: { tier: Tier }) {
+  const label = tier === 'FAIL' ? 'Fail' : tier;
+  return <span className={`tier-badge tier-${tier.toLowerCase()}`}>{label}</span>;
+}
+
+function NotApplicable() {
+  return <span style={{ color: 'var(--imoc-text-tertiary)', fontSize: 13 }}>—</span>;
+}
+
+function ExemptBadge() {
+  return <span className="tier-badge tier-exempt">Exempt</span>;
+}
+
 function AccessibilityPage() {
   const [filter, setFilter] = React.useState<'all' | 'text' | 'non-text' | 'fail'>('all');
 
@@ -61,14 +77,16 @@ function AccessibilityPage() {
     const fgToken = semanticColor[p.fg[0]][p.fg[1]];
     const bgToken = semanticColor[p.bg[0]][p.bg[1]];
     const ratio = contrastRatio(fgToken.value, bgToken.value);
-    const aa = p.kind === 'text' ? passAA(ratio) : passUiNonText(ratio);
-    const aaa = p.kind === 'text' ? passAAA(ratio) : null;
-    return { ...p, fgToken, bgToken, ratio, aa, aaa };
+    const normalText = p.kind === 'text' ? tierNormalText(ratio) : null;
+    const largeText = p.kind === 'text' ? tierLargeText(ratio) : null;
+    const iconsUI = p.exempt ? null : tierIconsUI(ratio);
+    const primaryTier = p.kind === 'text' ? normalText! : p.exempt ? 'AAA' /* exempt never counts as failing */ : iconsUI!;
+    return { ...p, fgToken, bgToken, ratio, normalText, largeText, iconsUI, primaryTier };
   });
 
   const filtered = rows.filter((r) => {
     if (filter === 'all') return true;
-    if (filter === 'fail') return !r.aa;
+    if (filter === 'fail') return r.primaryTier === 'FAIL';
     return r.kind === filter;
   });
 
@@ -79,13 +97,20 @@ function AccessibilityPage() {
           <h1 className="doc-h1">Accessibility</h1>
           <p className="doc-lede">
             WCAG 2.x contrast, computed from the actual resolved RGB values — not copied from the description
-            text — for every foreground/background pairing the system actually uses. Text pairs are checked
-            against 4.5:1 (AA) / 7:1 (AAA); borders and other non-text UI against the 3:1 non-text threshold
-            (WCAG 1.4.11).
+            text — for every foreground/background pairing the system actually uses.
           </p>
         </div>
         <FigmaBadge />
       </div>
+
+      <p className="doc-section-note" style={{ marginTop: -12, maxWidth: 640 }}>
+        <strong>Normal Text</strong> and <strong>Large Text</strong> (18px+, or 14px+ bold) come from WCAG 1.4.3 —
+        AA/AAA are real conformance levels there. <strong>Icons / UI</strong> comes from WCAG 1.4.11, which
+        defines only a single AA bar (3:1) and no stricter tier — the "AAA" shown there is an informal
+        convention (≥4.5:1, borrowed from the Large Text AAA bar) meaning "extra headroom," not an official
+        WCAG pass level. Rows marked <strong>Exempt</strong> are decorative and WCAG doesn't require them to
+        meet any bar.
+      </p>
 
       <div className="doc-tabs">
         {(['all', 'text', 'non-text', 'fail'] as const).map((f) => (
@@ -103,9 +128,10 @@ function AccessibilityPage() {
               <th>Foreground</th>
               <th>Background</th>
               <th>Ratio</th>
-              <th>AA</th>
-              <th>AAA</th>
-              <th>Intended for</th>
+              <th>Normal Text</th>
+              <th>Large Text (18px+)</th>
+              <th>Icons / UI</th>
+              <th>Context</th>
             </tr>
           </thead>
           <tbody>
@@ -133,16 +159,9 @@ function AccessibilityPage() {
                 <td style={{ fontFamily: 'ui-monospace, monospace', fontSize: 12 }}>{tokenName(r.fg)}</td>
                 <td style={{ fontFamily: 'ui-monospace, monospace', fontSize: 12 }}>{tokenName(r.bg)}</td>
                 <td style={{ fontFamily: 'ui-monospace, monospace', fontWeight: 700 }}>{formatRatio(r.ratio)}</td>
-                <td>
-                  <span className={`pass-badge ${r.aa ? 'pass' : 'fail'}`}>{r.aa ? 'PASS' : 'FAIL'}</span>
-                </td>
-                <td>
-                  {r.aaa === null ? (
-                    <span style={{ color: 'var(--imoc-text-tertiary)', fontSize: 12 }}>n/a</span>
-                  ) : (
-                    <span className={`pass-badge ${r.aaa ? 'pass' : 'fail'}`}>{r.aaa ? 'PASS' : 'FAIL'}</span>
-                  )}
-                </td>
+                <td>{r.normalText ? <TierBadge tier={r.normalText} /> : <NotApplicable />}</td>
+                <td>{r.largeText ? <TierBadge tier={r.largeText} /> : <NotApplicable />}</td>
+                <td>{r.exempt ? <ExemptBadge /> : r.iconsUI ? <TierBadge tier={r.iconsUI} /> : <NotApplicable />}</td>
                 <td style={{ fontSize: 13, color: 'var(--imoc-text-secondary)' }}>{r.context}</td>
               </tr>
             ))}

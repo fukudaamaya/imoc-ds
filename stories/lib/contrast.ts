@@ -51,15 +51,30 @@ export function formatRatio(ratio: number): string {
   return `${ratio.toFixed(2)}:1`;
 }
 
-export function passAA(ratio: number, isLarge = false): boolean {
-  return ratio >= (isLarge ? 3 : 4.5);
+export type Tier = 'AAA' | 'AA' | 'FAIL';
+
+function tierAt(ratio: number, aaMin: number, aaaMin: number): Tier {
+  if (ratio >= aaaMin) return 'AAA';
+  if (ratio >= aaMin) return 'AA';
+  return 'FAIL';
 }
 
-export function passAAA(ratio: number, isLarge = false): boolean {
-  return ratio >= (isLarge ? 4.5 : 7);
+/** WCAG 1.4.3 Normal Text: AA 4.5:1, AAA 7:1. */
+export function tierNormalText(ratio: number): Tier {
+  return tierAt(ratio, 4.5, 7);
 }
 
-// UI-component contrast (non-text, e.g. borders, focus rings) only needs 3:1 (WCAG 1.4.11).
-export function passUiNonText(ratio: number): boolean {
-  return ratio >= 3;
+/** WCAG 1.4.3 Large Text (18px+ or 14px+ bold): AA 3:1, AAA 4.5:1. */
+export function tierLargeText(ratio: number): Tier {
+  return tierAt(ratio, 3, 4.5);
+}
+
+/**
+ * WCAG 1.4.11 Non-text Contrast (borders, focus rings, icons) — AA-only, 3:1. WCAG defines
+ * no stricter tier for non-text elements, so "AAA" here is an informal convention (borrowed
+ * from the Large Text AAA bar, 4.5:1) meaning "extra headroom," not a real conformance level.
+ * Always label it as such in the UI — don't imply an official AAA pass for non-text content.
+ */
+export function tierIconsUI(ratio: number): Tier {
+  return tierAt(ratio, 3, 4.5);
 }

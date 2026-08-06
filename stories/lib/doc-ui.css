@@ -251,7 +251,7 @@
   vertical-align: middle;
 }
 
-.pass-badge {
+.tier-badge {
   display: inline-block;
   font-size: 11px;
   font-weight: 700;
@@ -259,14 +259,29 @@
   border-radius: var(--imoc-radius-pill);
 }
 
-.pass-badge.pass {
+/* AAA = green (success semantic). */
+.tier-badge.tier-aaa {
   background: var(--imoc-surface-success);
   color: var(--imoc-text-success);
 }
 
-.pass-badge.fail {
+/* AA = blue (info semantic) — a real pass, just not the stricter tier. Deliberately not
+   red/alarming: passing AA is a fine, common, compliant outcome, not a problem to flag. */
+.tier-badge.tier-aa {
+  background: var(--imoc-surface-info);
+  color: var(--imoc-text-info);
+}
+
+/* Only genuine failures (below the applicable AA bar) get the error treatment. */
+.tier-badge.tier-fail {
   background: var(--imoc-surface-error);
   color: var(--imoc-text-error);
+}
+
+/* Decorative pairings WCAG doesn't require to meet any bar — neutral, not a pass or a fail. */
+.tier-badge.tier-exempt {
+  background: var(--imoc-surface-disabled);
+  color: var(--imoc-text-tertiary);
 }
 
 .type-specimen {
