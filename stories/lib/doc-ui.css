@@ -186,7 +186,11 @@
 }
 
 /* CSS/Dart variants are color-coded so the two copy targets are distinguishable at a glance
-   without reading the label — CSS in ocean (matches --imoc-border-brand), Dart in flora. */
+   without reading the label — CSS uses the brand semantic pair (ocean), Dart uses the accent
+   semantic pair (earth). Both are real semantic tokens, not raw primitives — deliberately NOT
+   flora, which every flora/* description marks "unaliased in Clinic" (reserved for a future
+   Supplement mode, not wired into any current semantic token). Also keeps Dart visually
+   distinct from the green "copied" confirmation state below, which flora was too close to. */
 .copy-btn[data-kind='css'] {
   border-color: var(--imoc-border-brand);
   color: var(--imoc-text-brand);
@@ -194,9 +198,9 @@
 }
 
 .copy-btn[data-kind='dart'] {
-  border-color: var(--imoc-flora-600, var(--imoc-border-success));
-  color: var(--imoc-flora-700, var(--imoc-text-success));
-  background: var(--imoc-flora-50, var(--imoc-surface-success));
+  border-color: var(--imoc-border-accent);
+  color: var(--imoc-text-accent);
+  background: var(--imoc-surface-accent-subtle);
 }
 
 .copy-btn[data-copied='true'] {
