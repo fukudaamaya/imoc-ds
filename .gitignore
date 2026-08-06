@@ -5,3 +5,5 @@ storybook-static/
 .env
 .claude/settings.local.json
 figma-variables-export.json
+.vercel
+.env*
