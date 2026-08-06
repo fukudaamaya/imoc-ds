@@ -287,8 +287,14 @@
   border-radius: var(--imoc-radius-small);
 }
 
+/* Doc-chrome only, not a product type token — see stories/Typography.stories.tsx for why
+   this doesn't get a real type/label-small Figma variable. Values mirror the real
+   type/body-medium token (16px/400/Satoshi/26px) rather than duplicating its numbers, so a
+   future body-medium change in Figma is a reminder to check this by hand, not silent drift. */
 .type-meta-item .label {
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Satoshi', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--imoc-text-tertiary);
@@ -296,10 +302,11 @@
 }
 
 .type-meta-item .value {
-  font-size: 14px;
-  font-weight: 600;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
   color: var(--imoc-text-primary);
-  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
 }
 
 .ruler-row {
