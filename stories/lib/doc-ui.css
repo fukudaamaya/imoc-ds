@@ -172,10 +172,12 @@
   background: var(--imoc-surface-input);
   color: var(--imoc-text-primary);
   font-size: 11px;
+  line-height: 1;
   font-family: ui-monospace, 'SF Mono', Menlo, monospace;
-  padding: 4px 8px;
+  padding: 5px 8px;
   border-radius: var(--imoc-radius-small);
   cursor: pointer;
+  white-space: nowrap;
   transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
 }
 

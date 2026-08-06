@@ -51,9 +51,27 @@ function TypographyPage() {
         const lineHeight = s.lineHeight[platform];
         const letterSpacing = s.letterSpacing[platform];
         const family = s.family[platform];
+        // e.g. "--imoc-type-heading-1-size" -> "--imoc-type-heading-1-*" (also correctly
+        // handles body-medium, whose real codeSyntax prefix is "--imoc-type-body-*", not
+        // "-body-medium-*" — Figma's own naming for that one style, kept intact here).
+        const cssPrefix = s.size.figma.codeSyntax.replace(/-size$/, '');
 
         return (
           <div className="type-specimen" key={s.name}>
+            <h3
+              style={{
+                margin: '0 0 8px',
+                fontSize: 12,
+                fontWeight: 600,
+                letterSpacing: '0.02em',
+                fontFamily: 'ui-monospace, monospace',
+                color: 'var(--imoc-text-secondary)',
+                textTransform: 'uppercase',
+              }}
+            >
+              type/{s.name}
+            </h3>
+
             <div
               className="font-display"
               style={{
@@ -71,16 +89,11 @@ function TypographyPage() {
               {SAMPLE[s.name]}
             </div>
 
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-              <h3 style={{ margin: 0, fontSize: 15, fontFamily: 'ui-monospace, monospace', color: 'var(--imoc-text-brand)' }}>
-                type/{s.name}
-              </h3>
-              <span style={{ fontSize: 11, color: 'var(--imoc-text-tertiary)', textTransform: 'uppercase' }}>
-                {platform} mode
-              </span>
-            </div>
-
             <div className="type-meta-grid">
+              <div className="type-meta-item">
+                <span className="label">Family</span>
+                <span className="value">{family}</span>
+              </div>
               <div className="type-meta-item">
                 <span className="label">Size</span>
                 <span className="value">
@@ -95,25 +108,20 @@ function TypographyPage() {
                 <span className="value">{weight}</span>
               </div>
               <div className="type-meta-item">
-                <span className="label">Line height</span>
+                <span className="label">Line Height</span>
                 <span className="value">{lineHeight}px</span>
               </div>
               <div className="type-meta-item">
-                <span className="label">Letter spacing</span>
+                <span className="label">Tracking</span>
                 <span className="value">{letterSpacing}px</span>
-              </div>
-              <div className="type-meta-item">
-                <span className="label">Family</span>
-                <span className="value">{family}</span>
               </div>
             </div>
 
             <p className="swatch-desc">{s.size.description}</p>
 
-            <div className="action-row">
-              <CopyButton kind="css" label="CSS" value={css(s.name)} />
-              <CopyButton kind="dart" label="Dart" value={dartTypeStyleRef(s.name)} />
-              <FigmaBadge />
+            <div className="action-row" style={{ marginTop: 14 }}>
+              <CopyButton kind="css" label={`CSS ${cssPrefix}-*`} value={css(s.name)} />
+              <CopyButton kind="dart" label={`Dart ${dartTypeStyleRef(s.name)}`} value={dartTypeStyleRef(s.name)} />
             </div>
           </div>
         );
