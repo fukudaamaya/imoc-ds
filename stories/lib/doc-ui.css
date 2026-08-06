@@ -141,11 +141,9 @@
   border-bottom: 1px solid var(--imoc-border-subtle);
 }
 
-/* No fixed height — stretches to the row's full content height (row height minus the row's
-   own padding), so it grows close to the dividers above/below instead of sitting as a small
-   fixed square with whitespace around it. */
 .swatch-row-preview {
   width: 56px;
+  height: 56px;
   flex-shrink: 0;
   border-radius: var(--imoc-radius-small);
   border: 1px solid var(--imoc-border-default);
