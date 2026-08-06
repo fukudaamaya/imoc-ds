@@ -16,9 +16,8 @@ export function PrimitiveSwatch({ group, step, token }: { group: string; step: s
         <div className="swatch-hex">{token.value}</div>
         <p className="swatch-desc">{token.description}</p>
         <div className="action-row">
-          <CopyButton kind="css" label={token.figma.codeSyntax} value={`var(${token.figma.codeSyntax})`} />
+          <CopyButton kind="css" label="CSS" value={`var(${token.figma.codeSyntax})`} />
           <CopyButton kind="dart" label="Dart" value={dartPrimitiveColorRef(group, step)} />
-          <FigmaBadge />
         </div>
       </div>
     </div>

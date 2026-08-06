@@ -5,7 +5,9 @@ import { flatPrimitiveColors, flatSemanticColors } from './lib/tokens';
 import { PrimitiveSwatch, SemanticSwatch } from './components/ColorSwatch';
 import { FigmaBadge } from './components/FigmaBadge';
 
-const PRIMITIVE_GROUP_ORDER = ['ocean', 'earth', 'flora', 'neutral', 'success', 'warning', 'error', 'info'];
+// neutrals, ocean, earth, flora, then the status ramps in their common color-name order
+// (success=green, warning=yellow, error=red, info=blue).
+const PRIMITIVE_GROUP_ORDER = ['neutral', 'ocean', 'earth', 'flora', 'success', 'warning', 'error', 'info'];
 const SEMANTIC_GROUP_ORDER = ['text', 'surface', 'border'];
 
 function groupBy<T>(items: T[], keyFn: (item: T) => string): Record<string, T[]> {
