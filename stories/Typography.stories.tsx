@@ -51,10 +51,6 @@ function TypographyPage() {
         const lineHeight = s.lineHeight[platform];
         const letterSpacing = s.letterSpacing[platform];
         const family = s.family[platform];
-        // e.g. "--imoc-type-heading-1-size" -> "--imoc-type-heading-1-*" (also correctly
-        // handles body-medium, whose real codeSyntax prefix is "--imoc-type-body-*", not
-        // "-body-medium-*" — Figma's own naming for that one style, kept intact here).
-        const cssPrefix = s.size.figma.codeSyntax.replace(/-size$/, '');
 
         return (
           <div className="type-specimen" key={s.name}>
@@ -120,8 +116,8 @@ function TypographyPage() {
             <p className="swatch-desc">{s.size.description}</p>
 
             <div className="action-row" style={{ marginTop: 14 }}>
-              <CopyButton kind="css" label={`CSS ${cssPrefix}-*`} value={css(s.name)} />
-              <CopyButton kind="dart" label={`Dart ${dartTypeStyleRef(s.name)}`} value={dartTypeStyleRef(s.name)} />
+              <CopyButton kind="css" label="CSS" value={css(s.name)} />
+              <CopyButton kind="dart" label="Dart" value={dartTypeStyleRef(s.name)} />
             </div>
           </div>
         );

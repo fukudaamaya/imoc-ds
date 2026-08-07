@@ -50,7 +50,7 @@ export function SemanticSwatch({ group, tokenKey, token }: { group: string; toke
           </div>
         )}
         <div className="action-row">
-          <CopyButton kind="css" label={token.figma.codeSyntax} value={`var(${token.figma.codeSyntax})`} />
+          <CopyButton kind="css" label="CSS" value={`var(${token.figma.codeSyntax})`} />
           <CopyButton kind="dart" label="Dart" value={dartSemanticColorRef(group, tokenKey)} />
           <FigmaBadge />
         </div>

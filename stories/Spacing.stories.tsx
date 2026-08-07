@@ -41,7 +41,7 @@ function RulerRow({
         {description}
       </p>
       <div className="action-row" style={{ marginLeft: 236 }}>
-        <CopyButton kind="css" label={cssVar} value={`var(${cssVar})`} />
+        <CopyButton kind="css" label="CSS" value={`var(${cssVar})`} />
         <CopyButton kind="dart" label="Dart" value={dartRef} />
       </div>
     </div>
@@ -89,7 +89,7 @@ function SpacingPage() {
             <div style={{ fontSize: 12, fontFamily: 'ui-monospace, monospace' }}>radius/{key}</div>
             <div style={{ fontSize: 11, color: 'var(--imoc-text-tertiary)' }}>{t.web}px</div>
             <div className="action-row">
-              <CopyButton kind="css" label={t.figma.codeSyntax} value={`var(${t.figma.codeSyntax})`} />
+              <CopyButton kind="css" label="CSS" value={`var(${t.figma.codeSyntax})`} />
               <CopyButton kind="dart" label="Dart" value={dartDimensionRef('radius', 'semantic', key)} />
             </div>
           </div>
@@ -112,7 +112,7 @@ function SpacingPage() {
             </div>
             <p className="swatch-desc">{t.description}</p>
             <div className="action-row">
-              <CopyButton kind="css" label={t.figma.codeSyntax} value={`var(${t.figma.codeSyntax})`} />
+              <CopyButton kind="css" label="CSS" value={`var(${t.figma.codeSyntax})`} />
               <CopyButton kind="dart" label="Dart" value={dartDimensionRef('layout', null, key)} />
             </div>
           </div>
