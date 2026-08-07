@@ -198,6 +198,9 @@ function LayoutDiagram({ platform }: { platform: 'web' | 'mobile' }) {
 const meta: Meta<typeof SpacingPage> = {
   title: 'Design System/Spacing',
   component: SpacingPage,
+  // This page is already a full specimen page — the auto-generated Docs page would just
+  // duplicate it (primary story inline, then again under a "Stories" section).
+  tags: ['!autodocs'],
   parameters: {
     layout: 'fullscreen',
     docs: {

@@ -129,6 +129,9 @@ function TypographyPage() {
 const meta: Meta<typeof TypographyPage> = {
   title: 'Design System/Typography',
   component: TypographyPage,
+  // This page is already a full specimen page — the auto-generated Docs page would just
+  // duplicate it (primary story inline, then again under a "Stories" section).
+  tags: ['!autodocs'],
   parameters: {
     layout: 'fullscreen',
     docs: {

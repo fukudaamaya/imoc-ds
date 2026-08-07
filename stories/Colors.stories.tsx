@@ -110,6 +110,10 @@ function ColorsSemanticPage() {
 
 const meta: Meta = {
   title: 'Design System/Colors',
+  // This file has two full specimen pages (Primitives, Semantic) — the auto-generated Docs
+  // page would duplicate whichever renders first (primary story inline, then both again
+  // under a "Stories" section).
+  tags: ['!autodocs'],
   parameters: {
     layout: 'fullscreen',
     docs: {

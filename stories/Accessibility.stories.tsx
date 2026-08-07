@@ -165,6 +165,9 @@ function AccessibilityPage() {
 const meta: Meta<typeof AccessibilityPage> = {
   title: 'Design System/Accessibility',
   component: AccessibilityPage,
+  // This page is already a full specimen page — the auto-generated Docs page would just
+  // duplicate it (primary story inline, then again under a "Stories" section).
+  tags: ['!autodocs'],
   parameters: {
     layout: 'fullscreen',
     docs: {
