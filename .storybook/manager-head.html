@@ -1,0 +1,10 @@
+<style>
+  /* Storybook's sidebar hardcodes #6beff1 for tree-node hover — not one of our tokens.
+     data-highlightable is the stable hook (the emotion class hash isn't). ocean/100
+     (#d6f0f1) is explicitly "reserved for hover states on brand-subtle surfaces" in the
+     primitives — the selected row already correctly uses ocean/700 via colorSecondary. */
+  [data-highlightable="true"]:hover,
+  [data-highlightable="true"]:focus {
+    --tree-node-background-hover: #d6f0f1 !important;
+  }
+</style>
