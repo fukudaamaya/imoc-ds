@@ -19,7 +19,7 @@ function OverviewPage() {
   const stat = (label: string, value: number | string) => (
     <div className="doc-card" style={{ textAlign: 'center' }}>
       <div style={{ fontSize: 28, fontWeight: 700, color: 'var(--imoc-text-brand)' }}>{value}</div>
-      <div style={{ fontSize: 12, color: 'var(--imoc-text-secondary)', marginTop: 4 }}>{label}</div>
+      <div style={{ fontSize: 12, fontWeight: 500, color: 'var(--imoc-text-tertiary)', marginTop: 4 }}>{label}</div>
     </div>
   );
 

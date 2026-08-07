@@ -86,8 +86,8 @@ function SpacingPage() {
         {Object.entries(dimensions.radius).map(([key, t]) => (
           <div className="radius-demo" key={key}>
             <div className="radius-box" style={{ borderRadius: `${t.web}px` }} />
-            <div style={{ fontSize: 12, fontFamily: 'ui-monospace, monospace' }}>radius/{key}</div>
-            <div style={{ fontSize: 11, color: 'var(--imoc-text-tertiary)' }}>{t.web}px</div>
+            <div style={{ fontSize: 13, fontWeight: 600, fontFamily: 'ui-monospace, monospace' }}>radius/{key}</div>
+            <div style={{ fontSize: 12, fontWeight: 500, color: 'var(--imoc-text-tertiary)' }}>{t.web}px</div>
             <div className="action-row">
               <CopyButton kind="css" label="CSS" value={`var(${t.figma.codeSyntax})`} />
               <CopyButton kind="dart" label="Dart" value={dartDimensionRef('radius', 'semantic', key)} />
@@ -138,7 +138,8 @@ function LayoutDiagram({ platform }: { platform: 'web' | 'mobile' }) {
           height: header * 0.6,
           background: 'var(--imoc-surface-inverse)',
           color: 'var(--imoc-text-inverse)',
-          fontSize: 11,
+          fontSize: 12,
+          fontWeight: 500,
           display: 'flex',
           alignItems: 'center',
           paddingLeft: 12,
@@ -160,7 +161,7 @@ function LayoutDiagram({ platform }: { platform: 'web' | 'mobile' }) {
           gap: 8,
         }}
       >
-        <span style={{ fontSize: 10, color: 'var(--imoc-text-brand)' }}>
+        <span style={{ fontSize: 12, fontWeight: 500, color: 'var(--imoc-text-brand)' }}>
           max-width-container {container === 9999 ? '(uncapped)' : `${container}px`}
         </span>
         <div
@@ -171,7 +172,7 @@ function LayoutDiagram({ platform }: { platform: 'web' | 'mobile' }) {
             padding: 10,
           }}
         >
-          <span style={{ fontSize: 10, color: 'var(--imoc-text-accent)' }}>
+          <span style={{ fontSize: 12, fontWeight: 500, color: 'var(--imoc-text-accent)' }}>
             max-width-text {text === 9999 ? '(uncapped)' : `${text}px`}
           </span>
           <div
@@ -181,7 +182,8 @@ function LayoutDiagram({ platform }: { platform: 'web' | 'mobile' }) {
               border: '1px dashed var(--imoc-border-success)',
               borderRadius: 4,
               padding: 8,
-              fontSize: 10,
+              fontSize: 12,
+              fontWeight: 500,
               color: 'var(--imoc-text-success)',
             }}
           >

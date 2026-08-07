@@ -57,7 +57,7 @@ function TierBadge({ tier }: { tier: Tier }) {
 }
 
 function NotApplicable() {
-  return <span style={{ color: 'var(--imoc-text-tertiary)', fontSize: 13 }}>—</span>;
+  return <span style={{ color: 'var(--imoc-text-tertiary)', fontSize: 12, fontWeight: 500 }}>—</span>;
 }
 
 function AccessibilityPage() {
@@ -137,7 +137,7 @@ function AccessibilityPage() {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      fontSize: 11,
+                      fontSize: 12,
                       fontWeight: 700,
                       color: r.fgToken.value,
                       border: r.kind === 'non-text' ? `2px solid ${r.fgToken.value}` : '1px solid var(--imoc-border-subtle)',
@@ -146,13 +146,13 @@ function AccessibilityPage() {
                     {r.kind === 'text' ? 'Ag' : ''}
                   </div>
                 </td>
-                <td style={{ fontFamily: 'ui-monospace, monospace', fontSize: 12 }}>{tokenName(r.fg)}</td>
-                <td style={{ fontFamily: 'ui-monospace, monospace', fontSize: 12 }}>{tokenName(r.bg)}</td>
+                <td style={{ fontFamily: 'ui-monospace, monospace', fontSize: 12, fontWeight: 500 }}>{tokenName(r.fg)}</td>
+                <td style={{ fontFamily: 'ui-monospace, monospace', fontSize: 12, fontWeight: 500 }}>{tokenName(r.bg)}</td>
                 <td style={{ fontFamily: 'ui-monospace, monospace', fontWeight: 700 }}>{formatRatio(r.ratio)}</td>
                 <td>{r.normalText ? <TierBadge tier={r.normalText} /> : <NotApplicable />}</td>
                 <td>{r.largeText ? <TierBadge tier={r.largeText} /> : <NotApplicable />}</td>
                 <td>{r.iconsUI ? <TierBadge tier={r.iconsUI} /> : <NotApplicable />}</td>
-                <td style={{ fontSize: 13, color: 'var(--imoc-text-secondary)' }}>{r.context}</td>
+                <td style={{ color: 'var(--imoc-text-secondary)' }}>{r.context}</td>
               </tr>
             ))}
           </tbody>

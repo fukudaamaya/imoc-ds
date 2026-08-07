@@ -41,7 +41,7 @@ function ChangelogPage() {
             padding: '8px 12px',
             borderRadius: 'var(--imoc-radius-medium)',
             border: '1px solid var(--imoc-border-strong)',
-            fontSize: 13,
+            fontSize: 16, // type/body-medium — also keeps iOS Safari from zooming on focus
             minWidth: 220,
           }}
         />
@@ -67,7 +67,7 @@ function ChangelogPage() {
             </option>
           ))}
         </select>
-        <span style={{ fontSize: 12, color: 'var(--imoc-text-tertiary)' }}>
+        <span style={{ fontSize: 12, fontWeight: 500, color: 'var(--imoc-text-tertiary)' }}>
           {filtered.length} of {entries.length} entries
         </span>
       </div>
@@ -87,17 +87,17 @@ function ChangelogPage() {
           <tbody>
             {filtered.map((e, i) => (
               <tr key={i}>
-                <td style={{ fontFamily: 'ui-monospace, monospace', fontSize: 12 }}>{e.tokenName}</td>
-                <td style={{ fontSize: 12, color: 'var(--imoc-text-secondary)' }}>{e.collection}</td>
-                <td style={{ fontFamily: 'ui-monospace, monospace', fontSize: 12, color: 'var(--imoc-text-tertiary)' }}>
+                <td style={{ fontFamily: 'ui-monospace, monospace', fontSize: 12, fontWeight: 500 }}>{e.tokenName}</td>
+                <td style={{ fontSize: 12, fontWeight: 500, color: 'var(--imoc-text-secondary)' }}>{e.collection}</td>
+                <td style={{ fontFamily: 'ui-monospace, monospace', fontSize: 12, fontWeight: 500, color: 'var(--imoc-text-tertiary)' }}>
                   {e.oldValue ?? '—'}
                 </td>
-                <td style={{ fontFamily: 'ui-monospace, monospace', fontSize: 12 }}>{e.newValue ?? '—'}</td>
-                <td style={{ fontSize: 12, color: 'var(--imoc-text-secondary)' }}>{e.date}</td>
+                <td style={{ fontFamily: 'ui-monospace, monospace', fontSize: 12, fontWeight: 500 }}>{e.newValue ?? '—'}</td>
+                <td style={{ fontSize: 12, fontWeight: 500, color: 'var(--imoc-text-secondary)' }}>{e.date}</td>
                 <td>
                   <span
                     style={{
-                      fontSize: 11,
+                      fontSize: 12,
                       fontWeight: 700,
                       textTransform: 'uppercase',
                       color: STATUS_COLOR[e.status],
