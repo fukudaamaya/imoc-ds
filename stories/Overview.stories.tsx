@@ -29,8 +29,8 @@ function OverviewPage() {
         <div>
           <h1 className="doc-h1">IMOC Design System</h1>
           <p className="doc-lede">
-            Every token in this file, synced from Figma variables and generated into CSS custom properties and
-            Flutter Dart code by Style Dictionary. Use the toolbar above to switch between Mobile and Web
+            Every token in this file, synced from Figma variables and generated into CSS custom properties
+            by Style Dictionary. Use the toolbar above to switch between Mobile and Web
             dimension values.
           </p>
         </div>
