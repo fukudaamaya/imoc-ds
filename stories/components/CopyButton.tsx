@@ -7,7 +7,7 @@ export function CopyButton({
 }: {
   label: string;
   value: string;
-  kind?: 'css' | 'dart' | 'default';
+  kind?: 'css' | 'default';
 }) {
   const [copied, setCopied] = useState(false);
 
