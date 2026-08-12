@@ -1,6 +1,8 @@
 // Flattens a tokens/*.json-shaped tree to {name, collection, value} leaves, then diffs two
 // snapshots (old vs freshly-fetched) into changelog entries. A leaf is any object carrying
-// `value`, or both `mobile` and `web`.
+// `value`, or both `mobile` and `web`. Value and description are diffed independently (tagged
+// via `field`) since Figma lets either change without the other — a description-only edit
+// (usage guidance, aliasing notes) should still surface in the changelog.
 
 function isLeaf(node) {
   return node && typeof node === 'object' && ('value' in node || ('mobile' in node && 'web' in node));
@@ -12,9 +14,13 @@ function formatLeaf(leaf) {
   return `mobile: ${leaf.mobile}${unit}, web: ${leaf.web}${unit}`;
 }
 
-function leafEqual(a, b) {
+function valueEqual(a, b) {
   if ('value' in a) return a.value === b.value;
   return a.mobile === b.mobile && a.web === b.web;
+}
+
+function descriptionOf(leaf) {
+  return leaf.description ?? '';
 }
 
 function flatten(tree, collectionName, path = []) {
@@ -51,18 +57,32 @@ export function diffTokens(oldTokens, newTokens, date) {
       const after = newFlat.get(name);
 
       if (before && !after) {
-        entries.push({ tokenName: name, collection: collectionName, oldValue: formatLeaf(before), newValue: null, date, status: 'removed' });
+        entries.push({ tokenName: name, collection: collectionName, field: 'value', oldValue: formatLeaf(before), newValue: null, date, status: 'removed' });
       } else if (!before && after) {
-        entries.push({ tokenName: name, collection: collectionName, oldValue: null, newValue: formatLeaf(after), date, status: 'added' });
-      } else if (!leafEqual(before, after)) {
-        entries.push({
-          tokenName: name,
-          collection: collectionName,
-          oldValue: formatLeaf(before),
-          newValue: formatLeaf(after),
-          date,
-          status: 'changed',
-        });
+        entries.push({ tokenName: name, collection: collectionName, field: 'value', oldValue: null, newValue: formatLeaf(after), date, status: 'added' });
+      } else {
+        if (!valueEqual(before, after)) {
+          entries.push({
+            tokenName: name,
+            collection: collectionName,
+            field: 'value',
+            oldValue: formatLeaf(before),
+            newValue: formatLeaf(after),
+            date,
+            status: 'changed',
+          });
+        }
+        if (descriptionOf(before) !== descriptionOf(after)) {
+          entries.push({
+            tokenName: name,
+            collection: collectionName,
+            field: 'description',
+            oldValue: descriptionOf(before),
+            newValue: descriptionOf(after),
+            date,
+            status: 'changed',
+          });
+        }
       }
     }
   }

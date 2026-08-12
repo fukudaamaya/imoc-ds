@@ -103,7 +103,8 @@ export function diffAndWrite(newTokens, { dryRun = false } = {}) {
 
   mkdirSync(CHANGELOG_DIR, { recursive: true });
   const diffPath = join(CHANGELOG_DIR, `${date}.json`);
-  writeFileSync(diffPath, JSON.stringify(entries, null, 2) + '\n');
+  const priorEntries = existsSync(diffPath) ? JSON.parse(readFileSync(diffPath, 'utf-8')) : [];
+  writeFileSync(diffPath, JSON.stringify([...priorEntries, ...entries], null, 2) + '\n');
   console.log(`✔ ${diffPath}`);
 
   prependChangelog(date, summary, diffPath);

@@ -62,5 +62,32 @@
     "newValue": "mobile: Public Sans, web: Public Sans",
     "date": "2026-08-12",
     "status": "changed"
+  },
+  {
+    "tokenName": "spacing/stack-gap",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Between repeated items in a vertical list — condition rows, FAQ items, form fields. Fixed at 16: list rhythm should not change by platform.",
+    "newValue": "Between repeated items in a vertical list with no padding of their own — plain rows, FAQ items, form fields. Skip if the item already carries its own padding (e.g. Dropdown Item); that padding sets the rhythm instead. Fixed at 16: list rhythm should not change by platform.",
+    "date": "2026-08-12",
+    "status": "changed"
+  },
+  {
+    "tokenName": "spacing/inline-gap",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Between elements on one line — icon to label, chip to chip, button to button. Fixed at 8. Also the minimum gap between adjacent touch targets.",
+    "newValue": "Between elements on one line — icon to label, button to button. Fixed at 8. Also the minimum gap between adjacent touch targets.",
+    "date": "2026-08-12",
+    "status": "changed"
+  },
+  {
+    "tokenName": "spacing/micro-gap",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Tightest relationship — badge internals, icon to count, required-field asterisk to label. Fixed at 4.",
+    "newValue": "Tightest relationship: badge internals, title-to-caption pairs (dropdown items, condition rows) — visually tighter than content-gap because both lines read as one unit. Fixed at 4.",
+    "date": "2026-08-12",
+    "status": "changed"
   }
 ]
