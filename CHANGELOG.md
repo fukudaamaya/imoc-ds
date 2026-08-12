@@ -3,6 +3,8 @@
 ## 2026-08-12 — Figma sync
 
 0 added, 6 changed, 2 removed (8 tokens touched).
+- **Spacing** - removed space/50 and space/1300 primitives
+- **Typography** - changed body type from Satoshi to Public Sans
 
 Full diff: [changelog/diffs/2026-08-12.json](changelog/diffs/2026-08-12.json)
 
