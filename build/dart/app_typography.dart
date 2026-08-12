@@ -19,7 +19,7 @@ class AppTypography {
     letterSpacing: -1.05,
   );
 
-  /// Page titles — treatment name, condition name, "About Dr. Kinaly". Maps to H1. Size: 34px mobile, 52px web.
+  /// Page titles — treatment name, condition name, "About Dr. Kinaly". One per page, maps to the H1 element. Size: 34px mobile, 52px web.
   static const TextStyle heading1 = TextStyle(
     fontFamily: 'Fraunces',
     fontSize: 34,
@@ -28,7 +28,7 @@ class AppTypography {
     letterSpacing: -0.68,
   );
 
-  /// Section titles. Maps to H2. Size: 28px mobile, 36px web.
+  /// Section titles — "What to expect", "Related conditions", "Who this is for". Maps to H2. Size: 28px mobile, 36px web.
   static const TextStyle heading2 = TextStyle(
     fontFamily: 'Fraunces',
     fontSize: 28,
@@ -37,7 +37,7 @@ class AppTypography {
     letterSpacing: -0.42,
   );
 
-  /// Sub-sections, card titles, FAQ questions. Maps to H3. Size: 22px mobile, 24px web.
+  /// Sub-sections inside long treatment content, card titles, FAQ questions. Maps to H3 — the level the current site is missing. Size: 22px mobile, 24px web.
   static const TextStyle heading3 = TextStyle(
     fontFamily: 'Fraunces',
     fontSize: 22,
@@ -46,45 +46,45 @@ class AppTypography {
     letterSpacing: -0.22,
   );
 
-  /// Page intros, hero subheads, pull quotes. Fixed at 20 on both platforms.
+  /// Page intros, hero subheads, pull quotes, the opening paragraph of a treatment page. Fixed at 20 on both platforms. Size: 20px mobile, 20px web. Fixed across both platforms.
   static const TextStyle bodyLarge = TextStyle(
-    fontFamily: 'Satoshi',
+    fontFamily: 'Public Sans',
     fontSize: 20,
     fontWeight: FontWeight.w400,
     height: 1.550,
     letterSpacing: 0,
   );
 
-  /// All reading text. 16px floor on both platforms.
+  /// All reading text — treatment and condition copy, card body, list items. 16px floor on both platforms. Apply italic at layer level for disclaimers. Size: 16px mobile, 16px web. Fixed across both platforms.
   static const TextStyle bodyMedium = TextStyle(
-    fontFamily: 'Satoshi',
+    fontFamily: 'Public Sans',
     fontSize: 16,
     fontWeight: FontWeight.w400,
     height: 1.625,
     letterSpacing: 0,
   );
 
-  /// Form field labels, button text, nav items. 16px both platforms.
+  /// Form field labels, button text, navigation items, and fourth-level sub-heads. Matches body size so buttons and nav read at the same weight as content. Size: 16px mobile, 16px web. Fixed across both platforms.
   static const TextStyle label = TextStyle(
-    fontFamily: 'Satoshi',
+    fontFamily: 'Public Sans',
     fontSize: 16,
     fontWeight: FontWeight.w500,
     height: 1.375,
     letterSpacing: 0,
   );
 
-  /// Card body, table cells, dense list items. 14px, fixed on both platforms.
+  /// Card body, table cells, dense list items, form helper text, image credits, footnotes and timestamps. NOT for reading copy — long-form body text stays at 16px per the platform constraint (fatigue, cognitive fog, and iOS Safari input zoom). Size: 14px, fixed on both platforms.
   static const TextStyle bodySmall = TextStyle(
-    fontFamily: 'Satoshi',
+    fontFamily: 'Public Sans',
     fontSize: 14,
     fontWeight: FontWeight.w400,
     height: 1.500,
     letterSpacing: 0,
   );
 
-  /// Category kickers. 13px both platforms.
+  /// Category kickers above headings — "TREATMENT", "CONDITION", "LONGEVITY". Uppercase, wide tracking. Orients the reader without spending a heading level. Size: 13px mobile, 13px web. Fixed across both platforms.
   static const TextStyle overline = TextStyle(
-    fontFamily: 'Satoshi',
+    fontFamily: 'Public Sans',
     fontSize: 13,
     fontWeight: FontWeight.w700,
     height: 1.231,

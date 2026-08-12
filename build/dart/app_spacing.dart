@@ -6,9 +6,6 @@
 class AppSpacingScale {
   AppSpacingScale._();
 
-  /// Space 50 (2px). Hairline optical nudges only. If this appears in a layout, something is wrong — no semantic token aliases it.
-  static const double scale50 = 2;
-
   /// Space 100 (4px). Fine-adjustment step. Aliased by spacing/micro-gap.
   static const double scale100 = 4;
 
@@ -44,9 +41,6 @@ class AppSpacingScale {
 
   /// Space 1200 (96px). Aliased by spacing/section-gap-loose on web — signature moments only.
   static const double scale1200 = 96;
-
-  /// Space 1300 (128px). Unaliased — reserved for full-bleed editorial breaks.
-  static const double scale1300 = 128;
 }
 
 class AppSpacing {

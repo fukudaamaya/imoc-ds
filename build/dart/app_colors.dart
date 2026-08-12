@@ -210,7 +210,7 @@ class AppColors {
   /// Text and icons on any dark filled surface — primary button labels on surface/action, headings on surface/brand, copy on surface/accent editorial blocks. 6.29:1 on surface/action and surface/brand (ocean/700), 8.83:1 on surface/accent (earth/700). Replaces the former text/on-brand and text/on-accent, which were the same white doing the same job.
   static const Color textOnFill = Color(0xFFFFFFFF);
 
-  /// Confirmation copy — "Your request is in, we'll call within one business day." 8.01:1 on surface/success.
+  /// Confirmation copy — "Your request is in, we’ll call within one business day." 8.01:1 on surface/success.
   static const Color textSuccess = Color(0xFF235517);
 
   /// Advisory copy — out-of-state travel notes, limited availability messages. 7.81:1 on surface/warning.
@@ -240,13 +240,13 @@ class AppColors {
   /// Disabled buttons, unavailable appointment slots, locked form steps.
   static const Color surfaceDisabled = Color(0xFFE9E6E1);
 
-  /// Ocean feature panels, condition-finder headers, quiz intro blocks. Pair with text/on-fill — 6.29:1.
+  /// Ocean feature panels, condition-finder headers, quiz intro blocks. Pair with text/on-brand — 6.29:1.
   static const Color surfaceBrand = Color(0xFF0A6B6D);
 
   /// Condition-match banners, "yes, we treat this" confirmation strips, selected filter chips. The recognition moment for chronic-illness visitors.
   static const Color surfaceBrandSubtle = Color(0xFFF0FAFA);
 
-  /// Editorial feature blocks, methodology callouts, "why physician-led" panels. Pair with text/on-fill — 8.83:1.
+  /// Editorial feature blocks, methodology callouts, "why physician-led" panels. Pair with text/on-accent — 8.83:1.
   static const Color surfaceAccent = Color(0xFF6C3F27);
 
   /// Alternating warm section washes, quote blocks, patient story sections. text/primary reads 13.43:1 here.
@@ -294,10 +294,10 @@ class AppColors {
   /// Input borders, checkbox and radio outlines, select field edges. 4.81:1 on surface/card, clears the 3:1 non-text requirement. Every form control uses this.
   static const Color borderStrong = Color(0xFF767266);
 
-  /// Keyboard focus ring on every interactive element — 2px weight, 2px offset. 6.02:1 on surface/background. Never removable.
+  /// Keyboard focus ring on every interactive element — 2px weight at 2px OFFSET. The offset is load-bearing, not decorative: it lifts the ring off the control so the ring's neighbouring colour is always the page background (6.02:1, passes WCAG 2.2 SC 1.4.11 at 3:1). Flush against a brand-filled surface it drops to 1.0:1 and disappears, because this token and surface/action both alias ocean/700. Implement as outline: 2px solid + outline-offset: 2px. Never removable, never flush.
   static const Color borderFocus = Color(0xFF0A6B6D);
 
-  /// Selected filter chips, active tab underline, chosen condition card outline. 4.25:1 on surface/background.
+  /// Secondary button outlines, selected filter chips, active tab underline, chosen condition card outline. 4.25:1 on surface/background — clears the 3:1 UI-component threshold. Pair with text/brand for the label.
   static const Color borderBrand = Color(0xFF0D8588);
 
   /// Left rule on editorial pull quotes, category dividers on treatment cards. 5.41:1 on surface/card.

@@ -28,7 +28,7 @@
         "mobile": 600,
         "web": 600,
         "type": "fontWeight",
-        "description": "Homepage hero, condition-finder landing headline, longevity programme opener. Weight 600. Same on both platforms.",
+        "description": "Homepage hero, condition-finder landing headline, longevity programme opener. The largest type in the system — one per page at most. Weight 600. Same on both platforms.",
         "figma": {
           "id": "VariableID:9116:1311",
           "collection": "Dimensions",
@@ -39,7 +39,7 @@
         "mobile": 44,
         "web": 76,
         "type": "dimension",
-        "description": "Homepage hero, condition-finder landing headline, longevity programme opener. Line height 105%: 44px mobile, 76px web.",
+        "description": "Homepage hero, condition-finder landing headline, longevity programme opener. The largest type in the system — one per page at most. Line height 105% — stored in px because Figma line-height variables are pixel values: 44px mobile, 76px web (rounded to integers for clean code export).1px mobile, 75.6px web.",
         "figma": {
           "id": "VariableID:9116:1312",
           "collection": "Dimensions",
@@ -50,7 +50,7 @@
         "mobile": -1.05,
         "web": -1.8,
         "type": "dimension",
-        "description": "Homepage hero, condition-finder landing headline, longevity programme opener. Tracking -2.5%: -1.05px mobile, -1.8px web.",
+        "description": "Homepage hero, condition-finder landing headline, longevity programme opener. The largest type in the system — one per page at most. Tracking -2.5% — stored in px: -1.05px mobile, -1.8px web.",
         "figma": {
           "id": "VariableID:9116:1313",
           "collection": "Dimensions",
@@ -75,7 +75,7 @@
         "mobile": 34,
         "web": 52,
         "type": "dimension",
-        "description": "Page titles — treatment name, condition name, \"About Dr. Kinaly\". Maps to H1. Size: 34px mobile, 52px web.",
+        "description": "Page titles — treatment name, condition name, \"About Dr. Kinaly\". One per page, maps to the H1 element. Size: 34px mobile, 52px web.",
         "figma": {
           "id": "VariableID:9116:1315",
           "collection": "Dimensions",
@@ -86,7 +86,7 @@
         "mobile": 600,
         "web": 600,
         "type": "fontWeight",
-        "description": "Page titles. Weight 600. Same on both platforms.",
+        "description": "Page titles — treatment name, condition name, \"About Dr. Kinaly\". One per page, maps to the H1 element. Weight 600. Same on both platforms.",
         "figma": {
           "id": "VariableID:9116:1316",
           "collection": "Dimensions",
@@ -97,7 +97,7 @@
         "mobile": 38,
         "web": 58,
         "type": "dimension",
-        "description": "Page titles. Line height 112%: 38px mobile, 58px web.",
+        "description": "Page titles — treatment name, condition name, \"About Dr. Kinaly\". One per page, maps to the H1 element. Line height 112% — stored in px because Figma line-height variables are pixel values: 38px mobile, 58px web (rounded to integers for clean code export).08px mobile, 58.24px web.",
         "figma": {
           "id": "VariableID:9116:1317",
           "collection": "Dimensions",
@@ -108,7 +108,7 @@
         "mobile": -0.68,
         "web": -1.04,
         "type": "dimension",
-        "description": "Page titles. Tracking -2%: -0.68px mobile, -1.04px web.",
+        "description": "Page titles — treatment name, condition name, \"About Dr. Kinaly\". One per page, maps to the H1 element. Tracking -2% — stored in px: -0.68px mobile, -1.04px web.",
         "figma": {
           "id": "VariableID:9116:1318",
           "collection": "Dimensions",
@@ -133,7 +133,7 @@
         "mobile": 28,
         "web": 36,
         "type": "dimension",
-        "description": "Section titles. Maps to H2. Size: 28px mobile, 36px web.",
+        "description": "Section titles — \"What to expect\", \"Related conditions\", \"Who this is for\". Maps to H2. Size: 28px mobile, 36px web.",
         "figma": {
           "id": "VariableID:9116:1320",
           "collection": "Dimensions",
@@ -144,7 +144,7 @@
         "mobile": 600,
         "web": 600,
         "type": "fontWeight",
-        "description": "Section titles. Weight 600. Same on both platforms.",
+        "description": "Section titles — \"What to expect\", \"Related conditions\", \"Who this is for\". Maps to H2. Weight 600. Same on both platforms.",
         "figma": {
           "id": "VariableID:9116:1321",
           "collection": "Dimensions",
@@ -155,7 +155,7 @@
         "mobile": 34,
         "web": 43,
         "type": "dimension",
-        "description": "Section titles. Line height 120%: 34px mobile, 43px web.",
+        "description": "Section titles — \"What to expect\", \"Related conditions\", \"Who this is for\". Maps to H2. Line height 120% — stored in px because Figma line-height variables are pixel values: 34px mobile, 43px web (rounded to integers for clean code export).6px mobile, 43.2px web.",
         "figma": {
           "id": "VariableID:9116:1322",
           "collection": "Dimensions",
@@ -166,7 +166,7 @@
         "mobile": -0.42,
         "web": -0.54,
         "type": "dimension",
-        "description": "Section titles. Tracking -1.5%: -0.42px mobile, -0.54px web.",
+        "description": "Section titles — \"What to expect\", \"Related conditions\", \"Who this is for\". Maps to H2. Tracking -1.5% — stored in px: -0.42px mobile, -0.54px web.",
         "figma": {
           "id": "VariableID:9116:1323",
           "collection": "Dimensions",
@@ -191,7 +191,7 @@
         "mobile": 22,
         "web": 24,
         "type": "dimension",
-        "description": "Sub-sections, card titles, FAQ questions. Maps to H3. Size: 22px mobile, 24px web.",
+        "description": "Sub-sections inside long treatment content, card titles, FAQ questions. Maps to H3 — the level the current site is missing. Size: 22px mobile, 24px web.",
         "figma": {
           "id": "VariableID:9116:1325",
           "collection": "Dimensions",
@@ -202,7 +202,7 @@
         "mobile": 600,
         "web": 600,
         "type": "fontWeight",
-        "description": "Sub-sections. Weight 600. Same on both platforms.",
+        "description": "Sub-sections inside long treatment content, card titles, FAQ questions. Maps to H3 — the level the current site is missing. Weight 600. Same on both platforms.",
         "figma": {
           "id": "VariableID:9116:1326",
           "collection": "Dimensions",
@@ -213,7 +213,7 @@
         "mobile": 28,
         "web": 31,
         "type": "dimension",
-        "description": "Sub-sections. Line height 128%: 28px mobile, 31px web.",
+        "description": "Sub-sections inside long treatment content, card titles, FAQ questions. Maps to H3 — the level the current site is missing. Line height 128% — stored in px because Figma line-height variables are pixel values: 28px mobile, 31px web (rounded to integers for clean code export).16px mobile, 30.72px web.",
         "figma": {
           "id": "VariableID:9116:1327",
           "collection": "Dimensions",
@@ -224,7 +224,7 @@
         "mobile": -0.22,
         "web": -0.24,
         "type": "dimension",
-        "description": "Sub-sections. Tracking -1%: -0.22px mobile, -0.24px web.",
+        "description": "Sub-sections inside long treatment content, card titles, FAQ questions. Maps to H3 — the level the current site is missing. Tracking -1% — stored in px: -0.22px mobile, -0.24px web.",
         "figma": {
           "id": "VariableID:9116:1328",
           "collection": "Dimensions",
@@ -234,8 +234,8 @@
     },
     "body-large": {
       "family": {
-        "mobile": "Satoshi",
-        "web": "Satoshi",
+        "mobile": "Public Sans",
+        "web": "Public Sans",
         "aliasOf": "family/body",
         "type": "fontFamily",
         "description": "Page intros, hero subheads, pull quotes, the opening paragraph of a treatment page. Fixed at 20 on both platforms. Typeface: Satoshi.",
@@ -249,7 +249,7 @@
         "mobile": 20,
         "web": 20,
         "type": "dimension",
-        "description": "Page intros, hero subheads, pull quotes. Fixed at 20 on both platforms.",
+        "description": "Page intros, hero subheads, pull quotes, the opening paragraph of a treatment page. Fixed at 20 on both platforms. Size: 20px mobile, 20px web. Fixed across both platforms.",
         "figma": {
           "id": "VariableID:9116:1330",
           "collection": "Dimensions",
@@ -260,7 +260,7 @@
         "mobile": 400,
         "web": 400,
         "type": "fontWeight",
-        "description": "Page intros. Weight 400. Same on both platforms.",
+        "description": "Page intros, hero subheads, pull quotes, the opening paragraph of a treatment page. Fixed at 20 on both platforms. Weight 400. Same on both platforms.",
         "figma": {
           "id": "VariableID:9116:1331",
           "collection": "Dimensions",
@@ -271,7 +271,7 @@
         "mobile": 31,
         "web": 31,
         "type": "dimension",
-        "description": "Page intros. Line height 155%: 31px both platforms.",
+        "description": "Page intros, hero subheads, pull quotes, the opening paragraph of a treatment page. Fixed at 20 on both platforms. Line height 155% — stored in px because Figma line-height variables are pixel values: 31px mobile, 31px web (rounded to integers for clean code export).",
         "figma": {
           "id": "VariableID:9116:1332",
           "collection": "Dimensions",
@@ -282,7 +282,7 @@
         "mobile": 0,
         "web": 0,
         "type": "dimension",
-        "description": "Page intros. Tracking 0%.",
+        "description": "Page intros, hero subheads, pull quotes, the opening paragraph of a treatment page. Fixed at 20 on both platforms. Tracking 0% — stored in px: 0px mobile, 0px web.",
         "figma": {
           "id": "VariableID:9116:1333",
           "collection": "Dimensions",
@@ -292,8 +292,8 @@
     },
     "body-medium": {
       "family": {
-        "mobile": "Satoshi",
-        "web": "Satoshi",
+        "mobile": "Public Sans",
+        "web": "Public Sans",
         "aliasOf": "family/body",
         "type": "fontFamily",
         "description": "All reading text — treatment and condition copy, card body, list items. 16px floor on both platforms. Apply italic at layer level for disclaimers. Typeface: Satoshi.",
@@ -307,7 +307,7 @@
         "mobile": 16,
         "web": 16,
         "type": "dimension",
-        "description": "All reading text. 16px floor on both platforms.",
+        "description": "All reading text — treatment and condition copy, card body, list items. 16px floor on both platforms. Apply italic at layer level for disclaimers. Size: 16px mobile, 16px web. Fixed across both platforms.",
         "figma": {
           "id": "VariableID:9116:1335",
           "collection": "Dimensions",
@@ -318,7 +318,7 @@
         "mobile": 400,
         "web": 400,
         "type": "fontWeight",
-        "description": "All reading text. Weight 400. Same on both platforms.",
+        "description": "All reading text — treatment and condition copy, card body, list items. 16px floor on both platforms. Apply italic at layer level for disclaimers. Weight 400. Same on both platforms.",
         "figma": {
           "id": "VariableID:9116:1336",
           "collection": "Dimensions",
@@ -329,7 +329,7 @@
         "mobile": 26,
         "web": 26,
         "type": "dimension",
-        "description": "All reading text. Line height 163%: 26px both platforms.",
+        "description": "All reading text — treatment and condition copy, card body, list items. 16px floor on both platforms. Apply italic at layer level for disclaimers. Line height 163% — stored in px because Figma line-height variables are pixel values: 26px mobile, 26px web (rounded to integers for clean code export).08px mobile, 26.08px web.",
         "figma": {
           "id": "VariableID:9116:1337",
           "collection": "Dimensions",
@@ -340,7 +340,7 @@
         "mobile": 0,
         "web": 0,
         "type": "dimension",
-        "description": "All reading text. Tracking 0%.",
+        "description": "All reading text — treatment and condition copy, card body, list items. 16px floor on both platforms. Apply italic at layer level for disclaimers. Tracking 0% — stored in px: 0px mobile, 0px web.",
         "figma": {
           "id": "VariableID:9116:1338",
           "collection": "Dimensions",
@@ -350,8 +350,8 @@
     },
     "label": {
       "family": {
-        "mobile": "Satoshi",
-        "web": "Satoshi",
+        "mobile": "Public Sans",
+        "web": "Public Sans",
         "aliasOf": "family/body",
         "type": "fontFamily",
         "description": "Form field labels, button text, navigation items, and fourth-level sub-heads. Matches body size so buttons and nav read at the same weight as content. Typeface: Satoshi.",
@@ -365,7 +365,7 @@
         "mobile": 16,
         "web": 16,
         "type": "dimension",
-        "description": "Form field labels, button text, nav items. 16px both platforms.",
+        "description": "Form field labels, button text, navigation items, and fourth-level sub-heads. Matches body size so buttons and nav read at the same weight as content. Size: 16px mobile, 16px web. Fixed across both platforms.",
         "figma": {
           "id": "VariableID:9116:1340",
           "collection": "Dimensions",
@@ -376,7 +376,7 @@
         "mobile": 500,
         "web": 500,
         "type": "fontWeight",
-        "description": "Form field labels. Weight 500. Same on both platforms.",
+        "description": "Form field labels, button text, navigation items, and fourth-level sub-heads. Matches body size so buttons and nav read at the same weight as content. Weight 500. Same on both platforms.",
         "figma": {
           "id": "VariableID:9116:1341",
           "collection": "Dimensions",
@@ -387,7 +387,7 @@
         "mobile": 22,
         "web": 22,
         "type": "dimension",
-        "description": "Form field labels. Line height 140%: 22px both platforms.",
+        "description": "Form field labels, button text, navigation items, and fourth-level sub-heads. Matches body size so buttons and nav read at the same weight as content. Line height 140% — stored in px because Figma line-height variables are pixel values: 22px mobile, 22px web (rounded to integers for clean code export).4px mobile, 22.4px web.",
         "figma": {
           "id": "VariableID:9116:1342",
           "collection": "Dimensions",
@@ -398,7 +398,7 @@
         "mobile": 0,
         "web": 0,
         "type": "dimension",
-        "description": "Form field labels. Tracking 0%.",
+        "description": "Form field labels, button text, navigation items, and fourth-level sub-heads. Matches body size so buttons and nav read at the same weight as content. Tracking 0% — stored in px: 0px mobile, 0px web.",
         "figma": {
           "id": "VariableID:9116:1343",
           "collection": "Dimensions",
@@ -408,8 +408,8 @@
     },
     "body-small": {
       "family": {
-        "mobile": "Satoshi",
-        "web": "Satoshi",
+        "mobile": "Public Sans",
+        "web": "Public Sans",
         "aliasOf": "family/body",
         "type": "fontFamily",
         "description": "Card body, table cells, dense list items, form helper text, image credits, footnotes and timestamps. NOT for reading copy — long-form body text stays at 16px per the platform constraint (fatigue, cognitive fog, and iOS Safari input zoom). Typeface: Satoshi.",
@@ -423,7 +423,7 @@
         "mobile": 14,
         "web": 14,
         "type": "dimension",
-        "description": "Card body, table cells, dense list items. 14px, fixed on both platforms.",
+        "description": "Card body, table cells, dense list items, form helper text, image credits, footnotes and timestamps. NOT for reading copy — long-form body text stays at 16px per the platform constraint (fatigue, cognitive fog, and iOS Safari input zoom). Size: 14px, fixed on both platforms.",
         "figma": {
           "id": "VariableID:9116:1345",
           "collection": "Dimensions",
@@ -434,7 +434,7 @@
         "mobile": 400,
         "web": 400,
         "type": "fontWeight",
-        "description": "Card body etc. Weight 400. Same on both platforms.",
+        "description": "Card body, table cells, dense list items, form helper text, image credits, footnotes and timestamps. NOT for reading copy — long-form body text stays at 16px per the platform constraint (fatigue, cognitive fog, and iOS Safari input zoom). Weight 400. Same on both platforms.",
         "figma": {
           "id": "VariableID:9116:1346",
           "collection": "Dimensions",
@@ -445,7 +445,7 @@
         "mobile": 21,
         "web": 21,
         "type": "dimension",
-        "description": "Card body etc. Line height 150%: 21px on both platforms.",
+        "description": "Card body, table cells, dense list items, form helper text, image credits, footnotes and timestamps. NOT for reading copy — long-form body text stays at 16px per the platform constraint (fatigue, cognitive fog, and iOS Safari input zoom). Line height 150% — stored in px because Figma line-height variables are pixel values: 21px on both platforms.",
         "figma": {
           "id": "VariableID:9116:1347",
           "collection": "Dimensions",
@@ -456,7 +456,7 @@
         "mobile": 0,
         "web": 0,
         "type": "dimension",
-        "description": "Card body etc. Tracking 0.",
+        "description": "Card body, table cells, dense list items, form helper text, image credits, footnotes and timestamps. NOT for reading copy — long-form body text stays at 16px per the platform constraint (fatigue, cognitive fog, and iOS Safari input zoom). Tracking 0.",
         "figma": {
           "id": "VariableID:9116:1348",
           "collection": "Dimensions",
@@ -466,8 +466,8 @@
     },
     "overline": {
       "family": {
-        "mobile": "Satoshi",
-        "web": "Satoshi",
+        "mobile": "Public Sans",
+        "web": "Public Sans",
         "aliasOf": "family/body",
         "type": "fontFamily",
         "description": "Category kickers above headings — \"TREATMENT\", \"CONDITION\", \"LONGEVITY\". Uppercase, wide tracking. Orients the reader without spending a heading level. Typeface: Satoshi.",
@@ -481,7 +481,7 @@
         "mobile": 13,
         "web": 13,
         "type": "dimension",
-        "description": "Category kickers. 13px both platforms.",
+        "description": "Category kickers above headings — \"TREATMENT\", \"CONDITION\", \"LONGEVITY\". Uppercase, wide tracking. Orients the reader without spending a heading level. Size: 13px mobile, 13px web. Fixed across both platforms.",
         "figma": {
           "id": "VariableID:9116:1350",
           "collection": "Dimensions",
@@ -492,7 +492,7 @@
         "mobile": 700,
         "web": 700,
         "type": "fontWeight",
-        "description": "Category kickers. Weight 700 — Bold, because Satoshi has no SemiBold. Same on both platforms.",
+        "description": "Category kickers above headings — \"TREATMENT\", \"CONDITION\", \"LONGEVITY\". Uppercase, wide tracking. Orients the reader without spending a heading level. Weight 700. Same on both platforms.",
         "figma": {
           "id": "VariableID:9116:1351",
           "collection": "Dimensions",
@@ -503,7 +503,7 @@
         "mobile": 16,
         "web": 16,
         "type": "dimension",
-        "description": "Category kickers. Line height 120%: 16px both platforms.",
+        "description": "Category kickers above headings — \"TREATMENT\", \"CONDITION\", \"LONGEVITY\". Uppercase, wide tracking. Orients the reader without spending a heading level. Line height 120% — stored in px because Figma line-height variables are pixel values: 16px mobile, 16px web (rounded to integers for clean code export).6px mobile, 15.6px web.",
         "figma": {
           "id": "VariableID:9116:1352",
           "collection": "Dimensions",
@@ -514,7 +514,7 @@
         "mobile": 1.04,
         "web": 1.04,
         "type": "dimension",
-        "description": "Category kickers. Tracking 8%: 1.04px both platforms.",
+        "description": "Category kickers above headings — \"TREATMENT\", \"CONDITION\", \"LONGEVITY\". Uppercase, wide tracking. Orients the reader without spending a heading level. Tracking 8% — stored in px: 1.04px mobile, 1.04px web.",
         "figma": {
           "id": "VariableID:9116:1353",
           "collection": "Dimensions",

@@ -1,0 +1,66 @@
+[
+  {
+    "tokenName": "typography/family/body",
+    "collection": "Primitives",
+    "oldValue": "Satoshi",
+    "newValue": "Public Sans",
+    "date": "2026-08-12",
+    "status": "changed"
+  },
+  {
+    "tokenName": "spacing/50",
+    "collection": "Primitives",
+    "oldValue": "2px",
+    "newValue": null,
+    "date": "2026-08-12",
+    "status": "removed"
+  },
+  {
+    "tokenName": "spacing/1300",
+    "collection": "Primitives",
+    "oldValue": "128px",
+    "newValue": null,
+    "date": "2026-08-12",
+    "status": "removed"
+  },
+  {
+    "tokenName": "typography/body-large/family",
+    "collection": "Dimensions",
+    "oldValue": "mobile: Satoshi, web: Satoshi",
+    "newValue": "mobile: Public Sans, web: Public Sans",
+    "date": "2026-08-12",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/body-medium/family",
+    "collection": "Dimensions",
+    "oldValue": "mobile: Satoshi, web: Satoshi",
+    "newValue": "mobile: Public Sans, web: Public Sans",
+    "date": "2026-08-12",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/label/family",
+    "collection": "Dimensions",
+    "oldValue": "mobile: Satoshi, web: Satoshi",
+    "newValue": "mobile: Public Sans, web: Public Sans",
+    "date": "2026-08-12",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/body-small/family",
+    "collection": "Dimensions",
+    "oldValue": "mobile: Satoshi, web: Satoshi",
+    "newValue": "mobile: Public Sans, web: Public Sans",
+    "date": "2026-08-12",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/overline/family",
+    "collection": "Dimensions",
+    "oldValue": "mobile: Satoshi, web: Satoshi",
+    "newValue": "mobile: Public Sans, web: Public Sans",
+    "date": "2026-08-12",
+    "status": "changed"
+  }
+]

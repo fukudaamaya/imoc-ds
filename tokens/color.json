@@ -196,7 +196,7 @@
         "SHAPE_FILL",
         "TEXT_FILL"
       ],
-      "description": "Confirmation copy — \"Your request is in, we'll call within one business day.\" 8.01:1 on surface/success.",
+      "description": "Confirmation copy — \"Your request is in, we’ll call within one business day.\" 8.01:1 on surface/success.",
       "figma": {
         "id": "VariableID:9110:1262",
         "collection": "Colour",
@@ -368,7 +368,7 @@
         "FRAME_FILL",
         "SHAPE_FILL"
       ],
-      "description": "Ocean feature panels, condition-finder headers, quiz intro blocks. Pair with text/on-fill — 6.29:1.",
+      "description": "Ocean feature panels, condition-finder headers, quiz intro blocks. Pair with text/on-brand — 6.29:1.",
       "figma": {
         "id": "VariableID:9110:1272",
         "collection": "Colour",
@@ -402,7 +402,7 @@
         "FRAME_FILL",
         "SHAPE_FILL"
       ],
-      "description": "Editorial feature blocks, methodology callouts, \"why physician-led\" panels. Pair with text/on-fill — 8.83:1.",
+      "description": "Editorial feature blocks, methodology callouts, \"why physician-led\" panels. Pair with text/on-accent — 8.83:1.",
       "figma": {
         "id": "VariableID:9110:1274",
         "collection": "Colour",
@@ -671,7 +671,7 @@
       "scopes": [
         "STROKE_COLOR"
       ],
-      "description": "Keyboard focus ring on every interactive element — 2px weight, 2px offset. 6.02:1 on surface/background. Never removable.",
+      "description": "Keyboard focus ring on every interactive element — 2px weight at 2px OFFSET. The offset is load-bearing, not decorative: it lifts the ring off the control so the ring's neighbouring colour is always the page background (6.02:1, passes WCAG 2.2 SC 1.4.11 at 3:1). Flush against a brand-filled surface it drops to 1.0:1 and disappears, because this token and surface/action both alias ocean/700. Implement as outline: 2px solid + outline-offset: 2px. Never removable, never flush.",
       "figma": {
         "id": "VariableID:9110:1287",
         "collection": "Colour",
@@ -687,7 +687,7 @@
       "scopes": [
         "STROKE_COLOR"
       ],
-      "description": "Selected filter chips, active tab underline, chosen condition card outline. 4.25:1 on surface/background.",
+      "description": "Secondary button outlines, selected filter chips, active tab underline, chosen condition card outline. 4.25:1 on surface/background — clears the 3:1 UI-component threshold. Pair with text/brand for the label.",
       "figma": {
         "id": "VariableID:9110:1288",
         "collection": "Colour",

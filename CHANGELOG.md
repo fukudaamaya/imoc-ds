@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-12 — Figma sync
+
+0 added, 6 changed, 2 removed (8 tokens touched).
+
+Full diff: [changelog/diffs/2026-08-12.json](changelog/diffs/2026-08-12.json)
+
 Token changes are tracked automatically by `npm run sync-figma`. Each run diffs the live
 Figma variables against `tokens/*.json`, writes a dated diff to `changelog/diffs/`, updates
 the token JSON, and prepends a summary here. See the **Changelog** page in Storybook for a
@@ -18,4 +24,3 @@ Initial import from the IMOC DS Figma file (`83u6tgRpNEq3yYZetZBpQ9`). 188 token
   modes.
 
 Full diff: [changelog/diffs/2026-08-06.json](changelog/diffs/2026-08-06.json)
-
