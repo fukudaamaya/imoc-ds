@@ -134,24 +134,6 @@ export function flatTypeStyles(): FlatTypeStyle[] {
   });
 }
 
-// Field-naming mirrors style-dictionary/lib.mjs's toCamel()/dartFieldName() exactly, so
-// copy-to-clipboard always matches what's actually in build/dart/*.dart.
-function camelFromKey(key: string): string {
-  return key
-    .split('-')
-    .map((w, i) => (i === 0 ? w : w[0].toUpperCase() + w.slice(1)))
-    .join('');
-}
-
-/** e.g. dartSemanticColorRef('surface', 'action') -> "ImocDsTokens.of(context).surfaceAction" */
-export function dartSemanticColorRef(group: string, key: string): string {
-  return `ImocDsTokens.of(context).${camelFromKey(`${group}-${key}`)}`;
-}
-
-/** e.g. dartPrimitiveColorRef('ocean', '50') -> "AppColorPrimitives.ocean50" */
-export function dartPrimitiveColorRef(group: string, step: string): string {
-  return `AppColorPrimitives.${group}${step}`;
-}
 
 /**
  * Every primitive color description starts with its own name, e.g. "Ocean 50. Lightest
@@ -164,21 +146,3 @@ export function cleanPrimitiveDescription(description: string, group: string, st
   return description.startsWith(prefix) ? description.slice(prefix.length) : description;
 }
 
-/** e.g. dartTypeStyleRef('heading-1') -> "AppTypography.heading1" */
-export function dartTypeStyleRef(styleName: string): string {
-  return `AppTypography.${camelFromKey(styleName)}`;
-}
-
-/** e.g. dartDimensionRef('spacing', 'semantic', 'page-margin') -> "AppSpacing.pageMargin" */
-export function dartDimensionRef(group: 'spacing' | 'radius' | 'layout', kind: 'primitive' | 'semantic' | null, key: string): string {
-  const classes: Record<string, string> = {
-    'spacing.primitive': 'AppSpacingScale',
-    'spacing.semantic': 'AppSpacing',
-    'radius.primitive': 'AppRadiusScale',
-    'radius.semantic': 'AppRadius',
-    'layout.null': 'AppLayout',
-  };
-  const className = classes[`${group}.${kind}`];
-  const field = kind === 'primitive' ? `scale${key[0].toUpperCase()}${key.slice(1)}` : camelFromKey(key);
-  return `${className}.${field}`;
-}

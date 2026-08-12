@@ -3,7 +3,7 @@ import { CopyButton } from './CopyButton';
 import { FigmaBadge } from './FigmaBadge';
 import { UsedInChip } from './UsedInChip';
 import type { PrimitiveColorToken, SemanticColorToken } from '../lib/tokens';
-import { dartPrimitiveColorRef, dartSemanticColorRef, cleanPrimitiveDescription } from '../lib/tokens';
+import { cleanPrimitiveDescription } from '../lib/tokens';
 
 export function PrimitiveSwatch({ group, step, token }: { group: string; step: string; token: PrimitiveColorToken }) {
   return (
@@ -20,7 +20,6 @@ export function PrimitiveSwatch({ group, step, token }: { group: string; step: s
       </div>
       <div className="swatch-row-actions">
         <CopyButton kind="css" label="CSS" value={`var(${token.figma.codeSyntax})`} />
-        <CopyButton kind="dart" label="Dart" value={dartPrimitiveColorRef(group, step)} />
       </div>
     </div>
   );
@@ -51,7 +50,6 @@ export function SemanticSwatch({ group, tokenKey, token }: { group: string; toke
         )}
         <div className="action-row">
           <CopyButton kind="css" label="CSS" value={`var(${token.figma.codeSyntax})`} />
-          <CopyButton kind="dart" label="Dart" value={dartSemanticColorRef(group, tokenKey)} />
           <FigmaBadge />
         </div>
         <UsedInChip tokenName={fullName} />

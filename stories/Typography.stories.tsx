@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import './lib/doc-ui.css';
-import { flatTypeStyles, dartTypeStyleRef } from './lib/tokens';
+import { flatTypeStyles } from './lib/tokens';
 import { usePlatform } from './lib/usePlatform';
 import { CopyButton } from './components/CopyButton';
 import { FigmaBadge } from './components/FigmaBadge';
@@ -117,7 +117,6 @@ function TypographyPage() {
 
             <div className="action-row" style={{ marginTop: 14 }}>
               <CopyButton kind="css" label="CSS" value={css(s.name)} />
-              <CopyButton kind="dart" label="Dart" value={dartTypeStyleRef(s.name)} />
             </div>
           </div>
         );

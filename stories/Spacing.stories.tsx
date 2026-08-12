@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import './lib/doc-ui.css';
-import { dimensions, dartDimensionRef } from './lib/tokens';
+import { dimensions } from './lib/tokens';
 import { usePlatform } from './lib/usePlatform';
 import { CopyButton } from './components/CopyButton';
 import { FigmaBadge } from './components/FigmaBadge';
@@ -19,13 +19,11 @@ function RulerRow({
   value,
   description,
   cssVar,
-  dartRef,
 }: {
   name: string;
   value: number;
   description: string;
   cssVar: string;
-  dartRef: string;
 }) {
   const pct = Math.min(100, (value / MAX_BAR_REF) * 100);
   return (
@@ -42,7 +40,6 @@ function RulerRow({
       </p>
       <div className="action-row" style={{ marginLeft: 236 }}>
         <CopyButton kind="css" label="CSS" value={`var(${cssVar})`} />
-        <CopyButton kind="dart" label="Dart" value={dartRef} />
       </div>
     </div>
   );
@@ -75,7 +72,6 @@ function SpacingPage() {
             value={t[platform] as number}
             description={t.description}
             cssVar={t.figma.codeSyntax}
-            dartRef={dartDimensionRef('spacing', 'semantic', key)}
           />
         );
       })}
@@ -90,7 +86,6 @@ function SpacingPage() {
             <div style={{ fontSize: 12, fontWeight: 500, color: 'var(--imoc-text-tertiary)' }}>{t.web}px</div>
             <div className="action-row">
               <CopyButton kind="css" label="CSS" value={`var(${t.figma.codeSyntax})`} />
-              <CopyButton kind="dart" label="Dart" value={dartDimensionRef('radius', 'semantic', key)} />
             </div>
           </div>
         ))}
@@ -113,7 +108,6 @@ function SpacingPage() {
             <p className="swatch-desc">{t.description}</p>
             <div className="action-row">
               <CopyButton kind="css" label="CSS" value={`var(${t.figma.codeSyntax})`} />
-              <CopyButton kind="dart" label="Dart" value={dartDimensionRef('layout', null, key)} />
             </div>
           </div>
         ))}
