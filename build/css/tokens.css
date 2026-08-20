@@ -114,7 +114,7 @@
   --imoc-type-heading-1-family: "Fraunces";
   --imoc-type-heading-1-size: 52px;
   --imoc-type-heading-1-weight: 600;
-  --imoc-type-heading-1-line-height: 58px;
+  --imoc-type-heading-1-line-height: 62px;
   --imoc-type-heading-1-letter-spacing: -1.04px;
   --imoc-type-heading-2-family: "Fraunces";
   --imoc-type-heading-2-size: 36px;
@@ -157,16 +157,12 @@
   --imoc-space-400: 16px;
   --imoc-space-500: 24px;
   --imoc-space-600: 32px;
-  --imoc-space-700: 40px;
-  --imoc-space-800: 48px;
-  --imoc-space-900: 56px;
-  --imoc-space-1000: 64px;
-  --imoc-space-1100: 80px;
-  --imoc-space-1200: 96px;
+  --imoc-space-700: 48px;
+  --imoc-space-800: 64px;
+  --imoc-space-900: 80px;
   --imoc-spacing-page-margin: 32px;
   --imoc-spacing-section-gap: 80px;
-  --imoc-spacing-section-gap-loose: 96px;
-  --imoc-spacing-block-gap: 40px;
+  --imoc-spacing-block-gap: 48px;
   --imoc-spacing-card-padding: 24px;
   --imoc-spacing-card-padding-loose: 32px;
   --imoc-spacing-content-gap: 16px;
@@ -203,7 +199,7 @@
   --imoc-type-heading-1-family: "Fraunces";
   --imoc-type-heading-1-size: 34px;
   --imoc-type-heading-1-weight: 600;
-  --imoc-type-heading-1-line-height: 38px;
+  --imoc-type-heading-1-line-height: 41px;
   --imoc-type-heading-1-letter-spacing: -0.68px;
   --imoc-type-heading-2-family: "Fraunces";
   --imoc-type-heading-2-size: 28px;
@@ -242,7 +238,6 @@
   --imoc-type-overline-letter-spacing: 1.04px;
   --imoc-spacing-page-margin: 16px;
   --imoc-spacing-section-gap: 48px;
-  --imoc-spacing-section-gap-loose: 64px;
   --imoc-spacing-block-gap: 32px;
   --imoc-spacing-card-padding: 16px;
   --imoc-spacing-card-padding-loose: 24px;

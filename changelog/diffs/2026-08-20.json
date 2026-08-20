@@ -1,0 +1,515 @@
+[
+  {
+    "tokenName": "color/earth/100",
+    "collection": "Primitives",
+    "field": "description",
+    "oldValue": "Earth 100. Aliased by surface/accent-subtle for alternating warm section washes, quote blocks, story sections.",
+    "newValue": "Earth 100. Aliased by surface/accent-subtle — Badge (Type=accent) and Feature Card label chip backgrounds.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "spacing/700",
+    "collection": "Primitives",
+    "field": "value",
+    "oldValue": "40px",
+    "newValue": "48px",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "spacing/700",
+    "collection": "Primitives",
+    "field": "description",
+    "oldValue": "Space 700 (40px). Aliased by spacing/block-gap on web.",
+    "newValue": "Space 700 (48px). Aliased by spacing/section-gap on mobile and spacing/block-gap on web.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "spacing/800",
+    "collection": "Primitives",
+    "field": "value",
+    "oldValue": "48px",
+    "newValue": "64px",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "spacing/800",
+    "collection": "Primitives",
+    "field": "description",
+    "oldValue": "Space 800 (48px). Aliased by spacing/section-gap on mobile. Matches the platform constraint for mobile section padding.",
+    "newValue": "Space 800 (64px). Unaliased — kept in reserve after spacing/section-gap-loose was removed.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "spacing/900",
+    "collection": "Primitives",
+    "field": "value",
+    "oldValue": "56px",
+    "newValue": "80px",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "spacing/900",
+    "collection": "Primitives",
+    "field": "description",
+    "oldValue": "Space 900 (56px). Unaliased — available between section-gap steps.",
+    "newValue": "Space 900 (80px). Aliased by spacing/section-gap on web. Matches the platform constraint for desktop section padding.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "spacing/1000",
+    "collection": "Primitives",
+    "field": "value",
+    "oldValue": "64px",
+    "newValue": null,
+    "date": "2026-08-20",
+    "status": "removed"
+  },
+  {
+    "tokenName": "spacing/1100",
+    "collection": "Primitives",
+    "field": "value",
+    "oldValue": "80px",
+    "newValue": null,
+    "date": "2026-08-20",
+    "status": "removed"
+  },
+  {
+    "tokenName": "spacing/1200",
+    "collection": "Primitives",
+    "field": "value",
+    "oldValue": "96px",
+    "newValue": null,
+    "date": "2026-08-20",
+    "status": "removed"
+  },
+  {
+    "tokenName": "text/secondary",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Card subtitles, treatment duration lines, metadata, breadcrumbs, \"last updated\" stamps. 6.57:1 on surface/page, 6.86:1 on surface/card.",
+    "newValue": "Documentation-page labels and table headers on the Foundations pages (Colors, Spacing, Typography). Not yet used on any live product component — \"card subtitles, treatment duration, breadcrumbs\" describes planned future use, not current. Breadcrumb uses text/link, not this token. 6.57:1 on surface/page, 6.86:1 on surface/card.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/tertiary",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Helper text under form inputs, footnotes, supporting detail inside cards. 4.60:1 on surface/page, 4.81:1 on surface/card — passes AA body.",
+    "newValue": "Helper text under form inputs, footnotes, supporting detail inside cards. 4.60:1 on surface/page, 4.81:1 on surface/card — passes AA body. Shares its value with text/placeholder today (both alias neutral/600); kept as separate tokens since they mean different things even when they render the same.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/inverse",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Body copy and headings in the footer and dark longevity sections. 17.88:1 on surface/inverse.",
+    "newValue": "Body copy in the Footer — brand blurb, nav link columns, Practice details, contact info. \"Dark longevity sections\" is planned, not yet built. 17.88:1 on surface/inverse (neutral/50, warm off-white — matches the reduced-glare logic of surface/page, just inverted).",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/link",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Inline links in body copy, \"see related treatments\", in-page nav links. 6.02:1 on surface/page, 6.29:1 on surface/card. Always underlined — colour is never the sole cue.",
+    "newValue": "Breadcrumb items, Plain-variant button labels, card \"Explore →\" affordances, and inline links within body paragraphs. 6.02:1 on surface/page, 6.29:1 on surface/card. Underlined only when used inline within body copy, where colour alone isn't a sufficient cue against surrounding text. Breadcrumbs, buttons, and card affordances read as interactive via their component context (position, icon, being a button) and don't carry an underline.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/link-inverse",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Links inside the footer and dark longevity sections. 9.51:1 on surface/inverse.",
+    "newValue": "Not currently used in any built component. Use case undecided.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/brand",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Ocean-coloured headings, eyebrow labels above section titles, step numerals in the intake flow. 6.02:1 on surface/page.",
+    "newValue": "Overline eyebrow labels above section titles (not the headings themselves), Badge label colour (Type=brand), Secondary button label, and the active-state Nav Link label — pairs with surface/brand's active indicator. 6.02:1 on surface/page.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/success",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Confirmation copy — \"Your request is in, we’ll call within one business day.\" 8.01:1 on surface/success.",
+    "newValue": "Confirmation copy — \"Your request is in, we’ll call within one business day.\" 8.01:1 on surface/success. Also the label colour of the success Badge.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/warning",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Advisory copy — out-of-state travel notes, limited availability messages. 7.81:1 on surface/warning.",
+    "newValue": "Advisory copy — out-of-state travel notes, limited availability messages. 7.81:1 on surface/warning. Also the label colour of the warning Badge.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/error",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Validation messages beside the failing field. Supportive tone, never blaming. 8.89:1 on surface/error.",
+    "newValue": "Validation messages beside the failing field. Supportive tone, never blaming. 8.89:1 on surface/error. Also the label colour of the error Badge.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/info",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Explanatory copy — cash-pay policy, what to bring, telehealth eligibility. 8.94:1 on surface/info.",
+    "newValue": "Explanatory copy — cash-pay policy, what to bring, telehealth eligibility. 8.94:1 on surface/info. Also the label colour of the info Badge.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/placeholder",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Placeholder text inside empty form fields — \"you@example.com\", \"Search conditions\". 4.81:1 on surface/input. Distinct from text/tertiary (helper text below a field) and text/disabled (inactive control).",
+    "newValue": "Placeholder text inside empty form fields — \"you@example.com\", \"Search conditions\". 4.81:1 on surface/input. Currently aliases the same primitive as text/tertiary (neutral/600) — kept as a separate token because placeholder and helper text are different semantic roles (empty-state hint vs. supporting content) even though they render identically today. A lighter placeholder-specific value was considered but neutral/500 only clears 2.81:1 on surface/input, below the 3:1 floor — not worth the contrast trade-off for visual distinction alone.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/card",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Treatment cards, condition cards, practitioner bio panels, FAQ accordions. Lifts off the page without needing a border.",
+    "newValue": "Treatment and condition cards, practitioner bio panels, FAQ accordions. Lifts off the page without needing a border.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/inverse",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Footer, longevity programme sections, testimonial features. The primary aspirational register for longevity-seeking visitors.",
+    "newValue": "Not currently used in any built component. Use case undecided.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/brand",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Ocean feature panels, condition-finder headers, quiz intro blocks. Pair with text/on-brand — 6.29:1.",
+    "newValue": "Active/selected-state indicator on Nav Link (the underline bar) — Navigation, Dropdown menu, Footer nav links. Aliases ocean/700 in Clinic, flora/300 in Supplement — same primitive as surface/action, text/link, text/brand, border/focus.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/brand-subtle",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Condition-match banners, \"yes, we treat this\" confirmation strips, selected filter chips. The recognition moment for chronic-illness visitors.",
+    "newValue": "Badge background (Type=brand), Feature Card icon-frame background.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/accent",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Editorial feature blocks, methodology callouts, \"why physician-led\" panels. Pair with text/on-accent — 8.83:1.",
+    "newValue": "Not currently used in any built component. Aliases earth/700 — reserved for future editorial/feature-panel use.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/accent-subtle",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Alternating warm section washes, quote blocks, patient story sections. text/primary reads 13.43:1 here.",
+    "newValue": "Badge background (Type=accent), Feature Card label chip background.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/action",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Primary buttons — \"Book an appointment\", \"Start intake\". NOT ocean/600: white on 600 measures 4.44:1 and fails body text.",
+    "newValue": "Primary buttons — \"Book an appointment\", \"Start intake\". NOT ocean/600: white on 600 measures 4.44:1 and fails body text. In Supplement mode aliases flora/300 — primary CTA colour for the supplement line.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/success",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Booking confirmed panels, \"request received\" states, saved-intake banners.",
+    "newValue": "Booking confirmed panels, \"request received\" states, saved-intake banners. Also the background colour of the success Badge.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/warning",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Out-of-state logistics notices, \"call to confirm availability\" strips.",
+    "newValue": "Out-of-state logistics notices, \"call to confirm availability\" strips. Also the background colour of the warning Badge.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/error",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Form validation summaries, failed submission banners.",
+    "newValue": "Form validation summaries, failed submission banners. Also the background colour of the error Badge.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/info",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Cash-pay policy notes, what-to-bring callouts, first-visit and telehealth explainers.",
+    "newValue": "Cash-pay policy notes, what-to-bring callouts, first-visit and telehealth explainers. Also the background colour of the info Badge.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/hover",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Hover state on clickable cards and list rows — treatment cards, condition rows, FAQ headers. Shares a value with surface/disabled today but is a distinct state that will diverge. Pair with an elevation lift; hover is never the only route to content.",
+    "newValue": "Hover state on nav items, dropdown items, secondary/plain buttons, and text field inputs.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/subtle",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Dividers between list items, table row rules, section separators. Decorative at 1.19:1 — exempt from 3:1 because it carries no information.",
+    "newValue": "Dividers between list items, table row rules, section separators. Decorative at 1.19:1 — exempt from 3:1 because it carries no information. Also used as the outer edge of the Dropdown panel (Simple List, Mega Menu) — a structural boundary rather than a decorative divider, though currently bound to the same subtle value.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/default",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Card outlines, non-interactive container edges. 1.51:1 on surface/card — never the sole indicator of an interactive control.",
+    "newValue": "Card outlines, non-interactive container edges, and Text Field's default (resting) border. 1.51:1 on surface/card. Note: on Text Field, this is currently the only visual affordance that the control is interactive until hover/focus changes it — that's in tension with this token's general rule of never being the sole indicator of an interactive control. Flagged, not yet resolved.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/strong",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Input borders, checkbox and radio outlines, select field edges. 4.81:1 on surface/card, clears the 3:1 non-text requirement. Every form control uses this.",
+    "newValue": "Text Field's Active-state border, Feature Card's Hover-state border. 4.81:1 on surface/card, clears the 3:1 non-text requirement. Not currently used on checkboxes, radios, or selects — none of those components exist yet.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/brand",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Secondary button outlines, selected filter chips, active tab underline, chosen condition card outline. 4.25:1 on surface/background — clears the 3:1 UI-component threshold. Pair with text/brand for the label.",
+    "newValue": "Secondary button outline (all states), Badge border (Type=brand). 4.25:1 on surface/background — clears the 3:1 UI-component threshold. Pair with text/brand for the label. Not currently used for filter chips, tab underlines, or condition-card outlines — none of those components exist yet.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/accent",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Left rule on editorial pull quotes, category dividers on treatment cards. 5.41:1 on surface/card.",
+    "newValue": "Badge border (Type=accent), Feature Card label chip border. Not currently used for pull-quote rules or treatment-card dividers — no such component exists yet.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/success",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Left rule on confirmation panels, validated field outline. 3.93:1 on surface/background.",
+    "newValue": "Badge border (Type=success). Not currently used as a confirmation-panel left rule — no such component exists yet.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/warning",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Left rule on advisory panels. 3.66:1 on surface/background.",
+    "newValue": "Badge border (Type=warning). Not currently used as an advisory-panel left rule — no such component exists yet.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/info",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Left rule on informational callouts. 4.94:1 on surface/background.",
+    "newValue": "Badge border (Type=info). Not currently used as an informational-callout left rule — no such component exists yet.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/display/line-height",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Homepage hero, condition-finder landing headline, longevity programme opener. The largest type in the system — one per page at most. Line height 105% — stored in px because Figma line-height variables are pixel values: 44px mobile, 76px web (rounded to integers for clean code export).1px mobile, 75.6px web.",
+    "newValue": "Homepage hero, condition-finder landing headline, longevity programme opener. The largest type in the system — one per page at most. Line height 105% — stored in px because Figma line-height variables are pixel values: 44px mobile, 76px web (rounded to integers for clean code export).",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/heading-1/line-height",
+    "collection": "Dimensions",
+    "field": "value",
+    "oldValue": "mobile: 38, web: 58",
+    "newValue": "mobile: 41, web: 62",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/heading-1/line-height",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Page titles — treatment name, condition name, \"About Dr. Kinaly\". One per page, maps to the H1 element. Line height 112% — stored in px because Figma line-height variables are pixel values: 38px mobile, 58px web (rounded to integers for clean code export).08px mobile, 58.24px web.",
+    "newValue": "Page titles — treatment name, condition name, \"About Dr. Kinaly\". One per page, maps to the H1 element. Line height 120% — increased from 112% because Fraunces' descenders (e.g. lowercase \"g\") were clipping at the tighter value. Stored in px because Figma line-height variables are pixel values: 41px mobile, 62px web (rounded to integers for clean code export).",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/heading-2/line-height",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Section titles — \"What to expect\", \"Related conditions\", \"Who this is for\". Maps to H2. Line height 120% — stored in px because Figma line-height variables are pixel values: 34px mobile, 43px web (rounded to integers for clean code export).6px mobile, 43.2px web.",
+    "newValue": "Section titles — \"What to expect\", \"Related conditions\", \"Who this is for\". Maps to H2. Line height 120% — stored in px because Figma line-height variables are pixel values: 34px mobile, 43px web (rounded to integers for clean code export).",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/heading-3/line-height",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Sub-sections inside long treatment content, card titles, FAQ questions. Maps to H3 — the level the current site is missing. Line height 128% — stored in px because Figma line-height variables are pixel values: 28px mobile, 31px web (rounded to integers for clean code export).16px mobile, 30.72px web.",
+    "newValue": "Sub-sections inside long treatment content, card titles, FAQ questions. Maps to H3 — the level the current site is missing. Line height 128% — stored in px because Figma line-height variables are pixel values: 28px mobile, 31px web (rounded to integers for clean code export).",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/body-large/family",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Page intros, hero subheads, pull quotes, the opening paragraph of a treatment page. Fixed at 20 on both platforms. Typeface: Satoshi.",
+    "newValue": "Page intros, hero subheads, pull quotes, the opening paragraph of a treatment page. Fixed at 20 on both platforms. Typeface: Public Sans",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/body-medium/family",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "All reading text — treatment and condition copy, card body, list items. 16px floor on both platforms. Apply italic at layer level for disclaimers. Typeface: Satoshi.",
+    "newValue": "All reading text — treatment and condition copy, card body, list items. 16px floor on both platforms. Apply italic at layer level for disclaimers. Typeface: Public Sans.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/body-medium/line-height",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "All reading text — treatment and condition copy, card body, list items. 16px floor on both platforms. Apply italic at layer level for disclaimers. Line height 163% — stored in px because Figma line-height variables are pixel values: 26px mobile, 26px web (rounded to integers for clean code export).08px mobile, 26.08px web.",
+    "newValue": "All reading text — treatment and condition copy, card body, list items. 16px floor on both platforms. Apply italic at layer level for disclaimers. Line height 163% — stored in px because Figma line-height variables are pixel values: 26px mobile, 26px web (rounded to integers for clean code export).",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/label/family",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Form field labels, button text, navigation items, and fourth-level sub-heads. Matches body size so buttons and nav read at the same weight as content. Typeface: Satoshi.",
+    "newValue": "Form field labels, button text, navigation items, and fourth-level sub-heads. Matches body size so buttons and nav read at the same weight as content. Typeface: Public Sans.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/label/line-height",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Form field labels, button text, navigation items, and fourth-level sub-heads. Matches body size so buttons and nav read at the same weight as content. Line height 140% — stored in px because Figma line-height variables are pixel values: 22px mobile, 22px web (rounded to integers for clean code export).4px mobile, 22.4px web.",
+    "newValue": "Form field labels, button text, navigation items, and fourth-level sub-heads. Matches body size so buttons and nav read at the same weight as content. Line height 140% — stored in px because Figma line-height variables are pixel values: 22px mobile, 22px web (rounded to integers for clean code export).",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/body-small/family",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Card body, table cells, dense list items, form helper text, image credits, footnotes and timestamps. NOT for reading copy — long-form body text stays at 16px per the platform constraint (fatigue, cognitive fog, and iOS Safari input zoom). Typeface: Satoshi.",
+    "newValue": "Card body, table cells, dense list items, form helper text, image credits, footnotes and timestamps. NOT for reading copy — long-form body text stays at 16px per the platform constraint (fatigue, cognitive fog, and iOS Safari input zoom). Typeface: Public Sans.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/overline/family",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Category kickers above headings — \"TREATMENT\", \"CONDITION\", \"LONGEVITY\". Uppercase, wide tracking. Orients the reader without spending a heading level. Typeface: Satoshi.",
+    "newValue": "Category kickers above headings — \"TREATMENT\", \"CONDITION\", \"LONGEVITY\". Uppercase, wide tracking. Orients the reader without spending a heading level. Typeface: Public Sans.",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "typography/overline/line-height",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Category kickers above headings — \"TREATMENT\", \"CONDITION\", \"LONGEVITY\". Uppercase, wide tracking. Orients the reader without spending a heading level. Line height 120% — stored in px because Figma line-height variables are pixel values: 16px mobile, 16px web (rounded to integers for clean code export).6px mobile, 15.6px web.",
+    "newValue": "Category kickers above headings — \"TREATMENT\", \"CONDITION\", \"LONGEVITY\". Uppercase, wide tracking. Orients the reader without spending a heading level. Line height 120% — stored in px because Figma line-height variables are pixel values: 16px mobile, 16px web (rounded to integers for clean code export).",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "spacing/section-gap-loose",
+    "collection": "Dimensions",
+    "field": "value",
+    "oldValue": "mobile: 64px, web: 96px",
+    "newValue": null,
+    "date": "2026-08-20",
+    "status": "removed"
+  },
+  {
+    "tokenName": "spacing/block-gap",
+    "collection": "Dimensions",
+    "field": "value",
+    "oldValue": "mobile: 32px, web: 40px",
+    "newValue": "mobile: 32px, web: 48px",
+    "date": "2026-08-20",
+    "status": "changed"
+  },
+  {
+    "tokenName": "layout/max-width-text",
+    "collection": "Dimensions",
+    "field": "description",
+    "oldValue": "Long-form reading measure — treatment descriptions, condition copy, about text. 512px on web is 73 characters at 16px Satoshi (measured, avg char 6.99px), inside the 65–75ch constraint. Uncapped on mobile. On desktop the remaining container width holds the related-conditions rail, in-page nav, and booking CTA.",
+    "newValue": "Long-form reading measure — treatment descriptions, condition copy, about text. 512px on web is 71 characters at 16px Public Sans (measured, avg char 7.22px, representative prose sample), inside the 65–75ch constraint. Uncapped on mobile. On desktop the remaining container width holds the related-conditions rail, in-page nav, and booking CTA.",
+    "date": "2026-08-20",
+    "status": "changed"
+  }
+]

@@ -116,7 +116,7 @@
       "100": {
         "value": "#f6eee3",
         "type": "color",
-        "description": "Earth 100. Aliased by surface/accent-subtle for alternating warm section washes, quote blocks, story sections.",
+        "description": "Earth 100. Aliased by surface/accent-subtle — Badge (Type=accent) and Feature Card label chip backgrounds.",
         "figma": {
           "id": "VariableID:9110:1206",
           "collection": "Primitives",
@@ -649,69 +649,36 @@
       }
     },
     "700": {
-      "value": 40,
+      "value": 48,
       "type": "dimension",
       "unit": "px",
-      "description": "Space 700 (40px). Aliased by spacing/block-gap on web.",
+      "description": "Space 700 (48px). Aliased by spacing/section-gap on mobile and spacing/block-gap on web.",
       "figma": {
-        "id": "VariableID:9116:1372",
+        "id": "VariableID:9116:1373",
         "collection": "Primitives",
         "codeSyntax": "--imoc-space-700"
       }
     },
     "800": {
-      "value": 48,
+      "value": 64,
       "type": "dimension",
       "unit": "px",
-      "description": "Space 800 (48px). Aliased by spacing/section-gap on mobile. Matches the platform constraint for mobile section padding.",
+      "description": "Space 800 (64px). Unaliased — kept in reserve after spacing/section-gap-loose was removed.",
       "figma": {
-        "id": "VariableID:9116:1373",
+        "id": "VariableID:9116:1375",
         "collection": "Primitives",
         "codeSyntax": "--imoc-space-800"
       }
     },
     "900": {
-      "value": 56,
-      "type": "dimension",
-      "unit": "px",
-      "description": "Space 900 (56px). Unaliased — available between section-gap steps.",
-      "figma": {
-        "id": "VariableID:9116:1374",
-        "collection": "Primitives",
-        "codeSyntax": "--imoc-space-900"
-      }
-    },
-    "1000": {
-      "value": 64,
-      "type": "dimension",
-      "unit": "px",
-      "description": "Space 1000 (64px). Aliased by spacing/section-gap-loose on mobile.",
-      "figma": {
-        "id": "VariableID:9116:1375",
-        "collection": "Primitives",
-        "codeSyntax": "--imoc-space-1000"
-      }
-    },
-    "1100": {
       "value": 80,
       "type": "dimension",
       "unit": "px",
-      "description": "Space 1100 (80px). Aliased by spacing/section-gap on web. Matches the platform constraint for desktop section padding.",
+      "description": "Space 900 (80px). Aliased by spacing/section-gap on web. Matches the platform constraint for desktop section padding.",
       "figma": {
         "id": "VariableID:9116:1376",
         "collection": "Primitives",
-        "codeSyntax": "--imoc-space-1100"
-      }
-    },
-    "1200": {
-      "value": 96,
-      "type": "dimension",
-      "unit": "px",
-      "description": "Space 1200 (96px). Aliased by spacing/section-gap-loose on web — signature moments only.",
-      "figma": {
-        "id": "VariableID:9116:1377",
-        "collection": "Primitives",
-        "codeSyntax": "--imoc-space-1200"
+        "codeSyntax": "--imoc-space-900"
       }
     }
   },
