@@ -45,9 +45,13 @@ const USAGE_REGISTRY: Record<string, UsageDemo> = {
           borderRadius: 'var(--imoc-radius-medium)',
           padding: '10px 14px',
           fontSize: 13,
+          display: 'flex',
+          gap: 8,
+          alignItems: 'flex-start',
         }}
       >
-        Your request is in — we'll call within one business day.
+        <span aria-hidden="true">✓</span>
+        <span>Booking confirmed — we'll call within one business day.</span>
       </div>
     ),
   },
@@ -63,18 +67,24 @@ const USAGE_REGISTRY: Record<string, UsageDemo> = {
     ),
   },
   'surface/brand-subtle': {
-    label: 'Condition-match banner',
+    label: 'Icon frame',
     render: () => (
       <div
         style={{
-          background: 'var(--imoc-surface-brand-subtle)',
+          width: 64,
+          height: 64,
           borderRadius: 'var(--imoc-radius-medium)',
-          padding: '10px 14px',
-          fontSize: 13,
-          color: 'var(--imoc-text-primary)',
+          background: 'var(--imoc-surface-brand-subtle)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
-        Yes, we treat this condition
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--imoc-text-brand)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 2 4 5v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V5l-8-3Z" />
+          <line x1="12" y1="8" x2="12" y2="14" />
+          <line x1="9" y1="11" x2="15" y2="11" />
+        </svg>
       </div>
     ),
   },
@@ -97,20 +107,24 @@ const USAGE_REGISTRY: Record<string, UsageDemo> = {
     ),
   },
   'border/focus': {
-    label: 'Focus ring',
+    label: 'Focused button',
     render: () => (
-      <input
-        readOnly
-        value="Focused input"
+      <button
         style={{
-          border: '1px solid var(--imoc-border-strong)',
+          background: 'var(--imoc-surface-action)',
+          color: 'var(--imoc-text-on-fill)',
+          border: 'none',
+          borderRadius: 'var(--imoc-radius-medium)',
+          padding: '10px 20px',
+          fontSize: 16,
+          fontWeight: 500,
+          fontFamily: 'Satoshi, sans-serif',
           outline: '2px solid var(--imoc-border-focus)',
           outlineOffset: 2,
-          borderRadius: 'var(--imoc-radius-medium)',
-          padding: '8px 12px',
-          fontSize: 14,
         }}
-      />
+      >
+        Book an appointment
+      </button>
     ),
   },
   'surface/warning': {
@@ -123,9 +137,181 @@ const USAGE_REGISTRY: Record<string, UsageDemo> = {
           borderRadius: 'var(--imoc-radius-medium)',
           padding: '10px 14px',
           fontSize: 13,
+          display: 'flex',
+          gap: 8,
+          alignItems: 'flex-start',
         }}
       >
-        Call to confirm availability
+        <span aria-hidden="true">⚠</span>
+        <span>Call to confirm availability</span>
+      </div>
+    ),
+  },
+  'surface/error': {
+    label: 'Failed submission banner',
+    render: () => (
+      <div
+        style={{
+          background: 'var(--imoc-surface-error)',
+          color: 'var(--imoc-text-error)',
+          borderRadius: 'var(--imoc-radius-medium)',
+          padding: '10px 14px',
+          fontSize: 13,
+          display: 'flex',
+          gap: 8,
+          alignItems: 'flex-start',
+        }}
+      >
+        <span aria-hidden="true">✕</span>
+        <span>Failed to submit — please try again.</span>
+      </div>
+    ),
+  },
+  'surface/info': {
+    label: 'Telehealth explainer',
+    render: () => (
+      <div
+        style={{
+          background: 'var(--imoc-surface-info)',
+          color: 'var(--imoc-text-info)',
+          borderRadius: 'var(--imoc-radius-medium)',
+          padding: '10px 14px',
+          fontSize: 13,
+          display: 'flex',
+          gap: 8,
+          alignItems: 'flex-start',
+        }}
+      >
+        <span aria-hidden="true">ⓘ</span>
+        <span>Telehealth is available in most states.</span>
+      </div>
+    ),
+  },
+  'text/link-inverse': {
+    label: 'Footer link',
+    render: () => (
+      <div style={{ background: 'var(--imoc-surface-inverse)', borderRadius: 'var(--imoc-radius-medium)', padding: '10px 14px' }}>
+        <span style={{ fontSize: 14, color: 'var(--imoc-text-inverse)' }}>
+          Read{' '}
+          <a href="#" style={{ color: 'var(--imoc-text-link-inverse)', textDecoration: 'underline' }}>
+            our privacy policy
+          </a>
+        </span>
+      </div>
+    ),
+  },
+  'text/brand': {
+    label: 'Section eyebrow + heading',
+    render: () => (
+      <div>
+        <div
+          style={{
+            fontFamily: 'var(--imoc-type-overline-family), sans-serif',
+            fontSize: 'var(--imoc-type-overline-size)',
+            fontWeight: 'var(--imoc-type-overline-weight)' as React.CSSProperties['fontWeight'],
+            lineHeight: 'var(--imoc-type-overline-line-height)',
+            letterSpacing: 'var(--imoc-type-overline-letter-spacing)',
+            textTransform: 'uppercase',
+            color: 'var(--imoc-text-brand)',
+          }}
+        >
+          Our approach
+        </div>
+        <div
+          style={{
+            fontFamily: 'var(--imoc-type-heading-2-family), serif',
+            fontSize: 'var(--imoc-type-heading-2-size)',
+            fontWeight: 'var(--imoc-type-heading-2-weight)' as React.CSSProperties['fontWeight'],
+            lineHeight: 'var(--imoc-type-heading-2-line-height)',
+            letterSpacing: 'var(--imoc-type-heading-2-letter-spacing)',
+            color: 'var(--imoc-text-primary)',
+          }}
+        >
+          Physician-led, from day one
+        </div>
+      </div>
+    ),
+  },
+  'text/on-fill': {
+    label: 'Primary button label',
+    render: () => (
+      <button
+        style={{
+          background: 'var(--imoc-surface-action)',
+          color: 'var(--imoc-text-on-fill)',
+          border: 'none',
+          borderRadius: 'var(--imoc-radius-medium)',
+          padding: '10px 20px',
+          fontSize: 16,
+          fontWeight: 500,
+          fontFamily: 'Satoshi, sans-serif',
+        }}
+      >
+        Book an appointment
+      </button>
+    ),
+  },
+  'text/success': {
+    label: 'Inline success message',
+    render: () => (
+      <span style={{ color: 'var(--imoc-text-success)', fontSize: 14, display: 'flex', gap: 6, alignItems: 'center' }}>
+        ✓ Appointment confirmed
+      </span>
+    ),
+  },
+  'text/placeholder': {
+    label: 'Empty form field',
+    render: () => (
+      <div
+        style={{
+          border: '1px solid var(--imoc-border-strong)',
+          background: 'var(--imoc-surface-input)',
+          borderRadius: 'var(--imoc-radius-medium)',
+          padding: '8px 12px',
+          fontSize: 14,
+          color: 'var(--imoc-text-placeholder)',
+          width: 200,
+        }}
+      >
+        you@example.com
+      </div>
+    ),
+  },
+  'text/warning': {
+    label: 'Advisory copy',
+    render: () => (
+      <span style={{ color: 'var(--imoc-text-warning)', fontSize: 14, display: 'flex', gap: 6, alignItems: 'center' }}>
+        ⚠ Limited availability in your area
+      </span>
+    ),
+  },
+  'text/info': {
+    label: 'Explanatory callout copy',
+    render: () => (
+      <span style={{ color: 'var(--imoc-text-info)', fontSize: 14, display: 'flex', gap: 6, alignItems: 'center' }}>
+        ⓘ Telehealth available in most states
+      </span>
+    ),
+  },
+  'surface/hover': {
+    label: 'Dropdown menu item (hover)',
+    render: () => (
+      <div
+        style={{
+          width: 220,
+          border: '1px solid var(--imoc-border-default)',
+          background: 'var(--imoc-surface-card)',
+          borderRadius: 'var(--imoc-radius-medium)',
+          padding: 4,
+          fontSize: 14,
+          color: 'var(--imoc-text-primary)',
+        }}
+      >
+        <div style={{ padding: '8px 10px', borderRadius: 'var(--imoc-radius-small)' }}>Reschedule appointment</div>
+        <div style={{ padding: '8px 10px', borderRadius: 'var(--imoc-radius-small)', background: 'var(--imoc-surface-hover)' }}>
+          Cancel appointment
+        </div>
+        <div style={{ padding: '8px 10px', borderRadius: 'var(--imoc-radius-small)' }}>Contact clinic</div>
       </div>
     ),
   },

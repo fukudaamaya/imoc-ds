@@ -10,6 +10,15 @@ import { FigmaBadge } from './components/FigmaBadge';
 const PRIMITIVE_GROUP_ORDER = ['neutral', 'ocean', 'earth', 'flora', 'success', 'warning', 'error', 'info'];
 const SEMANTIC_GROUP_ORDER = ['text', 'surface', 'border'];
 
+// What each group's tokens are scoped to in Figma — previously shown as a "Shape Fill" /
+// "Text Fill" / etc. chip repeated under every single swatch. Since it's the same scope for
+// (almost) every token in a group, one note per section says it once instead.
+const SEMANTIC_GROUP_SCOPE_NOTES: Record<string, string> = {
+  text: 'Scoped to text fill and shape fill in Figma — usable as a text color or as a fill on icons and shapes.',
+  surface: 'Scoped to frame fill and shape fill in Figma — anywhere a background color is needed. (surface/decorative is shape fill only — see its description.)',
+  border: 'Scoped to stroke color in Figma — used for borders, outlines, and rules.',
+};
+
 // Not sourced from Figma — there's no collection-level description per group there, only
 // per-step. Written from what each ramp's own step descriptions actually say (e.g. ocean/600
 // literally calls itself "THE BRAND VALUE"; every flora/* step says "unaliased in Clinic").
@@ -97,7 +106,8 @@ function ColorsSemanticPage() {
           <h2 className="doc-section-title" style={{ textTransform: 'capitalize' }}>
             {group}
           </h2>
-          <div className="doc-grid doc-color-grid">
+          {SEMANTIC_GROUP_SCOPE_NOTES[group] && <p className="doc-section-note">{SEMANTIC_GROUP_SCOPE_NOTES[group]}</p>}
+          <div className="swatch-list">
             {semantics[group].map((c) => (
               <SemanticSwatch key={c.name} group={c.group} tokenKey={c.key} token={c.token} />
             ))}

@@ -79,65 +79,9 @@
   gap: 16px;
 }
 
-.doc-color-grid {
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-}
-
-.swatch-card {
-  background: var(--imoc-surface-card);
-  border: 1px solid var(--imoc-border-default);
-  border-radius: var(--imoc-radius-medium);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.swatch-preview {
-  height: 88px;
-  width: 100%;
-  border-bottom: 1px solid var(--imoc-border-default);
-}
-
-.swatch-body {
-  padding: 12px 14px 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.swatch-name {
-  font-size: 13px;
-  font-weight: 600;
-  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
-  color: var(--imoc-text-primary);
-}
-
-/* type/label-small (12px/500/text-tertiary) — proposed, not yet a real Figma token; see
-   Typography.stories.tsx for the same convention already applied there. Used here and
-   throughout for hex values, badges, and chips: small UI-chrome text that isn't real body
-   copy and shouldn't compete with it. */
-.swatch-hex {
-  font-size: 12px;
-  font-weight: 500;
-  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
-  color: var(--imoc-text-tertiary);
-}
-
-/* type/label-small */
-.swatch-alias {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--imoc-text-tertiary);
-}
-
-.swatch-alias code {
-  background: var(--imoc-surface-brand-subtle);
-  padding: 1px 4px;
-  border-radius: 3px;
-}
-
-/* Primitives list — a divided single-column list reads as a scale (light-to-dark top-to-
-   bottom) much more clearly than a wrapped multi-column grid of cards does. */
+/* Token lists (Primitives and Semantic) — a divided single-column list reads as a scale
+   (light-to-dark top-to-bottom for primitives) much more clearly than a wrapped
+   multi-column grid of cards does. */
 .swatch-list {
   display: flex;
   flex-direction: column;
@@ -149,6 +93,21 @@
   gap: 16px;
   padding: 8px 4px;
   border-bottom: 1px solid var(--imoc-border-subtle);
+}
+
+/* Semantic rows carry more than the primitive row's two lines — name+hex, then a
+   description, sometimes scope chips and a "used in" toggle too. Stretch-and-center (the
+   primitive row's layout, tuned for exactly two lines) would just push that extra content
+   around as it grows, so semantic rows pin content to the top instead and let the row grow
+   downward past the fixed 56px swatch. */
+.swatch-row--semantic {
+  align-items: flex-start;
+  padding: 12px 4px;
+}
+
+.swatch-row--semantic .swatch-row-body {
+  justify-content: flex-start;
+  gap: 4px;
 }
 
 .swatch-row-preview {
@@ -188,6 +147,16 @@
   color: var(--imoc-text-tertiary);
 }
 
+/* Semantic row's second line — alias + resolved hex together, e.g. "neutral/900 (#272420)".
+   Secondary rather than tertiary: unlike the primitive row's hex-only line, this is the
+   alias chain, which is core information for a semantic token, not throwaway metadata. */
+.swatch-row-meta {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  color: var(--imoc-text-secondary);
+}
+
 /* type/body-small — see .swatch-desc above. */
 .swatch-row-desc {
   margin: 2px 0 0;
@@ -210,13 +179,6 @@
   line-height: 1.5;
   color: var(--imoc-text-secondary);
   margin: 4px 0;
-}
-
-.chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  margin: 2px 0;
 }
 
 /* type/label-small size (12px) — weight/color stay as their own bolder, colored treatment
