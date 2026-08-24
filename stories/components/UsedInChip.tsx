@@ -187,19 +187,6 @@ const USAGE_REGISTRY: Record<string, UsageDemo> = {
       </div>
     ),
   },
-  'text/link-inverse': {
-    label: 'Footer link',
-    render: () => (
-      <div style={{ background: 'var(--imoc-surface-inverse)', borderRadius: 'var(--imoc-radius-medium)', padding: '10px 14px' }}>
-        <span style={{ fontSize: 14, color: 'var(--imoc-text-inverse)' }}>
-          Read{' '}
-          <a href="#" style={{ color: 'var(--imoc-text-link-inverse)', textDecoration: 'underline' }}>
-            our privacy policy
-          </a>
-        </span>
-      </div>
-    ),
-  },
   'text/brand': {
     label: 'Section eyebrow + heading',
     render: () => (

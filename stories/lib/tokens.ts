@@ -157,57 +157,63 @@ export function cleanPrimitiveDescription(description: string, group: string, st
  */
 const SEMANTIC_DESCRIPTION_OVERRIDES: Record<string, string> = {
   'text/primary': 'Body copy, treatment descriptions, headings, form labels — the default reading colour.',
-  'text/secondary': 'Card subtitles, treatment duration lines, metadata, breadcrumbs, "last updated" stamps.',
-  'text/tertiary': 'Helper text under form inputs, footnotes, supporting detail inside cards.',
+  'text/secondary':
+    'Documentation-page labels and table headers here on the Foundations pages. Not yet used on a live product component — "card subtitles, breadcrumbs" is planned, not current; breadcrumbs use text/link today.',
+  'text/tertiary':
+    'Helper text under form inputs, footnotes, supporting detail inside cards. Shares its value with text/placeholder today — kept as a separate token since they mean different things even when they render the same.',
   'text/disabled': 'Disabled button labels, unavailable appointment slot text, locked form step labels. Always pair with a non-colour cue.',
-  'text/inverse': 'Body copy and headings in the footer and dark longevity sections.',
-  'text/link': 'Inline links in body copy, "see related treatments", in-page nav links. Always underlined — colour is never the sole cue.',
+  'text/inverse': 'Body copy in the footer — brand blurb, nav link columns, practice details, contact info. Dark longevity sections are planned, not yet built.',
+  'text/link':
+    'Breadcrumb items, plain-variant button labels, card "Explore →" affordances, and inline links in body copy. Underlined only when inline in body copy, where colour alone isn\'t enough of a cue — breadcrumbs, buttons, and card affordances read as interactive from their own component context and don\'t carry an underline.',
   'text/link-hover': 'Hover and focus state on inline links.',
-  'text/link-inverse': 'Links inside the footer and dark longevity sections.',
-  'text/brand': 'Ocean-coloured headings, eyebrow labels above section titles, step numerals in the intake flow.',
+  'text/link-inverse': 'Not currently used in any built component — use case undecided.',
+  'text/brand': 'Overline eyebrow labels above section titles (not the headings themselves), badge label colour (Type=brand), secondary button label, and the active-state nav link label.',
   'text/accent': 'Earth-coloured editorial headings, pull quotes, treatment category labels.',
   'text/on-fill':
     'Text and icons on any dark filled surface — primary button labels on surface/action, headings on surface/brand, copy on surface/accent editorial blocks. Replaces the former text/on-brand and text/on-accent, which were the same white doing the same job.',
-  'text/success': 'Confirmation copy — "Your request is in, we\'ll call within one business day."',
-  'text/warning': 'Advisory copy — out-of-state travel notes, limited availability messages.',
-  'text/error': 'Validation messages beside the failing field. Supportive tone, never blaming.',
-  'text/info': 'Explanatory copy — cash-pay policy, what to bring, telehealth eligibility.',
+  'text/success': 'Confirmation copy — "Your request is in, we\'ll call within one business day." Also the label colour of the success badge.',
+  'text/warning': 'Advisory copy — out-of-state travel notes, limited availability messages. Also the label colour of the warning badge.',
+  'text/error': 'Validation messages beside the failing field. Supportive tone, never blaming. Also the label colour of the error badge.',
+  'text/info': 'Explanatory copy — cash-pay policy, what to bring, telehealth eligibility. Also the label colour of the info badge.',
   'text/placeholder':
-    'Placeholder text inside empty form fields — "you@example.com", "Search conditions". Distinct from text/tertiary (helper text below a field) and text/disabled (inactive control).',
+    'Placeholder text inside empty form fields — "you@example.com", "Search conditions". Distinct from text/tertiary (helper text below a field) and text/disabled (inactive control), even though it shares text/tertiary\'s value today.',
 
   'surface/background': 'Base page canvas behind all content on every route. Warm off-white rather than pure white to reduce glare for light-sensitive readers.',
-  'surface/card': 'Treatment cards, condition cards, practitioner bio panels, FAQ accordions. Lifts off the page without needing a border.',
+  'surface/card': 'Treatment and condition cards, practitioner bio panels, FAQ accordions. Lifts off the page without needing a border.',
   'surface/input': 'Text fields, selects, textareas, date pickers in the booking and intake forms. Always pair with border/strong.',
-  'surface/inverse': 'Footer, longevity programme sections, testimonial features. The primary aspirational register for longevity-seeking visitors.',
+  'surface/inverse': 'Not currently used in any built component — use case undecided.',
   'surface/disabled': 'Disabled buttons, unavailable appointment slots, locked form steps.',
-  'surface/brand': 'Ocean feature panels, condition-finder headers, quiz intro blocks. Pair with text/on-fill.',
+  'surface/brand': 'Active/selected-state indicator on the nav link underline bar — navigation, dropdown menu, footer nav links.',
   'surface/brand-subtle': 'Badge background (Type=brand) and icon-frame background for cards.',
-  'surface/accent': 'Editorial feature blocks, methodology callouts, "why physician-led" panels. Pair with text/on-fill.',
-  'surface/accent-subtle': 'Alternating warm section washes, quote blocks, patient story sections.',
-  'surface/action': 'Primary buttons — "Book an appointment", "Start intake".',
+  'surface/accent': 'Not currently used in any built component — reserved for a future editorial/feature-panel use.',
+  'surface/accent-subtle': 'Badge background (Type=accent), feature card label-chip background.',
+  'surface/action': 'Primary buttons — "Book an appointment", "Start intake". In Supplement mode, aliases flora/300 as that line\'s primary CTA colour.',
   'surface/action-hover': 'Hover state on primary buttons.',
   'surface/action-pressed': 'Active and pressed state on primary buttons.',
-  'surface/success': 'Booking confirmed panels, "request received" states, saved-intake banners.',
-  'surface/warning': 'Out-of-state logistics notices, "call to confirm availability" strips.',
-  'surface/error': 'Form validation summaries, failed submission banners.',
-  'surface/info': 'Cash-pay policy notes, what-to-bring callouts, first-visit and telehealth explainers.',
+  'surface/success': 'Booking confirmed panels, "request received" states, saved-intake banners. Also the background colour of the success badge.',
+  'surface/warning': 'Out-of-state logistics notices, "call to confirm availability" strips. Also the background colour of the warning badge.',
+  'surface/error': 'Form validation summaries, failed submission banners. Also the background colour of the error badge.',
+  'surface/info': 'Cash-pay policy notes, what-to-bring callouts, first-visit and telehealth explainers. Also the background colour of the info badge.',
   'surface/overlay': 'Scrim behind modals and the mobile navigation drawer. Warm-tinted to match neutral/950.',
   'surface/decorative': 'Illustration fills, image mattes, mascot colourways, decorative shapes behind content. The Sand brand value. Shape fill only — never text or borders.',
-  'surface/hover': 'Hover state on clickable cards and list rows — treatment cards, condition rows, FAQ headers. Pair with an elevation lift; hover is never the only route to content.',
+  'surface/hover': 'Hover state on nav items, dropdown items, secondary/plain buttons, and text field inputs.',
   'surface/selected':
     'Selected state — the chosen condition card, active filter chip, current step in the intake flow. Stronger than surface/brand-subtle so selection reads as a deliberate act rather than a highlight.',
 
-  'border/subtle': 'Dividers between list items, table row rules, section separators — decorative, carries no information.',
-  'border/default': 'Card outlines, non-interactive container edges. Never the sole indicator of an interactive control.',
-  'border/strong': 'Input borders, checkbox and radio outlines, select field edges. Every form control uses this.',
+  'border/subtle':
+    'Dividers between list items, table row rules, section separators — decorative, carries no information. Also the outer edge of the dropdown panel (simple list, mega menu), where it acts as a structural boundary rather than a decorative divider.',
+  'border/default':
+    'Card outlines, non-interactive container edges, and Text Field\'s default (resting) border. On Text Field, this is currently the only visual cue that the control is interactive until hover/focus takes over — flagged as in tension with border tokens generally not being the sole indicator of an interactive control, not yet resolved.',
+  'border/strong': 'Text Field\'s active-state border, Feature Card\'s hover-state border. Not yet used on checkboxes, radios, or selects — none of those components exist yet.',
   'border/focus':
     'Keyboard focus ring on every interactive element — 2px weight, 2px offset so the ring sits clear of the control against the page background. Implement as outline: 2px solid + outline-offset: 2px. Never removable, never flush.',
-  'border/brand': 'Secondary button outlines, selected filter chips, active tab underline, chosen condition card outline. Pair with text/brand for the label.',
-  'border/accent': 'Left rule on editorial pull quotes, category dividers on treatment cards.',
-  'border/success': 'Left rule on confirmation panels, validated field outline.',
-  'border/warning': 'Left rule on advisory panels.',
+  'border/brand':
+    'Secondary button outline (all states), badge border (Type=brand). Pair with text/brand for the label. Not yet used for filter chips, tab underlines, or condition-card outlines — none of those components exist yet.',
+  'border/accent': 'Badge border (Type=accent), feature card label-chip border. Not yet used for pull-quote rules or treatment-card dividers — no such component exists yet.',
+  'border/success': 'Badge border (Type=success). Not yet used as a confirmation-panel left rule — no such component exists yet.',
+  'border/warning': 'Badge border (Type=warning). Not yet used as an advisory-panel left rule — no such component exists yet.',
   'border/error': 'Failed input field outline. Always paired with an icon and a message.',
-  'border/info': 'Left rule on informational callouts.',
+  'border/info': 'Badge border (Type=info). Not yet used as an informational-callout left rule — no such component exists yet.',
 };
 
 export function cleanSemanticDescription(group: string, key: string, description: string): string {

@@ -10,6 +10,46 @@ import { FigmaBadge } from './components/FigmaBadge';
 const PRIMITIVE_GROUP_ORDER = ['neutral', 'ocean', 'earth', 'flora', 'success', 'warning', 'error', 'info'];
 const SEMANTIC_GROUP_ORDER = ['text', 'surface', 'border'];
 
+// Display order within the Surface section — Figma's own key order (background, card,
+// input, inverse, disabled, brand...) buries hover and selected at the very end. Hover
+// sits right after input: per its own description it's the hover state for nav items,
+// dropdown items, secondary/plain buttons, and text field inputs — not cards. Any token
+// not listed here (e.g. one added after this was written) falls back to wherever Figma's
+// own order puts it.
+const SURFACE_TOKEN_ORDER = [
+  'background',
+  'card',
+  'input',
+  'hover',
+  'inverse',
+  'disabled',
+  'brand',
+  'brand-subtle',
+  'accent',
+  'accent-subtle',
+  'action',
+  'action-hover',
+  'action-pressed',
+  'success',
+  'warning',
+  'error',
+  'info',
+  'overlay',
+  'decorative',
+  'selected',
+];
+
+function orderBy<T>(items: T[], keyFn: (item: T) => string, order: string[]): T[] {
+  return [...items].sort((a, b) => {
+    const ai = order.indexOf(keyFn(a));
+    const bi = order.indexOf(keyFn(b));
+    if (ai === -1 && bi === -1) return 0;
+    if (ai === -1) return 1;
+    if (bi === -1) return -1;
+    return ai - bi;
+  });
+}
+
 // What each group's tokens are scoped to in Figma — previously shown as a "Shape Fill" /
 // "Text Fill" / etc. chip repeated under every single swatch. Since it's the same scope for
 // (almost) every token in a group, one note per section says it once instead.
@@ -108,7 +148,7 @@ function ColorsSemanticPage() {
           </h2>
           {SEMANTIC_GROUP_SCOPE_NOTES[group] && <p className="doc-section-note">{SEMANTIC_GROUP_SCOPE_NOTES[group]}</p>}
           <div className="swatch-list">
-            {semantics[group].map((c) => (
+            {(group === 'surface' ? orderBy(semantics[group], (c) => c.key, SURFACE_TOKEN_ORDER) : semantics[group]).map((c) => (
               <SemanticSwatch key={c.name} group={c.group} tokenKey={c.key} token={c.token} />
             ))}
           </div>
