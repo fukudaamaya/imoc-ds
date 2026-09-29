@@ -58,8 +58,8 @@ function OverviewPage() {
         <div className="doc-card">
           <h3 style={{ margin: '0 0 6px' }}>Colour</h3>
           <p className="swatch-desc">
-            Semantic text/surface/border tokens, aliased to Primitives. One mode ("Clinic") — color doesn't vary
-            by platform in this system.
+            Semantic text/surface/border tokens, aliased to Primitives. Two modes — Clinic and Supplement — which
+            is what the Theme toggle switches. Colour doesn't vary by platform.
           </p>
         </div>
         <div className="doc-card">

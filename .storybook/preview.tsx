@@ -11,6 +11,17 @@ const withPlatform = (Story: any, context: any) => {
   return <Story />;
 };
 
+// Colour mode. Clinic is the :root default, so it removes the attribute rather than setting
+// data-theme="clinic"; Supplement applies the [data-theme="supplement"] overrides.
+const withTheme = (Story: any, context: any) => {
+  const theme = context.globals.theme ?? 'clinic';
+  useEffect(() => {
+    if (theme === 'clinic') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+  return <Story />;
+};
+
 const preview: Preview = {
   tags: ['autodocs'],
   parameters: {
@@ -35,6 +46,20 @@ const preview: Preview = {
     },
   },
   globalTypes: {
+    theme: {
+      name: 'Theme',
+      description: 'IMOC DS Colour mode — Clinic or Supplement',
+      defaultValue: 'clinic',
+      toolbar: {
+        icon: 'paintbrush',
+        items: [
+          { value: 'clinic', title: 'Clinic' },
+          { value: 'supplement', title: 'Supplement' },
+        ],
+        showName: true,
+        dynamicTitle: true,
+      },
+    },
     platform: {
       name: 'Platform',
       description: 'IMOC DS Dimensions mode — Web or Mobile',
@@ -50,7 +75,7 @@ const preview: Preview = {
       },
     },
   },
-  decorators: [withPlatform],
+  decorators: [withPlatform, withTheme],
 };
 
 export default preview;

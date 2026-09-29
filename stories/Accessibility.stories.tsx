@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import './lib/doc-ui.css';
-import { semanticColor } from './lib/tokens';
+import { semanticColor, themedColor } from './lib/tokens';
+import { useTheme } from './lib/useTheme';
 import { contrastRatio, formatRatio, tierNormalText, tierLargeText, tierIconsUI, type Tier } from './lib/contrast';
 import { FigmaBadge } from './components/FigmaBadge';
 
@@ -39,7 +40,8 @@ const PAIRINGS: Pairing[] = [
   { fg: ['text', 'info'], bg: ['surface', 'info'], context: 'Explanatory callouts', kind: 'text' },
   { fg: ['text', 'placeholder'], bg: ['surface', 'input'], context: 'Empty form-field placeholder', kind: 'text' },
   { fg: ['border', 'strong'], bg: ['surface', 'card'], context: 'Input / checkbox / radio outlines', kind: 'non-text' },
-  { fg: ['border', 'focus'], bg: ['surface', 'background'], context: 'Keyboard focus ring', kind: 'non-text' },
+  { fg: ['border', 'focus'], bg: ['surface', 'background'], context: 'Keyboard focus ring, Nav Link active underline', kind: 'non-text' },
+  { fg: ['surface', 'brand'], bg: ['surface', 'background'], context: 'Footer nav active indicator', kind: 'non-text' },
   { fg: ['border', 'brand'], bg: ['surface', 'background'], context: 'Selected filter chip, active tab', kind: 'non-text' },
   { fg: ['border', 'success'], bg: ['surface', 'background'], context: 'Confirmation panel rule', kind: 'non-text' },
   { fg: ['border', 'warning'], bg: ['surface', 'background'], context: 'Advisory panel rule', kind: 'non-text' },
@@ -62,10 +64,11 @@ function NotApplicable() {
 
 function AccessibilityPage() {
   const [filter, setFilter] = React.useState<'all' | 'text' | 'non-text' | 'fail'>('all');
+  const theme = useTheme();
 
   const rows = PAIRINGS.map((p) => {
-    const fgToken = semanticColor[p.fg[0]][p.fg[1]];
-    const bgToken = semanticColor[p.bg[0]][p.bg[1]];
+    const fgToken = themedColor(semanticColor[p.fg[0]][p.fg[1]], theme);
+    const bgToken = themedColor(semanticColor[p.bg[0]][p.bg[1]], theme);
     const ratio = contrastRatio(fgToken.value, bgToken.value);
     const normalText = p.kind === 'text' ? tierNormalText(ratio) : null;
     const largeText = p.kind === 'text' ? tierLargeText(ratio) : null;
@@ -87,7 +90,8 @@ function AccessibilityPage() {
           <h1 className="doc-h1">Accessibility</h1>
           <p className="doc-lede">
             WCAG 2.x contrast, computed from the actual resolved RGB values — not copied from the description
-            text — for every foreground/background pairing the system actually uses.
+            text — for every foreground/background pairing the system actually uses. Showing the{' '}
+            <strong>{theme === 'clinic' ? 'Clinic' : 'Supplement'}</strong> colour mode; switch with the Theme toggle.
           </p>
         </div>
         <FigmaBadge />
