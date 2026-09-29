@@ -89,6 +89,10 @@ function OverviewPage() {
         <li>
           <strong>Changelog</strong> — what changed, last time tokens were synced from Figma
         </li>
+        <li>
+          <strong>Components</strong> — Badge, Button, Breadcrumb, Text Field, Dropdown Menu, Headers and
+          Navigation, each with a Docs page and a Playground
+        </li>
       </ul>
     </div>
   );

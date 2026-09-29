@@ -17,6 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 
 data = json.loads(pathlib.Path(sys.argv[1]).read_text())
 renders = data.get("result", data)
+renders = renders.get("renders", renders)
 
 components = json.loads((ROOT / "components/components.json").read_text())
 owner = {

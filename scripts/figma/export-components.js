@@ -111,6 +111,7 @@ for (const [key, cfg] of Object.entries(COMPONENTS)) {
         props: v.variantProperties || {},
         width: Math.round(v.width),
         height: Math.round(v.height),
+        hidden: !v.visible || undefined,
         tokens: tokens.map(([layer, property, token]) => ({ layer, property, token })),
       });
     }

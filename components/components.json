@@ -3288,7 +3288,8 @@
                 "property": "color",
                 "token": "text/secondary"
               }
-            ]
+            ],
+            "hidden": true
           },
           {
             "id": "9243:16568",
@@ -3326,7 +3327,8 @@
                 "property": "text-style",
                 "token": "type/heading-2"
               }
-            ]
+            ],
+            "hidden": true
           },
           {
             "id": "9243:16572",
@@ -3384,7 +3386,8 @@
                 "property": "color",
                 "token": "text/secondary"
               }
-            ]
+            ],
+            "hidden": true
           },
           {
             "id": "9243:16576",
@@ -3412,7 +3415,8 @@
                 "property": "text-style",
                 "token": "type/heading-2"
               }
-            ]
+            ],
+            "hidden": true
           }
         ]
       },

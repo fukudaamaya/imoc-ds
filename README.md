@@ -13,6 +13,9 @@ Live docs: deployed via Vercel on every push to `master`.
 - **`style-dictionary/`** — build pipeline that turns `tokens/*.json` into consumable output
 - **`build/css/`** — generated CSS custom properties (`_root.css` for web defaults, `_mobile.css` as a `[data-platform="mobile"]` override)
 - **`stories/`** — Storybook pages documenting the system (Overview, Colors, Typography, Spacing, Accessibility, Changelog)
+- **`src/components/`** — React components built from the Figma component sets, styled only with the token CSS. Each has a Storybook **Docs** page (live examples, props, Figma usage notes, bound tokens, Figma renders) and a **Playground**
+- **`src/icons/`**, **`src/brand/`** — icon set and logo artwork exported from Figma
+- **`components/components.json`** — snapshot of each component set's description, properties and bound tokens, exported with `scripts/figma/export-components.js` (renders: `export-renders.js` + `write-renders.py`)
 - **`figma-plugin/`** — companion Figma plugin (IMOC DS Token Exporter) used to export variables from Figma when the REST Variables API isn't available on plan
 - **`scripts/sync-figma.mjs`** — pulls live Figma variables, diffs against `tokens/*.json`, writes a dated changelog entry, updates the token JSON
 - **`changelog/diffs/`** — dated JSON diffs from each Figma sync, feeding the Changelog Storybook page

@@ -27,7 +27,7 @@ export function componentDocsPage(componentKey: string, opts: { setIds?: string[
             </Unstyled>
           )}
         </div>
-        <Subtitle>{componentSummary(componentKey, primarySet)}</Subtitle>
+        <Subtitle>{componentSummary(componentKey, opts.setIds)}</Subtitle>
         <Primary />
         <Controls />
         <Stories title="Examples" includePrimary={false} />

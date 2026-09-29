@@ -1,0 +1,48 @@
+/* Breadcrumb — mirrors the Figma "Breadcrumb" (9241:14215) and "Breadcrumb Item" (9241:3759)
+   sets. Figma has no Focus state; the ring below is the system-wide focus treatment from
+   border/focus (2px, 2px offset), shaped by radius/small, which the Figma trail carries. */
+
+.imoc-breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--imoc-spacing-inline-gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  font-family: var(--imoc-type-body-medium-family), sans-serif;
+  font-size: var(--imoc-type-body-medium-size);
+  font-weight: var(--imoc-type-body-medium-weight);
+  line-height: var(--imoc-type-body-medium-line-height);
+  letter-spacing: var(--imoc-type-body-medium-letter-spacing);
+}
+
+.imoc-breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--imoc-spacing-inline-gap);
+}
+
+.imoc-breadcrumb__divider {
+  color: var(--imoc-text-tertiary);
+}
+
+.imoc-breadcrumb__link {
+  color: var(--imoc-text-link);
+  text-decoration: none;
+  border-radius: var(--imoc-radius-small);
+}
+
+.imoc-breadcrumb__link:hover {
+  color: var(--imoc-text-link-hover);
+}
+
+.imoc-breadcrumb__link:focus-visible {
+  outline: 2px solid var(--imoc-border-focus);
+  outline-offset: 2px;
+}
+
+.imoc-breadcrumb__current {
+  color: var(--imoc-text-primary);
+}

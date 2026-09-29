@@ -1,0 +1,112 @@
+/* Text Field — mirrors the Figma "Text field" set (9259:1911).
+   Figma states map to code like this:
+   - Default / Hover / Disabled / Error: as designed.
+   - Focus: border/focus at 2px. Drawn as a 1px border plus a 1px inset shadow so the field
+     doesn't grow by 2px when focused (Figma's inside stroke grows the frame).
+   - Active (border/strong while typing) has no separate CSS moment — a focused text input
+     is always :focus-visible, so Focus covers it. Flagged for design review. */
+
+.imoc-text-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--imoc-spacing-micro-gap);
+  width: 100%;
+}
+
+.imoc-text-field__box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: var(--imoc-spacing-micro-gap);
+  padding: var(--imoc-spacing-inline-gap);
+  background: var(--imoc-surface-input);
+  border: 1px solid var(--imoc-border-default);
+  border-radius: var(--imoc-radius-medium);
+  cursor: text;
+}
+
+.imoc-text-field__label {
+  color: var(--imoc-text-secondary);
+  font-family: var(--imoc-type-body-small-family), sans-serif;
+  font-size: var(--imoc-type-body-small-size);
+  font-weight: var(--imoc-type-body-small-weight);
+  line-height: var(--imoc-type-body-small-line-height);
+  letter-spacing: var(--imoc-type-body-small-letter-spacing);
+  cursor: inherit;
+}
+
+.imoc-text-field__input {
+  all: unset;
+  display: block;
+  width: 100%;
+  color: var(--imoc-text-primary);
+  font-family: var(--imoc-type-body-medium-family), sans-serif;
+  font-size: var(--imoc-type-body-medium-size);
+  font-weight: var(--imoc-type-body-medium-weight);
+  line-height: var(--imoc-type-body-medium-line-height);
+  letter-spacing: var(--imoc-type-body-medium-letter-spacing);
+}
+
+.imoc-text-field__input::placeholder {
+  color: var(--imoc-text-placeholder);
+  opacity: 1;
+}
+
+.imoc-text-field__helper,
+.imoc-text-field__error {
+  margin: 0;
+  font-family: var(--imoc-type-body-small-family), sans-serif;
+  font-size: var(--imoc-type-body-small-size);
+  font-weight: var(--imoc-type-body-small-weight);
+  line-height: var(--imoc-type-body-small-line-height);
+  letter-spacing: var(--imoc-type-body-small-letter-spacing);
+}
+
+.imoc-text-field__helper {
+  color: var(--imoc-text-secondary);
+}
+
+.imoc-text-field__error {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--imoc-spacing-micro-gap);
+  color: var(--imoc-text-error);
+}
+
+.imoc-text-field__error svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ---- states ---- */
+
+.imoc-text-field:not([data-disabled]):not([data-error]) .imoc-text-field__box:hover {
+  background: var(--imoc-surface-hover);
+}
+
+.imoc-text-field__box:focus-within {
+  background: var(--imoc-surface-input);
+  border-color: var(--imoc-border-focus);
+  box-shadow: inset 0 0 0 1px var(--imoc-border-focus);
+}
+
+.imoc-text-field[data-error] .imoc-text-field__box {
+  background: var(--imoc-surface-error);
+  border-color: var(--imoc-border-error);
+}
+
+.imoc-text-field[data-error] .imoc-text-field__box:focus-within {
+  box-shadow: inset 0 0 0 1px var(--imoc-border-error);
+}
+
+.imoc-text-field[data-disabled] .imoc-text-field__box {
+  background: var(--imoc-surface-disabled);
+  border-color: var(--imoc-border-subtle);
+  cursor: not-allowed;
+}
+
+.imoc-text-field[data-disabled] .imoc-text-field__label,
+.imoc-text-field[data-disabled] .imoc-text-field__input,
+.imoc-text-field[data-disabled] .imoc-text-field__input::placeholder {
+  color: var(--imoc-text-disabled);
+}

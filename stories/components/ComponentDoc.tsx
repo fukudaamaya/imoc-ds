@@ -55,6 +55,7 @@ function TokenChip({ token }: { token: string | undefined }) {
 
 function Render({ componentKey, variant }: { componentKey: string; variant: ComponentVariant }) {
   const src = renderUrl(componentKey, variant.id);
+  if (variant.hidden) return <div className="cd-missing">Hidden on the Figma canvas — no render</div>;
   if (!src) return <div className="cd-missing">Render not exported</div>;
   return (
     <img
@@ -63,7 +64,6 @@ function Render({ componentKey, variant }: { componentKey: string; variant: Comp
       width={variant.width}
       height={variant.height}
       alt={`${variant.name} — exported from Figma`}
-      loading="lazy"
     />
   );
 }
@@ -179,7 +179,7 @@ function VaryingTokens({ set, rows }: { set: ComponentSetSnapshot; rows: TokenRo
               data-active={o === tab}
               onClick={() => setTab(o)}
             >
-              {o}
+              {/^(true|false)$/.test(o) ? `${tabAxis.name}: ${o === 'true' ? 'with' : 'without'}` : o}
             </button>
           ))}
         </div>
@@ -298,9 +298,14 @@ export function ComponentGuidelines({ componentKey, setIds }: { componentKey: st
   );
 }
 
-/** First paragraph of a component set's Figma description — the page subtitle. */
-export function componentSummary(componentKey: string, setId?: string): string {
+/**
+ * First paragraph of a component's Figma description — the page subtitle. Uses the given
+ * set, or the first of the component's sets that has a description.
+ */
+export function componentSummary(componentKey: string, setIds?: string[]): string {
   const snapshot = components[componentKey];
-  const set = setId ? snapshot?.sets.find((s) => s.id === setId) : snapshot?.sets[0];
+  if (!snapshot) return '';
+  const sets = setIds ? setIds.map((id) => snapshot.sets.find((s) => s.id === id)).filter(Boolean) : snapshot.sets;
+  const set = (sets as ComponentSetSnapshot[]).find((s) => s.description.trim());
   return set ? paragraphs(set.description)[0] ?? '' : '';
 }

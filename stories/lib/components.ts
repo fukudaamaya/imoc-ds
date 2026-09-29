@@ -15,6 +15,8 @@ export interface ComponentVariant {
   props: Record<string, string>;
   width: number;
   height: number;
+  /** Hidden on the Figma canvas — no render can be exported. */
+  hidden?: boolean;
   tokens: TokenBinding[];
 }
 
@@ -38,7 +40,61 @@ export interface ComponentSnapshot {
   sets: ComponentSetSnapshot[];
 }
 
-export const components = componentsJson as unknown as Record<string, ComponentSnapshot>;
+/**
+ * Figma text layers are often auto-named after their sample text ("Email", "Jane",
+ * "Section headline goes here"), which differs between variants and would split one
+ * layer into several token-table rows. These map those names to the layer's role.
+ * Keyed by component; each rule rewrites one path segment.
+ */
+const LAYER_ALIASES: Record<string, [RegExp, string][]> = {
+  'text-field': [
+    [/^(Email|First [Nn]ame)$/, 'Label'],
+    [/^(jane\.smith@gmail\.com|Jane SmI|Jane|J)$/, 'Value'],
+  ],
+  breadcrumb: [
+    [/^Home$/, 'First crumb'],
+    [/^Services$/, 'Crumb'],
+    [/^Metabolic Disorders$/, 'Current crumb'],
+  ],
+  headers: [
+    [/^Section Overline$/, 'Overline'],
+    [/^Section headline goes here$/, 'Headline'],
+    [/^Section subheader$/, 'Subheader'],
+    [/^Home$/, 'First crumb'],
+    [/^Services$/, 'Crumb'],
+    [/^Metabolic Disorders$/, 'Current crumb'],
+  ],
+  navigation: [[/^Nav Link — .+$/, 'Nav Link']],
+  'dropdown-menu': [[/^Column \d$/, 'Column']],
+};
+
+function aliasLayer(componentKey: string, layer: string): string {
+  const rules = LAYER_ALIASES[componentKey];
+  if (!rules) return layer;
+  return layer
+    .split(' / ')
+    .map((seg) => rules.reduce((acc, [re, to]) => (re.test(acc) ? to : acc), seg))
+    .join(' / ');
+}
+
+export const components = Object.fromEntries(
+  Object.entries(componentsJson as unknown as Record<string, ComponentSnapshot>).map(([key, comp]) => [
+    key,
+    {
+      ...comp,
+      sets: comp.sets.map((set) => ({
+        ...set,
+        variants: set.variants.map((v) => ({
+          ...v,
+          // Logo artwork is raw vector paths, not tokens — nothing useful to list.
+          tokens: v.tokens
+            .filter((t) => !/(^|\/ )Logo( \/|$)/.test(t.layer))
+            .map((t) => ({ ...t, layer: aliasLayer(key, t.layer) })),
+        })),
+      })),
+    },
+  ]),
+) as Record<string, ComponentSnapshot>;
 
 export const FIGMA_FILE_KEY = '83u6tgRpNEq3yYZetZBpQ9';
 

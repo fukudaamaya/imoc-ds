@@ -1,0 +1,213 @@
+/* Navigation — mirrors the Figma "Nav Link" (9243:15552), "Navigation / Desktop"
+   (9241:14764) and "Navigation / Mobile" (9241:15211) sets. Height, margins and link
+   padding come from the Dimensions tokens, so the bar is 80px on Web and 64px on Mobile. */
+
+/* ---------------- Nav Link ---------------- */
+
+.imoc-nav-link {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  padding: var(--imoc-spacing-component-padding);
+  border-radius: var(--imoc-radius-medium);
+  color: var(--imoc-text-primary);
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+
+  font-family: var(--imoc-type-label-family), sans-serif;
+  font-size: var(--imoc-type-label-size);
+  font-weight: var(--imoc-type-label-weight);
+  line-height: var(--imoc-type-label-line-height);
+  letter-spacing: var(--imoc-type-label-letter-spacing);
+}
+
+.imoc-nav-link__row {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--imoc-spacing-inline-gap);
+}
+
+.imoc-nav-link--menu .imoc-nav-link__row {
+  padding: 0 var(--imoc-spacing-micro-gap);
+}
+
+.imoc-nav-link:hover,
+.imoc-nav-link[aria-expanded='true'] {
+  background: var(--imoc-surface-hover);
+  color: var(--imoc-text-brand);
+}
+
+.imoc-nav-link:focus-visible {
+  outline: 2px solid var(--imoc-border-focus);
+  outline-offset: 2px;
+}
+
+/* Active: brand label + 2px underline, so colour is never the only cue (WCAG 1.4.1).
+   Positioned under the label row rather than in flow, so the link keeps its height. */
+.imoc-nav-link[data-active] {
+  color: var(--imoc-text-brand);
+}
+
+.imoc-nav-link[data-active] .imoc-nav-link__row::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--imoc-surface-brand);
+}
+
+/* ---------------- Shared bar ---------------- */
+
+.imoc-nav {
+  box-sizing: border-box;
+  background: var(--imoc-surface-background);
+}
+
+.imoc-nav__logo {
+  display: inline-flex;
+  border-radius: var(--imoc-radius-small);
+}
+
+.imoc-nav__logo img {
+  display: block;
+  width: auto;
+}
+
+.imoc-nav__logo:focus-visible,
+.imoc-nav__trigger:focus-visible {
+  outline: 2px solid var(--imoc-border-focus);
+  outline-offset: 2px;
+}
+
+/* ---------------- Desktop ---------------- */
+
+.imoc-nav--desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--imoc-layout-header-height);
+  padding: 0 var(--imoc-spacing-page-margin);
+  border-bottom: 1px solid var(--imoc-border-subtle);
+}
+
+.imoc-nav--desktop nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imoc-nav__links {
+  display: flex;
+  align-items: center;
+  gap: var(--imoc-spacing-inline-gap);
+  margin: 0;
+  padding: 0 var(--imoc-spacing-micro-gap);
+  list-style: none;
+}
+
+.imoc-nav__item {
+  position: relative;
+}
+
+/* Dropdown hangs from the link; the bridge padding keeps hover alive across the gap. */
+.imoc-nav__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  padding-top: var(--imoc-spacing-micro-gap);
+}
+
+.imoc-nav__dropdown[hidden] {
+  display: none;
+}
+
+/* ---------------- Mobile ---------------- */
+
+.imoc-nav__bar {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--imoc-layout-header-height);
+  padding: 0 var(--imoc-spacing-page-margin);
+  border-bottom: 1px solid var(--imoc-border-subtle);
+}
+
+/* 44×44 — the WCAG minimum target; fixed in Figma, no token. */
+.imoc-nav__trigger {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--imoc-radius-medium);
+  color: var(--imoc-text-primary);
+  cursor: pointer;
+}
+
+.imoc-nav--mobile[data-open] {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.imoc-nav__drawer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.imoc-nav__drawer[hidden] {
+  display: none;
+}
+
+.imoc-nav__drawer nav {
+  flex: 1;
+}
+
+.imoc-nav__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: var(--imoc-spacing-content-gap) var(--imoc-spacing-page-margin);
+  list-style: none;
+}
+
+.imoc-nav__list .imoc-nav-link {
+  display: flex;
+  width: 100%;
+}
+
+.imoc-nav__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--imoc-spacing-content-gap);
+  padding: var(--imoc-spacing-content-gap) var(--imoc-spacing-page-margin) var(--imoc-spacing-section-gap);
+}
+
+.imoc-nav__footer-cta {
+  width: 100%;
+}
+
+.imoc-nav__phone {
+  margin: 0;
+  color: var(--imoc-text-secondary);
+  font-family: var(--imoc-type-body-small-family), sans-serif;
+  font-size: var(--imoc-type-body-small-size);
+  font-weight: var(--imoc-type-body-small-weight);
+  line-height: var(--imoc-type-body-small-line-height);
+  letter-spacing: var(--imoc-type-body-small-letter-spacing);
+}
+
+.imoc-nav__phone a {
+  color: inherit;
+}
