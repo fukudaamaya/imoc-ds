@@ -1,0 +1,48 @@
+/* Badge — mirrors the Figma "Badge" component set (9149:442). Only Type=neutral carries a
+   border in Figma (border/default, 1px); the six colour types are fill-only. */
+
+.imoc-badge {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--imoc-spacing-micro-gap);
+  padding: var(--imoc-spacing-micro-gap) var(--imoc-spacing-component-padding);
+  border-radius: var(--imoc-radius-pill);
+  white-space: nowrap;
+
+  font-family: var(--imoc-type-label-family), sans-serif;
+  font-size: var(--imoc-type-label-size);
+  font-weight: var(--imoc-type-label-weight);
+  line-height: var(--imoc-type-label-line-height);
+  letter-spacing: var(--imoc-type-label-letter-spacing);
+}
+
+.imoc-badge--neutral {
+  background: var(--imoc-surface-card);
+  border: 1px solid var(--imoc-border-default);
+  color: var(--imoc-text-secondary);
+}
+.imoc-badge--brand {
+  background: var(--imoc-surface-brand-subtle);
+  color: var(--imoc-text-brand);
+}
+.imoc-badge--accent {
+  background: var(--imoc-surface-accent-subtle);
+  color: var(--imoc-text-accent);
+}
+.imoc-badge--success {
+  background: var(--imoc-surface-success);
+  color: var(--imoc-text-success);
+}
+.imoc-badge--warning {
+  background: var(--imoc-surface-warning);
+  color: var(--imoc-text-warning);
+}
+.imoc-badge--error {
+  background: var(--imoc-surface-error);
+  color: var(--imoc-text-error);
+}
+.imoc-badge--info {
+  background: var(--imoc-surface-info);
+  color: var(--imoc-text-info);
+}

@@ -1,0 +1,91 @@
+/* Dropdown menu — mirrors the Figma "Dropdown Item" (9209:2388), "Dropdown/Simple"
+   (9241:15329) and "Dropdown/Mega" (9241:15421) sets.
+
+   The shadow is the Figma effect style elevation/medium, copied layer for layer. The token
+   pipeline doesn't export effect styles yet, so this is the one place a component carries
+   raw values — replace with a variable once elevation is in tokens/*.json. The 320px
+   (simple) and 300px (mega column) widths are the fixed frame widths in Figma. */
+
+.imoc-dropdown {
+  --imoc-dropdown-elevation: 0 2px 4px rgba(42, 23, 13, 0.05), 0 2px 8px rgba(12, 17, 17, 0.08);
+
+  box-sizing: border-box;
+  display: flex;
+  background: var(--imoc-surface-card);
+  border: 1px solid var(--imoc-border-subtle);
+  border-radius: var(--imoc-radius-large);
+  box-shadow: var(--imoc-dropdown-elevation);
+}
+
+.imoc-dropdown--simple {
+  width: 320px;
+  padding: var(--imoc-spacing-component-padding);
+}
+
+.imoc-dropdown--mega {
+  width: max-content;
+  gap: var(--imoc-spacing-grid-gap);
+  padding: var(--imoc-spacing-content-gap);
+}
+
+.imoc-dropdown__column {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex: 1;
+}
+
+.imoc-dropdown--mega .imoc-dropdown__column {
+  width: 300px;
+  flex: none;
+}
+
+/* ---- item ---- */
+
+.imoc-dropdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--imoc-spacing-micro-gap);
+  padding: var(--imoc-spacing-component-padding);
+  border-radius: var(--imoc-radius-medium);
+  text-decoration: none;
+}
+
+.imoc-dropdown-item:hover {
+  background: var(--imoc-surface-hover);
+}
+
+.imoc-dropdown-item:focus-visible {
+  outline: 2px solid var(--imoc-border-focus);
+  outline-offset: 2px;
+}
+
+.imoc-dropdown-item__title {
+  color: var(--imoc-text-primary);
+  font-family: var(--imoc-type-label-family), sans-serif;
+  font-size: var(--imoc-type-label-size);
+  font-weight: var(--imoc-type-label-weight);
+  line-height: var(--imoc-type-label-line-height);
+  letter-spacing: var(--imoc-type-label-letter-spacing);
+}
+
+.imoc-dropdown-item__description {
+  color: var(--imoc-text-secondary);
+  font-family: var(--imoc-type-body-small-family), sans-serif;
+  font-size: var(--imoc-type-body-small-size);
+  font-weight: var(--imoc-type-body-small-weight);
+  line-height: var(--imoc-type-body-small-line-height);
+  letter-spacing: var(--imoc-type-body-small-letter-spacing);
+}
+
+@media (max-width: 720px) {
+  .imoc-dropdown--mega {
+    flex-direction: column;
+    width: 100%;
+  }
+  .imoc-dropdown--mega .imoc-dropdown__column {
+    width: auto;
+  }
+}

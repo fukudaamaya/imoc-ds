@@ -1,0 +1,102 @@
+/* Button — mirrors the Figma "Button" component set (9149:99). Every value is a token
+   except the 48px height, which Figma also sets as a fixed size (no height token exists),
+   and the 1px secondary border width, which Figma leaves unbound. */
+
+.imoc-button {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--imoc-spacing-inline-gap);
+  min-height: 48px;
+  padding: 0 var(--imoc-spacing-component-padding);
+  border: 1px solid transparent;
+  border-radius: var(--imoc-radius-medium);
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+
+  font-family: var(--imoc-type-label-family), sans-serif;
+  font-size: var(--imoc-type-label-size);
+  font-weight: var(--imoc-type-label-weight);
+  line-height: var(--imoc-type-label-line-height);
+  letter-spacing: var(--imoc-type-label-letter-spacing);
+
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.imoc-button svg {
+  flex-shrink: 0;
+}
+
+/* Focus: 2px ring at 2px offset (border/focus). Never removed. */
+.imoc-button:focus-visible {
+  outline: 2px solid var(--imoc-border-focus);
+  outline-offset: 2px;
+}
+
+/* ---- Primary ---- */
+.imoc-button--primary {
+  background: var(--imoc-surface-action);
+  color: var(--imoc-text-on-fill);
+}
+.imoc-button--primary:hover:not(:disabled):not([aria-disabled='true']) {
+  background: var(--imoc-surface-action-hover);
+}
+
+/* ---- Secondary ---- */
+.imoc-button--secondary {
+  background: var(--imoc-surface-background);
+  border-color: var(--imoc-border-brand);
+  color: var(--imoc-text-brand);
+}
+.imoc-button--secondary:hover:not(:disabled):not([aria-disabled='true']) {
+  background: var(--imoc-surface-hover);
+}
+
+/* ---- Plain ---- */
+.imoc-button--plain {
+  color: var(--imoc-text-link);
+}
+.imoc-button--plain:hover:not(:disabled):not([aria-disabled='true']) {
+  background: var(--imoc-surface-hover);
+}
+
+/* ---- Disabled ---- */
+.imoc-button:disabled,
+.imoc-button[data-disabled] {
+  color: var(--imoc-text-disabled);
+  cursor: not-allowed;
+}
+.imoc-button--primary:disabled,
+.imoc-button--primary[data-disabled],
+.imoc-button--secondary:disabled,
+.imoc-button--secondary[data-disabled] {
+  background: var(--imoc-surface-disabled);
+  border-color: transparent;
+}
+
+/* ---- Loading ---- */
+.imoc-button[data-loading] {
+  cursor: progress;
+}
+
+.imoc-button__loader {
+  animation: imoc-button-spin 900ms steps(8) infinite;
+}
+
+@keyframes imoc-button-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .imoc-button__loader {
+    animation-duration: 2400ms;
+  }
+  .imoc-button {
+    transition: none;
+  }
+}

@@ -1,0 +1,65 @@
+/* Headers — mirrors the Figma "Section Header" (9243:16580) and "Page Header" (9243:16645)
+   sets. Type sizes follow the Web/Mobile dimension mode through the type tokens. */
+
+.imoc-section-header,
+.imoc-page-header,
+.imoc-page-header__top,
+.imoc-page-header__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--imoc-spacing-content-gap);
+}
+
+.imoc-section-header--center {
+  align-items: center;
+  text-align: center;
+}
+
+.imoc-section-header__overline,
+.imoc-section-header__title,
+.imoc-section-header__subheader,
+.imoc-page-header__title,
+.imoc-page-header__description {
+  margin: 0;
+}
+
+.imoc-section-header__overline {
+  color: var(--imoc-text-brand);
+  font-family: var(--imoc-type-overline-family), sans-serif;
+  font-size: var(--imoc-type-overline-size);
+  font-weight: var(--imoc-type-overline-weight);
+  line-height: var(--imoc-type-overline-line-height);
+  letter-spacing: var(--imoc-type-overline-letter-spacing);
+}
+
+.imoc-section-header__title {
+  color: var(--imoc-text-primary);
+  font-family: var(--imoc-type-heading-2-family), serif;
+  font-size: var(--imoc-type-heading-2-size);
+  font-weight: var(--imoc-type-heading-2-weight);
+  line-height: var(--imoc-type-heading-2-line-height);
+  letter-spacing: var(--imoc-type-heading-2-letter-spacing);
+}
+
+.imoc-section-header__subheader,
+.imoc-page-header__description {
+  color: var(--imoc-text-secondary);
+  font-family: var(--imoc-type-body-large-family), sans-serif;
+  font-size: var(--imoc-type-body-large-size);
+  font-weight: var(--imoc-type-body-large-weight);
+  line-height: var(--imoc-type-body-large-line-height);
+  letter-spacing: var(--imoc-type-body-large-letter-spacing);
+}
+
+.imoc-page-header__brandmark {
+  display: block;
+}
+
+.imoc-page-header__title {
+  color: var(--imoc-text-primary);
+  font-family: var(--imoc-type-heading-1-family), serif;
+  font-size: var(--imoc-type-heading-1-size);
+  font-weight: var(--imoc-type-heading-1-weight);
+  line-height: var(--imoc-type-heading-1-line-height);
+  letter-spacing: var(--imoc-type-heading-1-letter-spacing);
+}

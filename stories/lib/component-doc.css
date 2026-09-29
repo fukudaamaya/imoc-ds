@@ -1,0 +1,222 @@
+/* Component documentation pages (stories/components/ComponentDoc.tsx). Builds on
+   doc-ui.css — same page chrome, tables, tabs and copy buttons — and only adds what the
+   component pages need on top: the variant matrix and the token tables. */
+
+.cd-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.cd-prose {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--imoc-text-primary);
+  max-width: 720px;
+  margin: 0 0 12px;
+}
+
+.cd-set + .cd-set {
+  margin-top: 56px;
+  padding-top: 16px;
+  border-top: 1px solid var(--imoc-border-subtle);
+}
+
+.cd-set-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.cd-node-link {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--imoc-text-link);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cd-node-link:hover {
+  color: var(--imoc-text-link-hover);
+  text-decoration: underline;
+}
+
+.cd-node-link:focus-visible,
+.doc-tab:focus-visible {
+  outline: 2px solid var(--imoc-border-focus);
+  outline-offset: 2px;
+}
+
+.cd-subsection-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 28px 0 4px;
+  color: var(--imoc-text-primary);
+}
+
+.cd-table-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--imoc-text-secondary);
+  margin: 20px 0 8px;
+}
+
+/* ---- variant renders ---- */
+
+.cd-render {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.cd-matrix-scroll {
+  overflow-x: auto;
+}
+
+.cd-matrix {
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--imoc-surface-background);
+  border: 1px solid var(--imoc-border-subtle);
+  border-radius: var(--imoc-radius-medium);
+}
+
+.cd-matrix th {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--imoc-text-tertiary);
+  text-align: left;
+  padding: 12px 20px;
+  white-space: nowrap;
+}
+
+.cd-matrix thead th {
+  border-bottom: 1px solid var(--imoc-border-subtle);
+}
+
+.cd-matrix tbody th {
+  color: var(--imoc-text-secondary);
+}
+
+.cd-matrix td {
+  padding: 12px 20px;
+  vertical-align: middle;
+}
+
+.cd-axis {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.cd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.cd-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cd-cell {
+  margin: 0;
+  border: 1px solid var(--imoc-border-subtle);
+  border-radius: var(--imoc-radius-medium);
+  background: var(--imoc-surface-background);
+  overflow: hidden;
+}
+
+.cd-cell-canvas {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.cd-cell figcaption {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--imoc-text-secondary);
+  padding: 8px 12px;
+  border-top: 1px solid var(--imoc-border-subtle);
+  background: var(--imoc-surface-card);
+}
+
+.cd-missing {
+  font-size: 12px;
+  color: var(--imoc-text-tertiary);
+  padding: 12px;
+}
+
+/* ---- tables ---- */
+
+.cd-table td {
+  vertical-align: top;
+}
+
+.cd-table--varying th:not(:first-child) {
+  white-space: nowrap;
+}
+
+.cd-mono {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 12px;
+}
+
+.cd-layer {
+  font-size: 13px;
+  color: var(--imoc-text-primary);
+}
+
+.cd-muted {
+  color: var(--imoc-text-tertiary);
+}
+
+.cd-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.cd-empty {
+  color: var(--imoc-text-tertiary);
+}
+
+.cd-token {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: var(--imoc-radius-small);
+  border: 1px dashed var(--imoc-border-strong);
+  color: var(--imoc-text-secondary);
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .doc-page {
+    padding: 24px 16px 64px;
+  }
+
+  .cd-page-header,
+  .cd-set-header {
+    flex-direction: column;
+  }
+}
+
+/* ---- Docs page header (Title block + Figma badge) ---- */
+
+.cd-docs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.cd-guidelines {
+  margin-top: 48px;
+}
