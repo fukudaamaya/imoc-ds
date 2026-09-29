@@ -1,0 +1,4713 @@
+{
+  "badge": {
+    "page": "Badge",
+    "sets": [
+      {
+        "id": "9149:442",
+        "name": "Badge",
+        "description": "Static, non-interactive status or category label. Type maps 1:1 to the semantic colour tokens (neutral, brand, accent, success, warning, error, info) — the property value and the token family are deliberately the same word. \n\nSubtle style only; all pairings measured 5.92:1 or better. In code this is variant=\"{type}\"; a `strong` boolean is intentionally not implemented. Not for interactive filters or tabs — those need their own component with hover, selected and focus states.",
+        "properties": [
+          {
+            "name": "Label",
+            "type": "TEXT",
+            "default": "Badge"
+          },
+          {
+            "name": "Type",
+            "type": "VARIANT",
+            "options": [
+              "neutral",
+              "brand",
+              "accent",
+              "success",
+              "warning",
+              "error",
+              "info"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "9149:428",
+            "name": "Type=neutral",
+            "props": {
+              "Type": "neutral"
+            },
+            "width": 83,
+            "height": 32,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/pill"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/card"
+              },
+              {
+                "layer": "(root)",
+                "property": "border",
+                "token": "border/default"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          },
+          {
+            "id": "9149:430",
+            "name": "Type=brand",
+            "props": {
+              "Type": "brand"
+            },
+            "width": 81,
+            "height": 30,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/pill"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/brand-subtle"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          },
+          {
+            "id": "9149:432",
+            "name": "Type=accent",
+            "props": {
+              "Type": "accent"
+            },
+            "width": 81,
+            "height": 30,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/pill"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/accent-subtle"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/accent"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          },
+          {
+            "id": "9149:434",
+            "name": "Type=success",
+            "props": {
+              "Type": "success"
+            },
+            "width": 81,
+            "height": 30,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/pill"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/success"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/success"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          },
+          {
+            "id": "9149:436",
+            "name": "Type=warning",
+            "props": {
+              "Type": "warning"
+            },
+            "width": 81,
+            "height": 30,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/pill"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/warning"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/warning"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          },
+          {
+            "id": "9149:438",
+            "name": "Type=error",
+            "props": {
+              "Type": "error"
+            },
+            "width": 81,
+            "height": 30,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/pill"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/error"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/error"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          },
+          {
+            "id": "9149:440",
+            "name": "Type=info",
+            "props": {
+              "Type": "info"
+            },
+            "width": 81,
+            "height": 30,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/pill"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/info"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/info"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "button": {
+    "page": "Buttons",
+    "sets": [
+      {
+        "id": "9149:99",
+        "name": "Button",
+        "description": "Primary action control. One size (48px) — clears the 44px WCAG target minimum. \n\nEvery variant wraps a 'Button Surface' frame inside a transparent root whose 2px padding is the focus-ring offset; keep that structure so State toggles preserve overrides.\n\nBasic buttons are the most in the interface. Only use another style if a button requires more or less visual weight.\n\nPlain buttons, which look similar to links, are used for less important or less commonly used actions.",
+        "properties": [
+          {
+            "name": "Label",
+            "type": "TEXT",
+            "default": "Button"
+          },
+          {
+            "name": "Icon leading",
+            "type": "BOOLEAN",
+            "default": false
+          },
+          {
+            "name": "Icon trailing",
+            "type": "BOOLEAN",
+            "default": true
+          },
+          {
+            "name": "Icon",
+            "type": "INSTANCE_SWAP",
+            "default": "9149:183"
+          },
+          {
+            "name": "Variant",
+            "type": "VARIANT",
+            "options": [
+              "Primary",
+              "Secondary",
+              "Plain"
+            ]
+          },
+          {
+            "name": "State",
+            "type": "VARIANT",
+            "options": [
+              "Default",
+              "Hover",
+              "Focus",
+              "Disabled",
+              "Loading"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "9149:9",
+            "name": "Variant=Primary, State=Default",
+            "props": {
+              "Variant": "Primary",
+              "State": "Default"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "fill",
+                "token": "surface/action"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/on-fill"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Button Surface / Icon Trailing",
+                "property": "fill",
+                "token": "text/on-fill"
+              }
+            ]
+          },
+          {
+            "id": "9149:39",
+            "name": "Variant=Secondary, State=Default",
+            "props": {
+              "Variant": "Secondary",
+              "State": "Default"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "fill",
+                "token": "surface/background"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "border",
+                "token": "border/brand"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Button Surface / Icon Trailing",
+                "property": "fill",
+                "token": "text/brand"
+              }
+            ]
+          },
+          {
+            "id": "9149:69",
+            "name": "Variant=Plain, State=Default",
+            "props": {
+              "Variant": "Plain",
+              "State": "Default"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Button Surface / Icon Trailing",
+                "property": "fill",
+                "token": "text/link"
+              }
+            ]
+          },
+          {
+            "id": "9149:15",
+            "name": "Variant=Primary, State=Hover",
+            "props": {
+              "Variant": "Primary",
+              "State": "Hover"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "fill",
+                "token": "surface/action-hover"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/on-fill"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Button Surface / Icon Trailing",
+                "property": "fill",
+                "token": "text/on-fill"
+              }
+            ]
+          },
+          {
+            "id": "9149:45",
+            "name": "Variant=Secondary, State=Hover",
+            "props": {
+              "Variant": "Secondary",
+              "State": "Hover"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "fill",
+                "token": "surface/hover"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "border",
+                "token": "border/brand"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Button Surface / Icon Trailing",
+                "property": "fill",
+                "token": "text/brand"
+              }
+            ]
+          },
+          {
+            "id": "9149:75",
+            "name": "Variant=Plain, State=Hover",
+            "props": {
+              "Variant": "Plain",
+              "State": "Hover"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "fill",
+                "token": "surface/hover"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Button Surface / Icon Trailing",
+                "property": "fill",
+                "token": "text/link"
+              }
+            ]
+          },
+          {
+            "id": "9149:21",
+            "name": "Variant=Primary, State=Focus",
+            "props": {
+              "Variant": "Primary",
+              "State": "Focus"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "(root)",
+                "property": "border",
+                "token": "border/focus"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "fill",
+                "token": "surface/action"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/on-fill"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Button Surface / Icon Trailing",
+                "property": "fill",
+                "token": "text/on-fill"
+              }
+            ]
+          },
+          {
+            "id": "9149:51",
+            "name": "Variant=Secondary, State=Focus",
+            "props": {
+              "Variant": "Secondary",
+              "State": "Focus"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "border",
+                "token": "border/focus"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "fill",
+                "token": "surface/background"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "border",
+                "token": "border/brand"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Button Surface / Icon Trailing",
+                "property": "fill",
+                "token": "text/brand"
+              }
+            ]
+          },
+          {
+            "id": "9149:81",
+            "name": "Variant=Plain, State=Focus",
+            "props": {
+              "Variant": "Plain",
+              "State": "Focus"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "border",
+                "token": "border/focus"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Button Surface / Icon Trailing",
+                "property": "fill",
+                "token": "text/link"
+              }
+            ]
+          },
+          {
+            "id": "9149:27",
+            "name": "Variant=Primary, State=Disabled",
+            "props": {
+              "Variant": "Primary",
+              "State": "Disabled"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "fill",
+                "token": "surface/disabled"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/disabled"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Button Surface / Icon Trailing",
+                "property": "fill",
+                "token": "text/disabled"
+              }
+            ]
+          },
+          {
+            "id": "9149:57",
+            "name": "Variant=Secondary, State=Disabled",
+            "props": {
+              "Variant": "Secondary",
+              "State": "Disabled"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "fill",
+                "token": "surface/disabled"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/disabled"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Button Surface / Icon Trailing",
+                "property": "fill",
+                "token": "text/disabled"
+              }
+            ]
+          },
+          {
+            "id": "9149:87",
+            "name": "Variant=Plain, State=Disabled",
+            "props": {
+              "Variant": "Plain",
+              "State": "Disabled"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/disabled"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Button Surface / Icon Trailing",
+                "property": "fill",
+                "token": "text/disabled"
+              }
+            ]
+          },
+          {
+            "id": "9149:33",
+            "name": "Variant=Primary, State=Loading",
+            "props": {
+              "Variant": "Primary",
+              "State": "Loading"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "fill",
+                "token": "surface/action"
+              },
+              {
+                "layer": "Button Surface / Loading Indicator",
+                "property": "border",
+                "token": "text/on-fill"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/on-fill"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          },
+          {
+            "id": "9149:63",
+            "name": "Variant=Secondary, State=Loading",
+            "props": {
+              "Variant": "Secondary",
+              "State": "Loading"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "fill",
+                "token": "surface/background"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "border",
+                "token": "border/brand"
+              },
+              {
+                "layer": "Button Surface / Loading Indicator",
+                "property": "border",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          },
+          {
+            "id": "9149:93",
+            "name": "Variant=Plain, State=Loading",
+            "props": {
+              "Variant": "Plain",
+              "State": "Loading"
+            },
+            "width": 124,
+            "height": 52,
+            "tokens": [
+              {
+                "layer": "Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Button Surface / Loading Indicator",
+                "property": "border",
+                "token": "text/link"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "breadcrumb": {
+    "page": "Breadcrumb",
+    "sets": [
+      {
+        "id": "9241:3759",
+        "name": "Breadcrumb Item",
+        "description": "A single breadcrumb crumb: a label with an optional leading \"/\" divider. \n\nThe first crumb in a trail uses Divider=Without; every crumb after it uses Divider=With. \n\nThe current page (last crumb, non-clickable) uses State=Active.",
+        "properties": [
+          {
+            "name": "State",
+            "type": "VARIANT",
+            "options": [
+              "Default",
+              "Hover",
+              "Active"
+            ]
+          },
+          {
+            "name": "Divider",
+            "type": "VARIANT",
+            "options": [
+              "false",
+              "true"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "9241:3744",
+            "name": "State=Default, Divider=false",
+            "props": {
+              "State": "Default",
+              "Divider": "false"
+            },
+            "width": 34,
+            "height": 26,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          },
+          {
+            "id": "9241:3746",
+            "name": "State=Default, Divider=true",
+            "props": {
+              "State": "Default",
+              "Divider": "true"
+            },
+            "width": 48,
+            "height": 26,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Divider",
+                "property": "color",
+                "token": "text/tertiary"
+              },
+              {
+                "layer": "Divider",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          },
+          {
+            "id": "9241:3749",
+            "name": "State=Hover, Divider=false",
+            "props": {
+              "State": "Hover",
+              "Divider": "false"
+            },
+            "width": 34,
+            "height": 26,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/link-hover"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          },
+          {
+            "id": "9241:3751",
+            "name": "State=Hover, Divider=true",
+            "props": {
+              "State": "Hover",
+              "Divider": "true"
+            },
+            "width": 48,
+            "height": 26,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Divider",
+                "property": "color",
+                "token": "text/tertiary"
+              },
+              {
+                "layer": "Divider",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/link-hover"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          },
+          {
+            "id": "9241:3754",
+            "name": "State=Active, Divider=false",
+            "props": {
+              "State": "Active",
+              "Divider": "false"
+            },
+            "width": 34,
+            "height": 26,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          },
+          {
+            "id": "9241:3756",
+            "name": "State=Active, Divider=true",
+            "props": {
+              "State": "Active",
+              "Divider": "true"
+            },
+            "width": 48,
+            "height": 26,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Divider",
+                "property": "color",
+                "token": "text/tertiary"
+              },
+              {
+                "layer": "Divider",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9241:14215",
+        "name": "Breadcrumb",
+        "description": "",
+        "properties": [
+          {
+            "name": "Property",
+            "type": "VARIANT",
+            "options": [
+              "2 items",
+              "3 items",
+              "4 items"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "9241:3760",
+            "name": "Property=2 items",
+            "props": {
+              "Property": "2 items"
+            },
+            "width": 132,
+            "height": 26,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/small"
+              },
+              {
+                "layer": "Home",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Home / Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Home / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Metabolic Disorders",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Metabolic Disorders / Divider",
+                "property": "color",
+                "token": "text/tertiary"
+              },
+              {
+                "layer": "Metabolic Disorders / Divider",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Metabolic Disorders / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Metabolic Disorders / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          },
+          {
+            "id": "9241:14216",
+            "name": "Property=3 items",
+            "props": {
+              "Property": "3 items"
+            },
+            "width": 266,
+            "height": 26,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/small"
+              },
+              {
+                "layer": "Home",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Home / Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Home / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Services",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Services / Divider",
+                "property": "color",
+                "token": "text/tertiary"
+              },
+              {
+                "layer": "Services / Divider",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Services / Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Services / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Metabolic Disorders",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Metabolic Disorders / Divider",
+                "property": "color",
+                "token": "text/tertiary"
+              },
+              {
+                "layer": "Metabolic Disorders / Divider",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Metabolic Disorders / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Metabolic Disorders / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          },
+          {
+            "id": "9241:14225",
+            "name": "Property=4 items",
+            "props": {
+              "Property": "4 items"
+            },
+            "width": 322,
+            "height": 26,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/small"
+              },
+              {
+                "layer": "Home",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Home / Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Home / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Services",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Services / Divider",
+                "property": "color",
+                "token": "text/tertiary"
+              },
+              {
+                "layer": "Services / Divider",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Services / Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Services / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Metabolic Disorders",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Metabolic Disorders / Divider",
+                "property": "color",
+                "token": "text/tertiary"
+              },
+              {
+                "layer": "Metabolic Disorders / Divider",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Metabolic Disorders / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Metabolic Disorders / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "text-field": {
+    "page": "Text Field",
+    "sets": [
+      {
+        "id": "9259:1911",
+        "name": "Text field",
+        "description": "Input field that users can type into. A fixed top-left label that stays visible once a value is entered.",
+        "properties": [
+          {
+            "name": "State",
+            "type": "VARIANT",
+            "options": [
+              "Default",
+              "Hover",
+              "Active",
+              "Focus",
+              "Disabled",
+              "Error"
+            ]
+          },
+          {
+            "name": "Helper text",
+            "type": "VARIANT",
+            "options": [
+              "false",
+              "true"
+            ]
+          },
+          {
+            "name": "Validation error",
+            "type": "VARIANT",
+            "options": [
+              "false",
+              "true"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "9259:1912",
+            "name": "State=Default, Helper text=false, Validation error=false",
+            "props": {
+              "State": "Default",
+              "Helper text": "false",
+              "Validation error": "false"
+            },
+            "width": 340,
+            "height": 69,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-x",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-y",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Field",
+                "property": "fill",
+                "token": "surface/input"
+              },
+              {
+                "layer": "Field",
+                "property": "border",
+                "token": "border/default"
+              },
+              {
+                "layer": "Field / Email",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Field / Email",
+                "property": "text-style",
+                "token": "type/body-small"
+              },
+              {
+                "layer": "Field / jane.smith@gmail.com",
+                "property": "color",
+                "token": "text/placeholder"
+              },
+              {
+                "layer": "Field / jane.smith@gmail.com",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          },
+          {
+            "id": "9259:1916",
+            "name": "State=Default, Helper text=true, Validation error=false",
+            "props": {
+              "State": "Default",
+              "Helper text": "true",
+              "Validation error": "false"
+            },
+            "width": 340,
+            "height": 94,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-x",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-y",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Field",
+                "property": "fill",
+                "token": "surface/input"
+              },
+              {
+                "layer": "Field",
+                "property": "border",
+                "token": "border/default"
+              },
+              {
+                "layer": "Field / Email",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Field / Email",
+                "property": "text-style",
+                "token": "type/body-small"
+              },
+              {
+                "layer": "Field / jane.smith@gmail.com",
+                "property": "color",
+                "token": "text/placeholder"
+              },
+              {
+                "layer": "Field / jane.smith@gmail.com",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Helper text",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Helper text",
+                "property": "text-style",
+                "token": "type/body-small"
+              }
+            ]
+          },
+          {
+            "id": "9259:1921",
+            "name": "State=Active, Helper text=true, Validation error=false",
+            "props": {
+              "State": "Active",
+              "Helper text": "true",
+              "Validation error": "false"
+            },
+            "width": 340,
+            "height": 94,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-x",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-y",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Field",
+                "property": "fill",
+                "token": "surface/input"
+              },
+              {
+                "layer": "Field",
+                "property": "border",
+                "token": "border/strong"
+              },
+              {
+                "layer": "Field / First name",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Field / First name",
+                "property": "text-style",
+                "token": "type/body-small"
+              },
+              {
+                "layer": "Field / Jane SmI",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Field / Jane SmI",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Helper text",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Helper text",
+                "property": "text-style",
+                "token": "type/body-small"
+              }
+            ]
+          },
+          {
+            "id": "9259:1926",
+            "name": "State=Hover, Helper text=true, Validation error=false",
+            "props": {
+              "State": "Hover",
+              "Helper text": "true",
+              "Validation error": "false"
+            },
+            "width": 340,
+            "height": 94,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-x",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-y",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Field",
+                "property": "fill",
+                "token": "surface/hover"
+              },
+              {
+                "layer": "Field",
+                "property": "border",
+                "token": "border/default"
+              },
+              {
+                "layer": "Field / Email",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Field / Email",
+                "property": "text-style",
+                "token": "type/body-small"
+              },
+              {
+                "layer": "Field / jane.smith@gmail.com",
+                "property": "color",
+                "token": "text/placeholder"
+              },
+              {
+                "layer": "Field / jane.smith@gmail.com",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Helper text",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Helper text",
+                "property": "text-style",
+                "token": "type/body-small"
+              }
+            ]
+          },
+          {
+            "id": "9259:1931",
+            "name": "State=Hover, Helper text=false, Validation error=false",
+            "props": {
+              "State": "Hover",
+              "Helper text": "false",
+              "Validation error": "false"
+            },
+            "width": 340,
+            "height": 69,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-x",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-y",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Field",
+                "property": "fill",
+                "token": "surface/hover"
+              },
+              {
+                "layer": "Field",
+                "property": "border",
+                "token": "border/default"
+              },
+              {
+                "layer": "Field / Email",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Field / Email",
+                "property": "text-style",
+                "token": "type/body-small"
+              },
+              {
+                "layer": "Field / jane.smith@gmail.com",
+                "property": "color",
+                "token": "text/placeholder"
+              },
+              {
+                "layer": "Field / jane.smith@gmail.com",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          },
+          {
+            "id": "9259:1935",
+            "name": "State=Active, Helper text=false, Validation error=false",
+            "props": {
+              "State": "Active",
+              "Helper text": "false",
+              "Validation error": "false"
+            },
+            "width": 340,
+            "height": 69,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-x",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-y",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Field",
+                "property": "fill",
+                "token": "surface/input"
+              },
+              {
+                "layer": "Field",
+                "property": "border",
+                "token": "border/strong"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "text-style",
+                "token": "type/body-small"
+              },
+              {
+                "layer": "Field / Jane",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Field / Jane",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          },
+          {
+            "id": "9259:1939",
+            "name": "State=Focus, Helper text=false, Validation error=false",
+            "props": {
+              "State": "Focus",
+              "Helper text": "false",
+              "Validation error": "false"
+            },
+            "width": 340,
+            "height": 71,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-x",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-y",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Field",
+                "property": "fill",
+                "token": "surface/input"
+              },
+              {
+                "layer": "Field",
+                "property": "border",
+                "token": "border/focus"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "text-style",
+                "token": "type/body-small"
+              },
+              {
+                "layer": "Field / Jane",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Field / Jane",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          },
+          {
+            "id": "9259:1943",
+            "name": "State=Focus, Helper text=true, Validation error=false",
+            "props": {
+              "State": "Focus",
+              "Helper text": "true",
+              "Validation error": "false"
+            },
+            "width": 340,
+            "height": 96,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-x",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-y",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Field",
+                "property": "fill",
+                "token": "surface/input"
+              },
+              {
+                "layer": "Field",
+                "property": "border",
+                "token": "border/focus"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "text-style",
+                "token": "type/body-small"
+              },
+              {
+                "layer": "Field / Jane",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Field / Jane",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Helper text",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Helper text",
+                "property": "text-style",
+                "token": "type/body-small"
+              }
+            ]
+          },
+          {
+            "id": "9259:1948",
+            "name": "State=Disabled, Helper text=false, Validation error=false",
+            "props": {
+              "State": "Disabled",
+              "Helper text": "false",
+              "Validation error": "false"
+            },
+            "width": 340,
+            "height": 69,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-x",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-y",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Field",
+                "property": "fill",
+                "token": "surface/disabled"
+              },
+              {
+                "layer": "Field",
+                "property": "border",
+                "token": "border/subtle"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "color",
+                "token": "text/disabled"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "text-style",
+                "token": "type/body-small"
+              },
+              {
+                "layer": "Field / Jane",
+                "property": "color",
+                "token": "text/disabled"
+              },
+              {
+                "layer": "Field / Jane",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          },
+          {
+            "id": "9259:1952",
+            "name": "State=Disabled, Helper text=true, Validation error=false",
+            "props": {
+              "State": "Disabled",
+              "Helper text": "true",
+              "Validation error": "false"
+            },
+            "width": 340,
+            "height": 94,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-x",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-y",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Field",
+                "property": "fill",
+                "token": "surface/disabled"
+              },
+              {
+                "layer": "Field",
+                "property": "border",
+                "token": "border/subtle"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "color",
+                "token": "text/disabled"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "text-style",
+                "token": "type/body-small"
+              },
+              {
+                "layer": "Field / Jane",
+                "property": "color",
+                "token": "text/disabled"
+              },
+              {
+                "layer": "Field / Jane",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Helper text",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Helper text",
+                "property": "text-style",
+                "token": "type/body-small"
+              }
+            ]
+          },
+          {
+            "id": "9259:1957",
+            "name": "State=Error, Helper text=false, Validation error=false",
+            "props": {
+              "State": "Error",
+              "Helper text": "false",
+              "Validation error": "false"
+            },
+            "width": 340,
+            "height": 69,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-x",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-y",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Field",
+                "property": "fill",
+                "token": "surface/error"
+              },
+              {
+                "layer": "Field",
+                "property": "border",
+                "token": "border/error"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "text-style",
+                "token": "type/body-small"
+              },
+              {
+                "layer": "Field / J",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Field / J",
+                "property": "text-style",
+                "token": "type/body-medium"
+              }
+            ]
+          },
+          {
+            "id": "9259:1961",
+            "name": "State=Error, Helper text=false, Validation error=true",
+            "props": {
+              "State": "Error",
+              "Helper text": "false",
+              "Validation error": "true"
+            },
+            "width": 340,
+            "height": 94,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-x",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "padding-y",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Field",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Field",
+                "property": "fill",
+                "token": "surface/error"
+              },
+              {
+                "layer": "Field",
+                "property": "border",
+                "token": "border/error"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Field / First Name",
+                "property": "text-style",
+                "token": "type/body-small"
+              },
+              {
+                "layer": "Field / J",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Field / J",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Error message",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Error message / icon/alert",
+                "property": "fill",
+                "token": "text/error"
+              },
+              {
+                "layer": "Error message / Error text",
+                "property": "color",
+                "token": "text/error"
+              },
+              {
+                "layer": "Error message / Error text",
+                "property": "text-style",
+                "token": "type/body-small"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "dropdown-menu": {
+    "page": "Dropdown menu",
+    "sets": [
+      {
+        "id": "9209:2388",
+        "name": "Dropdown Item",
+        "description": "A single row inside a dropdown menu (e.g. the Conditions simple list or Services mega menu). Properties: Description (Without/With — toggles a secondary line under the title) and State (Default/Hover).",
+        "properties": [
+          {
+            "name": "Description",
+            "type": "VARIANT",
+            "options": [
+              "Without",
+              "With"
+            ]
+          },
+          {
+            "name": "State",
+            "type": "VARIANT",
+            "options": [
+              "Default",
+              "Hover"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "9209:2378",
+            "name": "Description=Without, State=Default",
+            "props": {
+              "Description": "Without",
+              "State": "Default"
+            },
+            "width": 302,
+            "height": 54,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Title",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Title",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          },
+          {
+            "id": "9209:2380",
+            "name": "Description=Without, State=Hover",
+            "props": {
+              "Description": "Without",
+              "State": "Hover"
+            },
+            "width": 302,
+            "height": 54,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/hover"
+              },
+              {
+                "layer": "Title",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Title",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          },
+          {
+            "id": "9209:2382",
+            "name": "Description=With, State=Default",
+            "props": {
+              "Description": "With",
+              "State": "Default"
+            },
+            "width": 302,
+            "height": 79,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Title",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Title",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Description",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Description",
+                "property": "text-style",
+                "token": "type/body-small"
+              }
+            ]
+          },
+          {
+            "id": "9209:2385",
+            "name": "Description=With, State=Hover",
+            "props": {
+              "Description": "With",
+              "State": "Hover"
+            },
+            "width": 302,
+            "height": 79,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/hover"
+              },
+              {
+                "layer": "Title",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Title",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Description",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Description",
+                "property": "text-style",
+                "token": "type/body-small"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9241:15329",
+        "name": "Dropdown/Simple",
+        "description": "",
+        "properties": [
+          {
+            "name": "Property",
+            "type": "VARIANT",
+            "options": [
+              "Default"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "9209:2390",
+            "name": "Property=Default",
+            "props": {
+              "Property": "Default"
+            },
+            "width": 320,
+            "height": 412,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/large"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/card"
+              },
+              {
+                "layer": "(root)",
+                "property": "border",
+                "token": "border/subtle"
+              },
+              {
+                "layer": "(root)",
+                "property": "effect",
+                "token": "elevation/medium"
+              },
+              {
+                "layer": "Dropdown Item",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Dropdown Item",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Dropdown Item",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Dropdown Item",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Dropdown Item / Title",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Dropdown Item / Title",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9241:15421",
+        "name": "Dropdown/Mega",
+        "description": "",
+        "properties": [
+          {
+            "name": "Property",
+            "type": "VARIANT",
+            "options": [
+              "Default"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "9209:2406",
+            "name": "Property=Default",
+            "props": {
+              "Property": "Default"
+            },
+            "width": 658,
+            "height": 271,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/grid-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/large"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/card"
+              },
+              {
+                "layer": "(root)",
+                "property": "border",
+                "token": "border/subtle"
+              },
+              {
+                "layer": "(root)",
+                "property": "effect",
+                "token": "elevation/medium"
+              },
+              {
+                "layer": "Column 1 / Dropdown Item",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Column 1 / Dropdown Item",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Column 1 / Dropdown Item",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Column 1 / Dropdown Item",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Column 1 / Dropdown Item / Title",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Column 1 / Dropdown Item / Title",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Column 1 / Dropdown Item / Description",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Column 1 / Dropdown Item / Description",
+                "property": "text-style",
+                "token": "type/body-small"
+              },
+              {
+                "layer": "Column 2 / Dropdown Item",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Column 2 / Dropdown Item",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Column 2 / Dropdown Item",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Column 2 / Dropdown Item",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Column 2 / Dropdown Item / Title",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Column 2 / Dropdown Item / Title",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Column 2 / Dropdown Item / Description",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Column 2 / Dropdown Item / Description",
+                "property": "text-style",
+                "token": "type/body-small"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "headers": {
+    "page": "Headers",
+    "sets": [
+      {
+        "id": "9243:16580",
+        "name": "Section Header",
+        "description": "Headline block used to introduce a page section. Properties: Overline (With/Without), Align (Left/Center), Subheader (With/Without — supporting line under the headline in text/secondary, type/body-large, e.g. \"Meet The Doctor\" pattern on the live site). All 8 combinations are baked out as separate variants (rather than boolean+visibility properties) so every option is visible directly in the file for design-system browsing.",
+        "properties": [
+          {
+            "name": "Align",
+            "type": "VARIANT",
+            "options": [
+              "Left",
+              "Center"
+            ]
+          },
+          {
+            "name": "Overline",
+            "type": "VARIANT",
+            "options": [
+              "true",
+              "false"
+            ]
+          },
+          {
+            "name": "Subheader",
+            "type": "VARIANT",
+            "options": [
+              "true",
+              "false"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "9243:16548",
+            "name": "Align=Left, Overline=true, Subheader=true",
+            "props": {
+              "Align": "Left",
+              "Overline": "true",
+              "Subheader": "true"
+            },
+            "width": 640,
+            "height": 122,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Section Overline",
+                "property": "color",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Section Overline",
+                "property": "text-style",
+                "token": "type/overline"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "text-style",
+                "token": "type/heading-2"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "letterSpacing",
+                "token": "type/body-large/letter-spacing"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "fontSize",
+                "token": "type/body-large/size"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "fontFamily",
+                "token": "type/body-large/family"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "lineHeight",
+                "token": "type/body-large/line-height"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "fontWeight",
+                "token": "type/body-large/weight"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "color",
+                "token": "text/secondary"
+              }
+            ]
+          },
+          {
+            "id": "9243:16552",
+            "name": "Align=Left, Overline=true, Subheader=false",
+            "props": {
+              "Align": "Left",
+              "Overline": "true",
+              "Subheader": "false"
+            },
+            "width": 640,
+            "height": 75,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Section Overline",
+                "property": "color",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Section Overline",
+                "property": "text-style",
+                "token": "type/overline"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "text-style",
+                "token": "type/heading-2"
+              }
+            ]
+          },
+          {
+            "id": "9243:16556",
+            "name": "Align=Left, Overline=false, Subheader=true",
+            "props": {
+              "Align": "Left",
+              "Overline": "false",
+              "Subheader": "true"
+            },
+            "width": 640,
+            "height": 90,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "text-style",
+                "token": "type/heading-2"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "letterSpacing",
+                "token": "type/body-large/letter-spacing"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "fontSize",
+                "token": "type/body-large/size"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "fontFamily",
+                "token": "type/body-large/family"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "lineHeight",
+                "token": "type/body-large/line-height"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "fontWeight",
+                "token": "type/body-large/weight"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "color",
+                "token": "text/secondary"
+              }
+            ]
+          },
+          {
+            "id": "9243:16560",
+            "name": "Align=Left, Overline=false, Subheader=false",
+            "props": {
+              "Align": "Left",
+              "Overline": "false",
+              "Subheader": "false"
+            },
+            "width": 640,
+            "height": 43,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "text-style",
+                "token": "type/heading-2"
+              }
+            ]
+          },
+          {
+            "id": "9243:16564",
+            "name": "Align=Center, Overline=true, Subheader=true",
+            "props": {
+              "Align": "Center",
+              "Overline": "true",
+              "Subheader": "true"
+            },
+            "width": 640,
+            "height": 122,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Section Overline",
+                "property": "color",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Section Overline",
+                "property": "text-style",
+                "token": "type/overline"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "text-style",
+                "token": "type/heading-2"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "letterSpacing",
+                "token": "type/body-large/letter-spacing"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "fontSize",
+                "token": "type/body-large/size"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "fontFamily",
+                "token": "type/body-large/family"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "lineHeight",
+                "token": "type/body-large/line-height"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "fontWeight",
+                "token": "type/body-large/weight"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "color",
+                "token": "text/secondary"
+              }
+            ]
+          },
+          {
+            "id": "9243:16568",
+            "name": "Align=Center, Overline=true, Subheader=false",
+            "props": {
+              "Align": "Center",
+              "Overline": "true",
+              "Subheader": "false"
+            },
+            "width": 640,
+            "height": 75,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Section Overline",
+                "property": "color",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Section Overline",
+                "property": "text-style",
+                "token": "type/overline"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "text-style",
+                "token": "type/heading-2"
+              }
+            ]
+          },
+          {
+            "id": "9243:16572",
+            "name": "Align=Center, Overline=false, Subheader=true",
+            "props": {
+              "Align": "Center",
+              "Overline": "false",
+              "Subheader": "true"
+            },
+            "width": 640,
+            "height": 90,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "text-style",
+                "token": "type/heading-2"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "letterSpacing",
+                "token": "type/body-large/letter-spacing"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "fontSize",
+                "token": "type/body-large/size"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "fontFamily",
+                "token": "type/body-large/family"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "lineHeight",
+                "token": "type/body-large/line-height"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "fontWeight",
+                "token": "type/body-large/weight"
+              },
+              {
+                "layer": "Section subheader",
+                "property": "color",
+                "token": "text/secondary"
+              }
+            ]
+          },
+          {
+            "id": "9243:16576",
+            "name": "Align=Center, Overline=false, Subheader=false",
+            "props": {
+              "Align": "Center",
+              "Overline": "false",
+              "Subheader": "false"
+            },
+            "width": 640,
+            "height": 43,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Section headline goes here",
+                "property": "text-style",
+                "token": "type/heading-2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9243:16645",
+        "name": "Page Header",
+        "description": "Top-of-page header used to introduce a page. Always includes Logo and H1 Title. Properties: Breadcrumb (With/Without), Description (With/Without). All 4 combinations are baked out as separate variants (rather than boolean+visibility properties) so every option is visible directly in the file for design-system browsing. Include Breadcrumb on pages with 3+ levels of hierarchy; omit on flat top-level pages.",
+        "properties": [
+          {
+            "name": "Breadcrumb",
+            "type": "VARIANT",
+            "options": [
+              "true",
+              "false"
+            ]
+          },
+          {
+            "name": "Description",
+            "type": "VARIANT",
+            "options": [
+              "true",
+              "false"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "9243:16581",
+            "name": "Breadcrumb=true, Description=true",
+            "props": {
+              "Breadcrumb": "true",
+              "Description": "true"
+            },
+            "width": 640,
+            "height": 243,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Header top",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Header top / Breadcrumb",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Header top / Breadcrumb",
+                "property": "radius",
+                "token": "radius/small"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Home",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Home / Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Home / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Services",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Services / Divider",
+                "property": "color",
+                "token": "text/tertiary"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Services / Divider",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Services / Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Services / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Metabolic Disorders",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Metabolic Disorders / Divider",
+                "property": "color",
+                "token": "text/tertiary"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Metabolic Disorders / Divider",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Metabolic Disorders / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Metabolic Disorders / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Header text",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Header text / Title",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Header text / Title",
+                "property": "text-style",
+                "token": "type/heading-1"
+              },
+              {
+                "layer": "Header text / Description",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Header text / Description",
+                "property": "text-style",
+                "token": "type/body-large"
+              }
+            ]
+          },
+          {
+            "id": "9243:16588",
+            "name": "Breadcrumb=true, Description=false",
+            "props": {
+              "Breadcrumb": "true",
+              "Description": "false"
+            },
+            "width": 640,
+            "height": 196,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Header top",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Header top / Breadcrumb",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Header top / Breadcrumb",
+                "property": "radius",
+                "token": "radius/small"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Home",
+                "property": "gap",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Home / Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Home / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Services",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Services / Divider",
+                "property": "color",
+                "token": "text/tertiary"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Services / Divider",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Services / Label",
+                "property": "color",
+                "token": "text/link"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Services / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Metabolic Disorders",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Metabolic Disorders / Divider",
+                "property": "color",
+                "token": "text/tertiary"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Metabolic Disorders / Divider",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Metabolic Disorders / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Header top / Breadcrumb / Metabolic Disorders / Label",
+                "property": "text-style",
+                "token": "type/body-medium"
+              },
+              {
+                "layer": "Header text",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Header text / Title",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Header text / Title",
+                "property": "text-style",
+                "token": "type/heading-1"
+              }
+            ]
+          },
+          {
+            "id": "9243:16607",
+            "name": "Breadcrumb=false, Description=true",
+            "props": {
+              "Breadcrumb": "false",
+              "Description": "true"
+            },
+            "width": 640,
+            "height": 201,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Header top",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Header text",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Header text / Title",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Header text / Title",
+                "property": "text-style",
+                "token": "type/heading-1"
+              },
+              {
+                "layer": "Header text / Description",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Header text / Description",
+                "property": "text-style",
+                "token": "type/body-large"
+              }
+            ]
+          },
+          {
+            "id": "9243:16626",
+            "name": "Breadcrumb=false, Description=false",
+            "props": {
+              "Breadcrumb": "false",
+              "Description": "false"
+            },
+            "width": 640,
+            "height": 154,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Header top",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Header text",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Header text / Title",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Header text / Title",
+                "property": "text-style",
+                "token": "type/heading-1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navigation": {
+    "page": "Navigation",
+    "sets": [
+      {
+        "id": "9243:15552",
+        "name": "Nav Link",
+        "description": "Top-level header navigation link. Active shows a 2px brand underline — colour is never the sole indicator of the current page (WCAG 1.4.1). Focus uses the same 2px ring at 2px offset as Button. Hover shifts the label to text/brand. Properties: State (Default/Hover/Active/Focus) and Chevron (With/Without). Use Chevron=With for menu items that reveal a dropdown on hover (Conditions, Services); Chevron=Without for links that navigate directly (About, Testimonials, Web Store).",
+        "properties": [
+          {
+            "name": "Label",
+            "type": "TEXT",
+            "default": "About"
+          },
+          {
+            "name": "State",
+            "type": "VARIANT",
+            "options": [
+              "Default",
+              "Hover",
+              "Active",
+              "Focus"
+            ]
+          },
+          {
+            "name": "Chevron",
+            "type": "VARIANT",
+            "options": [
+              "With",
+              "Without"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "9156:1359",
+            "name": "State=Focus, Chevron=Without",
+            "props": {
+              "State": "Focus",
+              "Chevron": "Without"
+            },
+            "width": 78,
+            "height": 54,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "(root)",
+                "property": "border",
+                "token": "border/focus"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          },
+          {
+            "id": "9156:1355",
+            "name": "State=Active, Chevron=Without",
+            "props": {
+              "State": "Active",
+              "Chevron": "Without"
+            },
+            "width": 78,
+            "height": 56,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Active Indicator",
+                "property": "fill",
+                "token": "surface/brand"
+              }
+            ]
+          },
+          {
+            "id": "9243:15524",
+            "name": "State=Default, Chevron=With",
+            "props": {
+              "State": "Default",
+              "Chevron": "With"
+            },
+            "width": 145,
+            "height": 54,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Label Row",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Label Row",
+                "property": "padding-x",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Label Row / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Label Row / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Label Row / Chevron",
+                "property": "border",
+                "token": "text/primary"
+              }
+            ]
+          },
+          {
+            "id": "9243:15531",
+            "name": "State=Hover, Chevron=With",
+            "props": {
+              "State": "Hover",
+              "Chevron": "With"
+            },
+            "width": 145,
+            "height": 54,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/hover"
+              },
+              {
+                "layer": "Label Row",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Label Row",
+                "property": "padding-x",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Label Row / Label",
+                "property": "color",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Label Row / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Label Row / Chevron",
+                "property": "border",
+                "token": "text/brand"
+              }
+            ]
+          },
+          {
+            "id": "9243:15545",
+            "name": "State=Focus, Chevron=With",
+            "props": {
+              "State": "Focus",
+              "Chevron": "With"
+            },
+            "width": 145,
+            "height": 54,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "(root)",
+                "property": "border",
+                "token": "border/focus"
+              },
+              {
+                "layer": "Label Row",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Label Row",
+                "property": "padding-x",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Label Row / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Label Row / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Label Row / Chevron",
+                "property": "border",
+                "token": "text/primary"
+              }
+            ]
+          },
+          {
+            "id": "9243:15538",
+            "name": "State=Active, Chevron=With",
+            "props": {
+              "State": "Active",
+              "Chevron": "With"
+            },
+            "width": 145,
+            "height": 56,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Label Row",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Label Row",
+                "property": "padding-x",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Label Row / Label",
+                "property": "color",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Label Row / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Label Row / Chevron",
+                "property": "border",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Active Indicator",
+                "property": "fill",
+                "token": "surface/brand"
+              }
+            ]
+          },
+          {
+            "id": "9156:1347",
+            "name": "State=Default, Chevron=Without",
+            "props": {
+              "State": "Default",
+              "Chevron": "Without"
+            },
+            "width": 78,
+            "height": 54,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          },
+          {
+            "id": "9156:1351",
+            "name": "State=Hover, Chevron=Without",
+            "props": {
+              "State": "Hover",
+              "Chevron": "Without"
+            },
+            "width": 78,
+            "height": 54,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "(root)",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/hover"
+              },
+              {
+                "layer": "Label",
+                "property": "color",
+                "token": "text/brand"
+              },
+              {
+                "layer": "Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9241:14764",
+        "name": "Navigation / Desktop",
+        "description": "Site header. Height is bound to layout/header-height — 80 on Web, 64 on Mobile — so switching the frame's Dimensions mode resizes it correctly. Logo is fixed left and links to home; nav links sit centre; the booking CTA is fixed right and is the only button in the bar. The phone number is deliberately NOT in the header: the brief's primary goal is shifting volume away from phone. Bottom border only, no shadow, until the scrolled state is designed.",
+        "properties": [
+          {
+            "name": "Property 1",
+            "type": "VARIANT",
+            "options": [
+              "Desktop"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "9156:1365",
+            "name": "Property 1=Desktop",
+            "props": {
+              "Property 1": "Desktop"
+            },
+            "width": 1200,
+            "height": 80,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/page-margin"
+              },
+              {
+                "layer": "(root)",
+                "property": "height",
+                "token": "layout/header-height"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/background"
+              },
+              {
+                "layer": "(root)",
+                "property": "border",
+                "token": "border/subtle"
+              },
+              {
+                "layer": "Nav Links",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Nav Links",
+                "property": "padding-x",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Nav Links / Nav Link — About",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav Links / Nav Link — About",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav Links / Nav Link — About",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Nav Links / Nav Link — About / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Nav Links / Nav Link — About / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Conditions",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Conditions",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Conditions",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Conditions / Label Row",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Conditions / Label Row",
+                "property": "padding-x",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Conditions / Label Row / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Conditions / Label Row / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Conditions / Label Row / Chevron",
+                "property": "border",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Services",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Services",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Services",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Services / Label Row",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Services / Label Row",
+                "property": "padding-x",
+                "token": "spacing/micro-gap"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Services / Label Row / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Services / Label Row / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Services / Label Row / Chevron",
+                "property": "border",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Testimonials",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Testimonials",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Testimonials",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Testimonials / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Testimonials / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Web Store",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Web Store",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Web Store",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Web Store / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Nav Links / Nav Link — Web Store / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Primary CTA / Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Primary CTA / Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Primary CTA / Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Primary CTA / Button Surface",
+                "property": "fill",
+                "token": "surface/action"
+              },
+              {
+                "layer": "Primary CTA / Button Surface / Label",
+                "property": "color",
+                "token": "text/on-fill"
+              },
+              {
+                "layer": "Primary CTA / Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9241:15211",
+        "name": "Navigation / Mobile",
+        "description": "Mobile navigation, toggled by the top-bar trigger icon. Properties: State (Closed/Open). Closed is the collapsed top bar (Logo + hamburger trigger); Open is the full-height drawer (same top bar with the trigger swapped to a close icon, plus Nav List, spacer, and Drawer Footer with primary CTA and phone fallback). Distinct from the Desktop Navigation component, which is a separate component due to its structurally different (horizontal) anatomy.",
+        "properties": [
+          {
+            "name": "State",
+            "type": "VARIANT",
+            "options": [
+              "Closed",
+              "Open"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "9156:1443",
+            "name": "State=Closed",
+            "props": {
+              "State": "Closed"
+            },
+            "width": 390,
+            "height": 64,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "padding-x",
+                "token": "spacing/page-margin"
+              },
+              {
+                "layer": "(root)",
+                "property": "height",
+                "token": "layout/header-height"
+              },
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/background"
+              },
+              {
+                "layer": "(root)",
+                "property": "border",
+                "token": "border/subtle"
+              },
+              {
+                "layer": "Menu Trigger / icon/menu",
+                "property": "fill",
+                "token": "text/primary"
+              }
+            ]
+          },
+          {
+            "id": "9156:1495",
+            "name": "State=Open",
+            "props": {
+              "State": "Open"
+            },
+            "width": 390,
+            "height": 844,
+            "tokens": [
+              {
+                "layer": "(root)",
+                "property": "fill",
+                "token": "surface/background"
+              },
+              {
+                "layer": "Top Bar",
+                "property": "padding-x",
+                "token": "spacing/page-margin"
+              },
+              {
+                "layer": "Top Bar",
+                "property": "height",
+                "token": "layout/header-height"
+              },
+              {
+                "layer": "Top Bar",
+                "property": "border",
+                "token": "border/subtle"
+              },
+              {
+                "layer": "Top Bar / Close Trigger / icon/close",
+                "property": "fill",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Nav List",
+                "property": "padding-x",
+                "token": "spacing/page-margin"
+              },
+              {
+                "layer": "Nav List",
+                "property": "padding-y",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Nav List / Nav Link — About",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav List / Nav Link — About",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav List / Nav Link — About",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Nav List / Nav Link — About / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Nav List / Nav Link — About / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Nav List / Nav Link — Conditions",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav List / Nav Link — Conditions",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav List / Nav Link — Conditions",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Nav List / Nav Link — Conditions / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Nav List / Nav Link — Conditions / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Nav List / Nav Link — Services",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav List / Nav Link — Services",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav List / Nav Link — Services",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Nav List / Nav Link — Services / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Nav List / Nav Link — Services / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Nav List / Nav Link — Testimonials",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav List / Nav Link — Testimonials",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav List / Nav Link — Testimonials",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Nav List / Nav Link — Testimonials / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Nav List / Nav Link — Testimonials / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Nav List / Nav Link — Web Store",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav List / Nav Link — Web Store",
+                "property": "padding-y",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Nav List / Nav Link — Web Store",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Nav List / Nav Link — Web Store / Label",
+                "property": "color",
+                "token": "text/primary"
+              },
+              {
+                "layer": "Nav List / Nav Link — Web Store / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Drawer Footer",
+                "property": "gap",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Drawer Footer",
+                "property": "padding-x",
+                "token": "spacing/page-margin"
+              },
+              {
+                "layer": "Drawer Footer",
+                "property": "padding-y",
+                "token": "spacing/content-gap"
+              },
+              {
+                "layer": "Drawer Footer",
+                "property": "padding-y",
+                "token": "spacing/section-gap"
+              },
+              {
+                "layer": "Drawer Footer / Primary CTA / Button Surface",
+                "property": "gap",
+                "token": "spacing/inline-gap"
+              },
+              {
+                "layer": "Drawer Footer / Primary CTA / Button Surface",
+                "property": "padding-x",
+                "token": "spacing/component-padding"
+              },
+              {
+                "layer": "Drawer Footer / Primary CTA / Button Surface",
+                "property": "radius",
+                "token": "radius/medium"
+              },
+              {
+                "layer": "Drawer Footer / Primary CTA / Button Surface",
+                "property": "fill",
+                "token": "surface/action"
+              },
+              {
+                "layer": "Drawer Footer / Primary CTA / Button Surface / Label",
+                "property": "color",
+                "token": "text/on-fill"
+              },
+              {
+                "layer": "Drawer Footer / Primary CTA / Button Surface / Label",
+                "property": "text-style",
+                "token": "type/label"
+              },
+              {
+                "layer": "Drawer Footer / Contact fallback",
+                "property": "color",
+                "token": "text/secondary"
+              },
+              {
+                "layer": "Drawer Footer / Contact fallback",
+                "property": "text-style",
+                "token": "type/body-small"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

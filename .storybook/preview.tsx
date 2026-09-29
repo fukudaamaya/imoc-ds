@@ -20,6 +20,8 @@ const preview: Preview = {
         order: [
           'Design System',
           ['Overview', 'Colors', 'Typography', 'Spacing', 'Accessibility', 'Changelog'],
+          'Components',
+          ['Badge', 'Button', 'Breadcrumb', 'Text Field', 'Dropdown Menu', 'Headers', 'Navigation'],
         ],
       },
     },

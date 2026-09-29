@@ -14,5 +14,5 @@
     "noEmit": true,
     "allowJs": false
   },
-  "include": ["stories", ".storybook"]
+  "include": ["src", "stories", ".storybook"]
 }
