@@ -189,7 +189,7 @@
 }
 
 
-/* Mobile-mode overrides — Dimensions collection only (Colour has a single mode) */
+/* Mobile-mode overrides — Dimensions collection only */
 [data-platform="mobile"] {
   --imoc-type-display-family: "Fraunces";
   --imoc-type-display-size: 42px;
@@ -257,4 +257,22 @@
   --imoc-layout-max-width-narrow: 9999px;
   --imoc-layout-header-height: 64px;
   --imoc-layout-sticky-bar-height: 64px;
+}
+
+/* Supplement colour mode — Colour collection only */
+[data-theme="supplement"] {
+  --imoc-text-link: #436327;
+  --imoc-text-link-hover: #2c421a;
+  --imoc-text-link-inverse: #b2d78b;
+  --imoc-text-brand: #436327;
+  --imoc-text-on-fill: #272420;
+  --imoc-surface-brand: #b2d78b;
+  --imoc-surface-brand-subtle: #f6fbf0;
+  --imoc-surface-accent: #c9a177;
+  --imoc-surface-action: #b2d78b;
+  --imoc-surface-action-hover: #93c165;
+  --imoc-surface-action-pressed: #74a445;
+  --imoc-surface-selected: #eaf6dc;
+  --imoc-border-focus: #436327;
+  --imoc-border-brand: #5a8434;
 }

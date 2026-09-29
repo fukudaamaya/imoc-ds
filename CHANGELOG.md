@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-29 — Figma sync
+
+0 added, 48 changed, 0 removed (48 tokens touched).
+
+Full diff: [changelog/diffs/2026-09-29.json](changelog/diffs/2026-09-29.json)
+
 ## 2026-08-20 — Figma sync
 
 0 added, 53 changed, 4 removed (57 tokens touched).

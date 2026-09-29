@@ -3878,7 +3878,7 @@
               {
                 "layer": "Active Indicator",
                 "property": "fill",
-                "token": "surface/brand"
+                "token": "border/focus"
               }
             ]
           },
@@ -4101,7 +4101,7 @@
               {
                 "layer": "Active Indicator",
                 "property": "fill",
-                "token": "surface/brand"
+                "token": "border/focus"
               }
             ]
           },

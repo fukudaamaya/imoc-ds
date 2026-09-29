@@ -8,14 +8,22 @@ function isLeaf(node) {
   return node && typeof node === 'object' && ('value' in node || ('mobile' in node && 'web' in node));
 }
 
+function formatModes(leaf) {
+  if (!leaf.modes) return '';
+  return Object.entries(leaf.modes)
+    .map(([mode, m]) => `; ${mode}: ${m.aliasOf ?? m.value}`)
+    .join('');
+}
+
 function formatLeaf(leaf) {
-  if ('value' in leaf) return `${leaf.value}${leaf.unit === 'px' ? 'px' : ''}`;
+  if ('value' in leaf) return `${leaf.value}${leaf.unit === 'px' ? 'px' : ''}${formatModes(leaf)}`;
   const unit = leaf.unit === 'px' ? 'px' : '';
   return `mobile: ${leaf.mobile}${unit}, web: ${leaf.web}${unit}`;
 }
 
 function valueEqual(a, b) {
-  if ('value' in a) return a.value === b.value;
+  // Colour tokens also carry per-mode values (e.g. Supplement) — compare those too.
+  if ('value' in a) return a.value === b.value && formatModes(a) === formatModes(b);
   return a.mobile === b.mobile && a.web === b.web;
 }
 

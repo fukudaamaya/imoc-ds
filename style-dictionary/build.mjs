@@ -31,8 +31,8 @@ const webTree = {
   layout: expandMode(dimensions.layout, 'web'),
 };
 
-// Dimensions-only, Mobile mode — CSS [data-platform="mobile"] override. Color collection
-// has a single "Clinic" mode (no platform variance), so it's intentionally excluded here.
+// Dimensions-only, Mobile mode — CSS [data-platform="mobile"] override. Colour doesn't vary
+// by platform, so it's excluded here; its modes are handled by colourModeOverrides() below.
 const mobileOverrideTree = {
   typography: expandMode(dimensions.typography, 'mobile'),
   spacing: { semantic: expandMode(dimensions.spacing, 'mobile') },
@@ -40,6 +40,27 @@ const mobileOverrideTree = {
   layout: expandMode(dimensions.layout, 'mobile'),
 };
 
+
+// Colour-mode overrides (e.g. Supplement) — CSS [data-theme="<mode>"]. Only tokens whose
+// value differs from the default (Clinic) mode are emitted, so the override block reads as
+// exactly the list of what the theme changes.
+function colourModeOverrides(colorTree) {
+  const byMode = {};
+  for (const group of Object.values(colorTree)) {
+    for (const token of Object.values(group)) {
+      for (const [mode, m] of Object.entries(token.modes ?? {})) {
+        if (m.value === token.value) continue;
+        (byMode[mode] ??= []).push(`  ${token.figma.codeSyntax}: ${m.value};`);
+      }
+    }
+  }
+  return Object.entries(byMode)
+    .map(
+      ([mode, lines]) =>
+        `\n/* ${mode.charAt(0).toUpperCase() + mode.slice(1)} colour mode — Colour collection only */\n[data-theme="${mode}"] {\n${lines.join('\n')}\n}\n`,
+    )
+    .join('');
+}
 
 // ---------------------------------------------------------------------------
 // CSS formats
@@ -61,7 +82,7 @@ StyleDictionary.registerFormat({
 StyleDictionary.registerFormat({
   name: 'css/imoc-mobile-override',
   format: ({ dictionary }) =>
-    `\n/* Mobile-mode overrides — Dimensions collection only (Colour has a single mode) */\n[data-platform="mobile"] {\n${cssLines(
+    `\n/* Mobile-mode overrides — Dimensions collection only */\n[data-platform="mobile"] {\n${cssLines(
       dictionary.allTokens,
     )}\n}\n`,
 });
@@ -107,7 +128,10 @@ const [rootCss] = await sdWeb.formatPlatform('css');
 const [mobileCss] = await sdMobile.formatPlatform('css');
 
 const { writeFileSync } = await import('node:fs');
-writeFileSync(join(ROOT, 'build/css/tokens.css'), rootCss.output + '\n' + mobileCss.output);
+writeFileSync(
+  join(ROOT, 'build/css/tokens.css'),
+  rootCss.output + '\n' + mobileCss.output + colourModeOverrides(color),
+);
 console.log('✔ build/css/tokens.css');
 
 console.log('\nStyle Dictionary build complete.');

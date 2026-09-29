@@ -62,37 +62,59 @@ export function buildPrimitives(variables, collection) {
   return out;
 }
 
-/** Builds tokens/color.json's shape from the Colour collection (semantic, single mode). */
+/**
+ * Resolves one Colour-collection value to { value, alias, aliasOf }. Handles three shapes:
+ * a plain alias to a primitive, a raw RGBA, and an alias with an opacity applied
+ * ({ color: VARIABLE_ALIAS, opacity: 0–100 }), which Figma returns for surface/overlay.
+ */
+function resolveColorValue(raw, primitivesById, tokenName) {
+  if (raw && raw.type === 'VARIABLE_ALIAS') {
+    const target = primitivesById.get(raw.id);
+    if (!target) throw new Error(`Unresolved alias in ${tokenName}: ${raw.id}`);
+    return {
+      value: toHex(target.valuesByMode[Object.keys(target.valuesByMode)[0]]),
+      alias: `{color.primitive.${target.name.split('/')[0]}.${target.name.split('/')[1]}}`,
+      aliasOf: target.name,
+    };
+  }
+  if (raw && raw.color && raw.color.type === 'VARIABLE_ALIAS' && typeof raw.opacity === 'number') {
+    const target = primitivesById.get(raw.color.id);
+    if (!target) throw new Error(`Unresolved alias in ${tokenName}: ${raw.color.id}`);
+    const base = target.valuesByMode[Object.keys(target.valuesByMode)[0]];
+    // Kept as a raw rgba (alias: null) — CSS can't alias a variable and add opacity in one value.
+    return { value: toRgba({ ...base, a: raw.opacity / 100 }), alias: null, aliasOf: null };
+  }
+  return { value: toRgba(raw), alias: null, aliasOf: null };
+}
+
+/**
+ * Builds tokens/color.json's shape from the Colour collection. The first mode (Clinic) sits
+ * at the top level of each token, as before; every other mode (Supplement) is stored under
+ * `modes.<lowercase mode name>` with the same { value, alias, aliasOf } shape.
+ */
 export function buildColor(variables, collection, primitivesById) {
-  const modeId = collection.modes[0].modeId;
+  const [defaultMode, ...otherModes] = collection.modes;
   const out = {};
 
   for (const v of Object.values(variables)) {
     if (v.variableCollectionId !== collection.id) continue;
     const [group, ...rest] = v.name.split('/');
     const key = rest.join('-');
-    const raw = v.valuesByMode[modeId];
     out[group] = out[group] || {};
 
-    const base = {
+    const token = {
+      ...resolveColorValue(v.valuesByMode[defaultMode.modeId], primitivesById, v.name),
       type: 'color',
       scopes: v.scopes ?? [],
       description: v.description,
-      figma: { id: v.id, collection: collection.name, mode: collection.modes[0].name, codeSyntax: codeSyntaxOf(v) },
+      figma: { id: v.id, collection: collection.name, mode: defaultMode.name, codeSyntax: codeSyntaxOf(v) },
     };
-
-    if (raw && raw.type === 'VARIABLE_ALIAS') {
-      const target = primitivesById.get(raw.id);
-      if (!target) throw new Error(`Unresolved alias in ${v.name}: ${raw.id}`);
-      out[group][key] = {
-        value: toHex(target.valuesByMode[Object.keys(target.valuesByMode)[0]]),
-        alias: `{color.primitive.${target.name.split('/')[0]}.${target.name.split('/')[1]}}`,
-        aliasOf: target.name,
-        ...base,
-      };
-    } else {
-      out[group][key] = { value: toRgba(raw), alias: null, aliasOf: null, ...base };
+    if (otherModes.length) {
+      token.modes = Object.fromEntries(
+        otherModes.map((m) => [m.name.toLowerCase(), resolveColorValue(v.valuesByMode[m.modeId], primitivesById, v.name)]),
+      );
     }
+    out[group][key] = token;
   }
   return out;
 }

@@ -15,6 +15,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-primary"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#272420",
+          "alias": "{color.primitive.neutral.900}",
+          "aliasOf": "neutral/900"
+        }
       }
     },
     "secondary": {
@@ -32,6 +39,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-secondary"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#5e5a52",
+          "alias": "{color.primitive.neutral.700}",
+          "aliasOf": "neutral/700"
+        }
       }
     },
     "tertiary": {
@@ -49,6 +63,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-tertiary"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#767266",
+          "alias": "{color.primitive.neutral.600}",
+          "aliasOf": "neutral/600"
+        }
       }
     },
     "disabled": {
@@ -66,6 +87,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-disabled"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#9e9a90",
+          "alias": "{color.primitive.neutral.500}",
+          "aliasOf": "neutral/500"
+        }
       }
     },
     "inverse": {
@@ -83,6 +111,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-inverse"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#fafaf8",
+          "alias": "{color.primitive.neutral.50}",
+          "aliasOf": "neutral/50"
+        }
       }
     },
     "link": {
@@ -100,6 +135,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-link"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#436327",
+          "alias": "{color.primitive.flora.700}",
+          "aliasOf": "flora/700"
+        }
       }
     },
     "link-hover": {
@@ -117,6 +159,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-link-hover"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#2c421a",
+          "alias": "{color.primitive.flora.800}",
+          "aliasOf": "flora/800"
+        }
       }
     },
     "link-inverse": {
@@ -134,6 +183,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-link-inverse"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#b2d78b",
+          "alias": "{color.primitive.flora.300}",
+          "aliasOf": "flora/300"
+        }
       }
     },
     "brand": {
@@ -151,6 +207,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-brand"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#436327",
+          "alias": "{color.primitive.flora.700}",
+          "aliasOf": "flora/700"
+        }
       }
     },
     "accent": {
@@ -168,6 +231,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-accent"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#6c3f27",
+          "alias": "{color.primitive.earth.700}",
+          "aliasOf": "earth/700"
+        }
       }
     },
     "on-fill": {
@@ -185,6 +255,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-on-fill"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#272420",
+          "alias": "{color.primitive.neutral.900}",
+          "aliasOf": "neutral/900"
+        }
       }
     },
     "success": {
@@ -202,6 +279,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-success"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#235517",
+          "alias": "{color.primitive.success.700}",
+          "aliasOf": "success/700"
+        }
       }
     },
     "warning": {
@@ -219,6 +303,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-warning"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#6e4207",
+          "alias": "{color.primitive.warning.700}",
+          "aliasOf": "warning/700"
+        }
       }
     },
     "error": {
@@ -236,6 +327,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-error"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#7c1f17",
+          "alias": "{color.primitive.error.700}",
+          "aliasOf": "error/700"
+        }
       }
     },
     "info": {
@@ -253,6 +351,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-info"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#144468",
+          "alias": "{color.primitive.info.700}",
+          "aliasOf": "info/700"
+        }
       }
     },
     "placeholder": {
@@ -270,6 +375,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-text-placeholder"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#767266",
+          "alias": "{color.primitive.neutral.600}",
+          "aliasOf": "neutral/600"
+        }
       }
     }
   },
@@ -289,6 +401,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-page"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#fafaf8",
+          "alias": "{color.primitive.neutral.50}",
+          "aliasOf": "neutral/50"
+        }
       }
     },
     "card": {
@@ -306,6 +425,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-card"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#ffffff",
+          "alias": "{color.primitive.neutral.0}",
+          "aliasOf": "neutral/0"
+        }
       }
     },
     "input": {
@@ -323,6 +449,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-input"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#ffffff",
+          "alias": "{color.primitive.neutral.0}",
+          "aliasOf": "neutral/0"
+        }
       }
     },
     "inverse": {
@@ -340,6 +473,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-inverse"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#141210",
+          "alias": "{color.primitive.neutral.950}",
+          "aliasOf": "neutral/950"
+        }
       }
     },
     "disabled": {
@@ -357,6 +497,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-disabled"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#e9e6e1",
+          "alias": "{color.primitive.neutral.200}",
+          "aliasOf": "neutral/200"
+        }
       }
     },
     "brand": {
@@ -368,12 +515,19 @@
         "FRAME_FILL",
         "SHAPE_FILL"
       ],
-      "description": "Active/selected-state indicator on Nav Link (the underline bar) — Navigation, Dropdown menu, Footer nav links. Aliases ocean/700 in Clinic, flora/300 in Supplement — same primitive as surface/action, text/link, text/brand, border/focus.",
+      "description": "Active-state indicator on footer nav links. Aliases ocean/700 in Clinic, flora/300 in Supplement.",
       "figma": {
         "id": "VariableID:9110:1272",
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-brand"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#b2d78b",
+          "alias": "{color.primitive.flora.300}",
+          "aliasOf": "flora/300"
+        }
       }
     },
     "brand-subtle": {
@@ -391,6 +545,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-brand-subtle"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#f6fbf0",
+          "alias": "{color.primitive.flora.50}",
+          "aliasOf": "flora/50"
+        }
       }
     },
     "accent": {
@@ -408,6 +569,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-accent"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#c9a177",
+          "alias": "{color.primitive.earth.400}",
+          "aliasOf": "earth/400"
+        }
       }
     },
     "accent-subtle": {
@@ -425,6 +593,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-accent-subtle"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#f6eee3",
+          "alias": "{color.primitive.earth.100}",
+          "aliasOf": "earth/100"
+        }
       }
     },
     "action": {
@@ -442,6 +617,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-action"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#b2d78b",
+          "alias": "{color.primitive.flora.300}",
+          "aliasOf": "flora/300"
+        }
       }
     },
     "action-hover": {
@@ -459,6 +641,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-action-hover"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#93c165",
+          "alias": "{color.primitive.flora.400}",
+          "aliasOf": "flora/400"
+        }
       }
     },
     "action-pressed": {
@@ -476,6 +665,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-action-pressed"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#74a445",
+          "alias": "{color.primitive.flora.500}",
+          "aliasOf": "flora/500"
+        }
       }
     },
     "success": {
@@ -493,6 +689,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-success"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#edf7e9",
+          "alias": "{color.primitive.success.50}",
+          "aliasOf": "success/50"
+        }
       }
     },
     "warning": {
@@ -510,6 +713,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-warning"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#fdf3e3",
+          "alias": "{color.primitive.warning.50}",
+          "aliasOf": "warning/50"
+        }
       }
     },
     "error": {
@@ -527,6 +737,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-error"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#fdecea",
+          "alias": "{color.primitive.error.50}",
+          "aliasOf": "error/50"
+        }
       }
     },
     "info": {
@@ -544,6 +761,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-info"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#e8f1f9",
+          "alias": "{color.primitive.info.50}",
+          "aliasOf": "info/50"
+        }
       }
     },
     "overlay": {
@@ -561,6 +785,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-overlay"
+      },
+      "modes": {
+        "supplement": {
+          "value": "rgba(20, 18, 16, 0.6)",
+          "alias": null,
+          "aliasOf": null
+        }
       }
     },
     "decorative": {
@@ -577,6 +808,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-decorative"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#dfc3a4",
+          "alias": "{color.primitive.earth.300}",
+          "aliasOf": "earth/300"
+        }
       }
     },
     "hover": {
@@ -594,6 +832,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-hover"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#f5f3f0",
+          "alias": "{color.primitive.neutral.100}",
+          "aliasOf": "neutral/100"
+        }
       }
     },
     "selected": {
@@ -611,6 +856,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-surface-selected"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#eaf6dc",
+          "alias": "{color.primitive.flora.100}",
+          "aliasOf": "flora/100"
+        }
       }
     }
   },
@@ -629,6 +881,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-border-subtle"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#e9e6e1",
+          "alias": "{color.primitive.neutral.200}",
+          "aliasOf": "neutral/200"
+        }
       }
     },
     "default": {
@@ -645,6 +904,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-border-default"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#d6d2ca",
+          "alias": "{color.primitive.neutral.300}",
+          "aliasOf": "neutral/300"
+        }
       }
     },
     "strong": {
@@ -661,6 +927,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-border-strong"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#767266",
+          "alias": "{color.primitive.neutral.600}",
+          "aliasOf": "neutral/600"
+        }
       }
     },
     "focus": {
@@ -671,12 +944,19 @@
       "scopes": [
         "STROKE_COLOR"
       ],
-      "description": "Keyboard focus ring on every interactive element — 2px weight at 2px OFFSET. The offset is load-bearing, not decorative: it lifts the ring off the control so the ring's neighbouring colour is always the page background (6.02:1, passes WCAG 2.2 SC 1.4.11 at 3:1). Flush against a brand-filled surface it drops to 1.0:1 and disappears, because this token and surface/action both alias ocean/700. Implement as outline: 2px solid + outline-offset: 2px. Never removable, never flush.",
+      "description": "Keyboard focus ring on every interactive element — 2px weight at 2px OFFSET. The offset is load-bearing, not decorative: it lifts the ring off the control so the ring's neighbouring colour is always the page background (6.02:1, passes WCAG 2.2 SC 1.4.11 at 3:1). Flush against a brand-filled surface it drops to 1.0:1 and disappears, because this token and surface/action both alias ocean/700. Implement as outline: 2px solid + outline-offset: 2px. Never removable, never flush. Also the Nav Link active-state underline (2px), chosen over surface/brand because it holds contrast in both colour modes.",
       "figma": {
         "id": "VariableID:9110:1287",
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-border-focus"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#436327",
+          "alias": "{color.primitive.flora.700}",
+          "aliasOf": "flora/700"
+        }
       }
     },
     "brand": {
@@ -693,6 +973,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-border-brand"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#5a8434",
+          "alias": "{color.primitive.flora.600}",
+          "aliasOf": "flora/600"
+        }
       }
     },
     "accent": {
@@ -709,6 +996,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-border-accent"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#8e6039",
+          "alias": "{color.primitive.earth.600}",
+          "aliasOf": "earth/600"
+        }
       }
     },
     "success": {
@@ -725,6 +1019,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-border-success"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#3e8e2e",
+          "alias": "{color.primitive.success.500}",
+          "aliasOf": "success/500"
+        }
       }
     },
     "warning": {
@@ -741,6 +1042,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-border-warning"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#b8730e",
+          "alias": "{color.primitive.warning.500}",
+          "aliasOf": "warning/500"
+        }
       }
     },
     "error": {
@@ -757,6 +1065,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-border-error"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#c8352a",
+          "alias": "{color.primitive.error.500}",
+          "aliasOf": "error/500"
+        }
       }
     },
     "info": {
@@ -773,6 +1088,13 @@
         "collection": "Colour",
         "mode": "Clinic",
         "codeSyntax": "--imoc-border-info"
+      },
+      "modes": {
+        "supplement": {
+          "value": "#2172ac",
+          "alias": "{color.primitive.info.500}",
+          "aliasOf": "info/500"
+        }
       }
     }
   }

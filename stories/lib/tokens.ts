@@ -32,10 +32,15 @@ export interface PrimitivesFile {
   radius: Record<string, { value: number; type: string; unit: string; description: string; figma: FigmaMeta }>;
 }
 
-export interface SemanticColorToken {
+export interface ColorModeValue {
   value: string;
   alias: string | null;
   aliasOf: string | null;
+}
+
+export interface SemanticColorToken extends ColorModeValue {
+  /** Values for the non-default colour modes, keyed by lowercase mode name (e.g. `supplement`). */
+  modes?: Record<string, ColorModeValue>;
   type: 'color';
   scopes: string[];
   description: string;
@@ -43,6 +48,12 @@ export interface SemanticColorToken {
 }
 
 export type ColorFile = Record<string, Record<string, SemanticColorToken>>;
+
+/** A semantic colour's value in the given colour mode. Clinic is the default (top-level) value. */
+export function themedColor(token: SemanticColorToken, theme: string): ColorModeValue {
+  if (theme === 'clinic') return token;
+  return token.modes?.[theme] ?? token;
+}
 
 export interface DimensionToken {
   mobile: number | string;

@@ -287,8 +287,8 @@ export function ComponentGuidelines({ componentKey, setIds }: { componentKey: st
               )}
             </div>
             <p className="doc-section-note">
-              Every variant as designed, exported from Figma ({set.variants.length}). Use it to check the live
-              component against the source.
+              Every variant as designed, exported from Figma ({set.variants.length}). Renders show the Clinic colour
+              mode; use them to check the live component against the source.
             </p>
             <VariantMatrix componentKey={componentKey} set={set} />
           </section>

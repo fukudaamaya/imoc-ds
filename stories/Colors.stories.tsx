@@ -66,7 +66,7 @@ const PRIMITIVE_GROUP_DESCRIPTIONS: Record<string, string> = {
   neutral: 'Backgrounds, surfaces, text, and structural elements — the minimum-hue, minimum-saturation base every other color sits on top of.',
   ocean: 'The primary brand colour — used for primary actions, links, focus states, and brand headings.',
   earth: 'The secondary brand colour — used for editorial accents, pull quotes, and decorative illustration fills.',
-  flora: 'Reserved for a future Supplement product line — not currently aliased to any semantic token in the live Clinic theme.',
+  flora: 'The Supplement line’s brand colour — aliased only in the Supplement colour mode (actions, links, brand text, focus). Unused in Clinic.',
   success: 'Confirmation and success states — completed bookings, saved changes, positive feedback.',
   warning: "Advisory and caution states — logistics notices, limited availability, anything that needs attention without being an error.",
   error: 'Errors and validation failures — rejected form fields, failed submissions.',
@@ -137,8 +137,9 @@ function ColorsSemanticPage() {
       </div>
 
       <p className="doc-section-note" style={{ marginTop: -12 }}>
-        Color does not vary between Mobile and Web — the Colour collection has a single "Clinic" mode. The
-        Mobile/Web toolbar toggle above won't change anything on this page; it affects Typography and Spacing.
+        Values follow the <strong>Theme</strong> toggle in the toolbar — the Colour collection has two modes,
+        Clinic and Supplement. In Supplement, tokens that change also show their Clinic value. Colour doesn't
+        vary between Mobile and Web; that toggle only affects Typography and Spacing.
       </p>
 
       {SEMANTIC_GROUP_ORDER.filter((g) => semantics[g]).map((group) => (

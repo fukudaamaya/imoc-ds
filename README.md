@@ -8,10 +8,10 @@ Live docs: deployed via Vercel on every push to `master`.
  
 - **`tokens/`** — source of truth for design tokens, synced from Figma variables
   - `primitives.json` — colour ramps, type families, spacing scale, radius scale (single mode)
-  - `color.json` — semantic text/surface/border tokens, aliased to primitives (single "Clinic" mode)
+  - `color.json` — semantic text/surface/border tokens, aliased to primitives. Clinic values at the top level of each token; Supplement values under `modes.supplement`
   - `dimensions.json` — type scale, semantic spacing, semantic radius, layout (Mobile + Web modes)
 - **`style-dictionary/`** — build pipeline that turns `tokens/*.json` into consumable output
-- **`build/css/`** — generated CSS custom properties (`_root.css` for web defaults, `_mobile.css` as a `[data-platform="mobile"]` override)
+- **`build/css/tokens.css`** — generated CSS custom properties: web defaults on `:root`, a `[data-platform="mobile"]` override for dimensions, and a `[data-theme="supplement"]` override for colour
 - **`stories/`** — Storybook pages documenting the system (Overview, Colors, Typography, Spacing, Accessibility, Changelog)
 - **`src/components/`** — React components built from the Figma component sets, styled only with the token CSS. Each has a Storybook **Docs** page (live examples, props, Figma usage notes, bound tokens, Figma renders) and a **Playground**
 - **`src/icons/`**, **`src/brand/`** — icon set and logo artwork exported from Figma
@@ -24,7 +24,7 @@ Live docs: deployed via Vercel on every push to `master`.
  
 Two independent mode axes, intentionally kept separate rather than collapsed into one:
  
-- **Colour mode** — theme axis. Currently only "Clinic" is defined; a future "Supplement" mode will activate the `flora` primitive ramp.
+- **Colour mode** — theme axis: Clinic (default, `:root`) and Supplement (`[data-theme="supplement"]`, which activates the `flora` ramp). Only tokens that change are overridden. Storybook's **Theme** toolbar toggle switches between them.
 - **Web/Mobile mode** — dimension axis, applied to typography, spacing, radius, and layout only. Colour does not vary by platform.
 Semantic tokens use property-first naming (no `color/` prefix) — see individual token descriptions in `tokens/*.json` for usage rules, including accessibility guardrails on `border/default` vs `border/strong`.
  
@@ -65,5 +65,5 @@ Vercel builds `npm run build-storybook` and serves `storybook-static/` on every 
  
 ## Contributing
  
-Maya Allister is the sole designer and maintainer. This system serves the IMOC Clinic product line today; a Supplement line extension (Colour mode + `flora` primitive activation) is planned.
+Maya Allister is the sole designer and maintainer. This system serves the IMOC Clinic product line and, through the Supplement colour mode, the supplement line.
  

@@ -1,0 +1,434 @@
+[
+  {
+    "tokenName": "text/primary",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#272420",
+    "newValue": "#272420; supplement: neutral/900",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/secondary",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#5e5a52",
+    "newValue": "#5e5a52; supplement: neutral/700",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/tertiary",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#767266",
+    "newValue": "#767266; supplement: neutral/600",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/disabled",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#9e9a90",
+    "newValue": "#9e9a90; supplement: neutral/500",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/inverse",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#fafaf8",
+    "newValue": "#fafaf8; supplement: neutral/50",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/link",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#0a6b6d",
+    "newValue": "#0a6b6d; supplement: flora/700",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/link-hover",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#075052",
+    "newValue": "#075052; supplement: flora/800",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/link-inverse",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#6ec7ca",
+    "newValue": "#6ec7ca; supplement: flora/300",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/brand",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#0a6b6d",
+    "newValue": "#0a6b6d; supplement: flora/700",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/accent",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#6c3f27",
+    "newValue": "#6c3f27; supplement: earth/700",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/on-fill",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#ffffff",
+    "newValue": "#ffffff; supplement: neutral/900",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/success",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#235517",
+    "newValue": "#235517; supplement: success/700",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/warning",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#6e4207",
+    "newValue": "#6e4207; supplement: warning/700",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/error",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#7c1f17",
+    "newValue": "#7c1f17; supplement: error/700",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/info",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#144468",
+    "newValue": "#144468; supplement: info/700",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "text/placeholder",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#767266",
+    "newValue": "#767266; supplement: neutral/600",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/background",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#fafaf8",
+    "newValue": "#fafaf8; supplement: neutral/50",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/card",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#ffffff",
+    "newValue": "#ffffff; supplement: neutral/0",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/input",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#ffffff",
+    "newValue": "#ffffff; supplement: neutral/0",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/inverse",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#141210",
+    "newValue": "#141210; supplement: neutral/950",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/disabled",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#e9e6e1",
+    "newValue": "#e9e6e1; supplement: neutral/200",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/brand",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#0a6b6d",
+    "newValue": "#0a6b6d; supplement: flora/300",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/brand",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Active/selected-state indicator on Nav Link (the underline bar) — Navigation, Dropdown menu, Footer nav links. Aliases ocean/700 in Clinic, flora/300 in Supplement — same primitive as surface/action, text/link, text/brand, border/focus.",
+    "newValue": "Active-state indicator on footer nav links. Aliases ocean/700 in Clinic, flora/300 in Supplement.",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/brand-subtle",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#f0fafa",
+    "newValue": "#f0fafa; supplement: flora/50",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/accent",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#6c3f27",
+    "newValue": "#6c3f27; supplement: earth/400",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/accent-subtle",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#f6eee3",
+    "newValue": "#f6eee3; supplement: earth/100",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/action",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#0a6b6d",
+    "newValue": "#0a6b6d; supplement: flora/300",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/action-hover",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#075052",
+    "newValue": "#075052; supplement: flora/400",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/action-pressed",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#04302f",
+    "newValue": "#04302f; supplement: flora/500",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/success",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#edf7e9",
+    "newValue": "#edf7e9; supplement: success/50",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/warning",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#fdf3e3",
+    "newValue": "#fdf3e3; supplement: warning/50",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/error",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#fdecea",
+    "newValue": "#fdecea; supplement: error/50",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/info",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#e8f1f9",
+    "newValue": "#e8f1f9; supplement: info/50",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/overlay",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "rgba(20, 18, 16, 0.6)",
+    "newValue": "rgba(20, 18, 16, 0.6); supplement: rgba(20, 18, 16, 0.6)",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/decorative",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#dfc3a4",
+    "newValue": "#dfc3a4; supplement: earth/300",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/hover",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#f5f3f0",
+    "newValue": "#f5f3f0; supplement: neutral/100",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "surface/selected",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#d6f0f1",
+    "newValue": "#d6f0f1; supplement: flora/100",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/subtle",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#e9e6e1",
+    "newValue": "#e9e6e1; supplement: neutral/200",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/default",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#d6d2ca",
+    "newValue": "#d6d2ca; supplement: neutral/300",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/strong",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#767266",
+    "newValue": "#767266; supplement: neutral/600",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/focus",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#0a6b6d",
+    "newValue": "#0a6b6d; supplement: flora/700",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/focus",
+    "collection": "Colour",
+    "field": "description",
+    "oldValue": "Keyboard focus ring on every interactive element — 2px weight at 2px OFFSET. The offset is load-bearing, not decorative: it lifts the ring off the control so the ring's neighbouring colour is always the page background (6.02:1, passes WCAG 2.2 SC 1.4.11 at 3:1). Flush against a brand-filled surface it drops to 1.0:1 and disappears, because this token and surface/action both alias ocean/700. Implement as outline: 2px solid + outline-offset: 2px. Never removable, never flush.",
+    "newValue": "Keyboard focus ring on every interactive element — 2px weight at 2px OFFSET. The offset is load-bearing, not decorative: it lifts the ring off the control so the ring's neighbouring colour is always the page background (6.02:1, passes WCAG 2.2 SC 1.4.11 at 3:1). Flush against a brand-filled surface it drops to 1.0:1 and disappears, because this token and surface/action both alias ocean/700. Implement as outline: 2px solid + outline-offset: 2px. Never removable, never flush. Also the Nav Link active-state underline (2px), chosen over surface/brand because it holds contrast in both colour modes.",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/brand",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#0d8588",
+    "newValue": "#0d8588; supplement: flora/600",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/accent",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#8e6039",
+    "newValue": "#8e6039; supplement: earth/600",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/success",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#3e8e2e",
+    "newValue": "#3e8e2e; supplement: success/500",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/warning",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#b8730e",
+    "newValue": "#b8730e; supplement: warning/500",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/error",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#c8352a",
+    "newValue": "#c8352a; supplement: error/500",
+    "date": "2026-09-29",
+    "status": "changed"
+  },
+  {
+    "tokenName": "border/info",
+    "collection": "Colour",
+    "field": "value",
+    "oldValue": "#2172ac",
+    "newValue": "#2172ac; supplement: info/500",
+    "date": "2026-09-29",
+    "status": "changed"
+  }
+]
